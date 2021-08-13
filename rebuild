@@ -1,0 +1,15 @@
+#! /bin/sh
+
+EMAIL=tim.j.wilkinson@gmail.com
+DIST=dev
+
+dpkg-scanpackages --multiversion ${DIST} > ${DIST}/Packages
+rm -f ${DIST}/Packages.gz
+gzip -k ${DIST}/Packages
+
+echo "Codename: dev/" > ${DIST}/Release
+echo "Origin: pimox" >> ${DIST}/Release
+apt-ftparchive release ${DIST} >> ${DIST}/Release
+gpg --default-key "${EMAIL}" -abs -o - ${DIST}/Release > ${DIST}/Release.gpg
+gpg --default-key "${EMAIL}" --clearsign -o - ${DIST}/Release > ${DIST}/InRelease
+
