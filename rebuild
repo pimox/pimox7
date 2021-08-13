@@ -7,7 +7,9 @@ dpkg-scanpackages --multiversion ${DIST} > ${DIST}/Packages
 rm -f ${DIST}/Packages.gz
 gzip -k ${DIST}/Packages
 
+echo "Architecture: arm64" > ${DIST}/Release
 echo "Codename: dev/" > ${DIST}/Release
+echo "Label: Pimox: Raspberry Pi Promox" >> ${DIST}/Release
 echo "Origin: pimox" >> ${DIST}/Release
 apt-ftparchive release ${DIST} >> ${DIST}/Release
 gpg --default-key "${EMAIL}" -abs -o - ${DIST}/Release > ${DIST}/Release.gpg
