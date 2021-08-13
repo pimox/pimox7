@@ -1116,6 +1116,67 @@ Priority: optional
 Homepage: http://ceph.com/
 Description: This package provides libraries needed for distributed tracing for Ceph.
 
+Package: libjs-extjs
+Version: 7.0.0-1
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 22491
+Breaks: proxmox-widget-toolkit (<< 3.1-1)
+Filename: dev/main/binary-all/libjs-extjs_7.0.0-1_all.deb
+Size: 2819748
+MD5sum: 3627fbab2b33b8fd4dc337c694e23594
+SHA1: cc7901b06e3a731b0094b2d9bf96dc59aa442ff2
+SHA256: b9a32f6bd87c3f5da818e3d774f1789ab606d846b1bb3e93a24f229b774d0540
+Section: web
+Priority: optional
+Homepage: https://www.sencha.com/
+Description: cross-browser JavaScript library
+ Ext JS is a cross-browser JavaScript library for building rich internet
+ applications.
+
+Package: libproxmox-acme-perl
+Source: libproxmox-acme
+Version: 1.2.0
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 36
+Depends: libpve-common-perl (>= 6~), libproxmox-acme-plugins, perl:any
+Breaks: libpve-common-perl (<< 6.0-20)
+Replaces: libpve-common-perl (<< 6.0-20)
+Filename: dev/main/binary-all/libproxmox-acme-perl_1.2.0_all.deb
+Size: 9544
+MD5sum: d4b1f926ed32b6276074f283c4e6f686
+SHA1: c6e5b630e56952b4272ead937c4314c106a370de
+SHA256: 76da52a1f4216953aab8e822a47551a43d310d9526ca4d6a13a828de6add9d1d
+Section: admin
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox ACME integration perl library
+ Used in perl-based Proxmox project as common interface for DNS and HTTP ACME
+ challenges.
+
+Package: libproxmox-acme-plugins
+Source: libproxmox-acme
+Version: 1.2.0
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 726
+Depends: coreutils (>= 8.30-1), curl (>= 7.64.0-1), sed (>= 4.7-1)
+Recommends: idn
+Breaks: libproxmox-acme-perl (<< 1.1.0)
+Replaces: libproxmox-acme-perl (<< 1.1.0)
+Filename: dev/main/binary-all/libproxmox-acme-plugins_1.2.0_all.deb
+Size: 107172
+MD5sum: 1964b7fbcb4159ccfd02e2e40cb4f561
+SHA1: 07c14aad83d2600efa517902b7e8ce759174110f
+SHA256: 3257e4837221305a41cdafcd48ce7b1ff563d2c77a2302c3ffe40eccb553c8aa
+Section: admin
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox acme.sh wrapper for DNS API plugins
+ Used in Proxmox project to provide DNS API plugins for issuing ACME DNS
+ challenges with a small wrapper executable.
+
 Package: libpve-access-control
 Version: 7.0-4
 Architecture: all
