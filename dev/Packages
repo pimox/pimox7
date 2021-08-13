@@ -1196,6 +1196,23 @@ Description: Proxmox VE access control library
  This package contains the role based user management and access
  control function used by Proxmox VE.
 
+Package: libpve-apiclient-perl
+Version: 3.2-1
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 34
+Depends: libcrypt-ssleay-perl, libhttp-message-perl, libio-socket-ssl-perl, libjson-perl, liburi-perl, libwww-perl, perl:any
+Filename: dev/main/binary-all/libpve-apiclient-perl_3.2-1_all.deb
+Size: 7992
+MD5sum: c4295ee3421c038c0bb9c793c0ffb817
+SHA1: a4458114e647d92000a189500fd3be5bb54e471c
+SHA256: aab7f2a67238da82be4340b0d02a25f6b4a9776708f8a33e9a0b0f41647810a7
+Section: perl
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox VE API client library
+ This implements an API client for Proxmox VE in perl.
+
 Package: libpve-cluster-api-perl
 Source: pve-cluster
 Version: 7.0-3
@@ -2006,6 +2023,67 @@ Priority: optional
 Description: Proxmox APT archive keyring
  This package contains the release keyrings used to sign APT repositories for
  various Proxmox products.
+
+Package: proxmox-backup-client
+Source: rust-proxmox-backup
+Version: 2.0.9-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 10011
+Depends: qrencode, libacl1 (>= 2.2.23), libc6 (>= 2.28), libfuse3-3 (>= 3.2.3), libgcc-s1 (>= 4.2), libssl1.1 (>= 1.1.0), libstdc++6 (>= 4.1.1), libzstd1 (>= 1.4.0)
+Filename: dev/main/binary-arm64/proxmox-backup-client_2.0.9-1_arm64.deb
+Size: 2258320
+MD5sum: f43b408a324697cf6333bce2083f7e5c
+SHA1: 31d87b8542743dc757653ec029cc84c6f04f6857
+SHA256: d41fb54969f03e8026cf96f693b428f56bf2e4fd1c6971b08c319bd535619a27
+Section: admin
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox Backup Client tools
+ This package contains the Proxmox Backup client, which provides a
+ simple command line tool to create and restore backups.
+
+Package: proxmox-backup-file-restore
+Source: rust-proxmox-backup
+Version: 2.0.9-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 11369
+Depends: libacl1 (>= 2.2.23), libc6 (>= 2.28), libgcc-s1 (>= 4.2), libssl1.1 (>= 1.1.0), libstdc++6 (>= 4.1.1), libuuid1 (>= 2.16), libzstd1 (>= 1.4.0)
+Recommends: pve-qemu-kvm (>= 5.0.0-9), proxmox-backup-restore-image
+Breaks: proxmox-backup-restore-image (<< 0.3.1)
+Filename: dev/main/binary-arm64/proxmox-backup-file-restore_2.0.9-1_arm64.deb
+Size: 2284516
+MD5sum: 8819170b2081f271c084e4894eb4c86b
+SHA1: e4aaf4f26385f69b018524408892fee1c8f31ab5
+SHA256: 436f2feb839d76b92de2a124d0a02469a6f9638f0a6df46acdf33a1958bc253a
+Section: admin
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox Backup single file restore tools for pxar and block device backups
+ This package contains the Proxmox Backup single file restore client for
+ restoring individual files and folders from both host/container and VM/block
+ device backups. It includes a block device restore driver using QEMU.
+
+Package: proxmox-backup-server
+Source: rust-proxmox-backup
+Version: 2.0.9-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 58036
+Depends: fonts-font-awesome, libjs-extjs (>= 7~), libjs-qrcodejs (>= 1.20201119), libproxmox-acme-plugins, libsgutils2-2 (>= 1.43), libzstd1 (>= 1.4.0), lvm2, openssh-server, pbs-i18n, postfix | mail-transport-agent, proxmox-backup-docs, proxmox-mini-journalreader, proxmox-widget-toolkit (>= 3.3-2), pve-xtermjs (>= 4.7.0-1), sg3-utils, smartmontools, libapt-pkg6.0 (>= 1.9~), libc6 (>= 2.28), libcrypt1 (>= 1:4.1.0), libcurl3-gnutls (>= 7.16.2), libgcc-s1 (>= 4.2), libpam0g (>= 0.99.7.1), libssl1.1 (>= 1.1.1), libstdc++6 (>= 5.2), libsystemd0, libudev1 (>= 183), libuuid1 (>= 2.16)
+Recommends: zfsutils-linux, ifupdown2
+Filename: dev/main/binary-arm64/proxmox-backup-server_2.0.9-1_arm64.deb
+Size: 12860380
+MD5sum: 227cc55d1ce2d079f88d355fe88f845c
+SHA1: b775026edbf63a7d9ffbc2726650fbc0ab6e75f1
+SHA256: 7b5bff6727e738f9611a8c2ee809a7fd109b839dc09a63b3409cb3a20f81b826
+Section: admin
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox Backup Server daemon with tools and GUI
+ This package contains the Proxmox Backup Server daemons and related
+ tools. This includes a web-based graphical user interface.
 
 Package: proxmox-mini-journalreader
 Version: 1.2-1
