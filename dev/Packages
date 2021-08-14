@@ -2107,15 +2107,15 @@ Version: 7.0-2
 Architecture: all
 Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 27
-Depends: apt, openssh-client, openssh-server, proxmox-archive-keyring, pve-manager, pve-qemu-kvm, qemu-server, spiceterm, vncterm
+Depends: apt, openssh-client, openssh-server, proxmox-archive-keyring, pve-manager, pve-qemu-kvm, qemu-server, spiceterm, vncterm, zfsutils-linux
 Conflicts: proxmox-ve-3.10.0, proxmox-virtual-environment, pve-kernel
 Replaces: proxmox-ve-3.10.0, proxmox-virtual-environment, pve-kernel
 Provides: proxmox-virtual-environment
 Filename: dev/main/binary-all/proxmox-ve_7.0-2_all.deb
-Size: 5816
-MD5sum: 9cfffe4f36587cf42d0da476f7dc09fc
-SHA1: 2fa0e8cfc469143f018c756c9b14a27e93280b9d
-SHA256: 65cfa10106aa5e0a1e06b8c842b89326d0b5998fff3d31cd9e8223edca884446
+Size: 5828
+MD5sum: cb783965f6d336b59fc779c234f99fe7
+SHA1: 31760eb05eb837393da36cdc73534c9d95473239
+SHA256: b87aa2008ce0d6b9f1fd4767883b64c4157a443bff6911b995b922a99606d9e3
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
