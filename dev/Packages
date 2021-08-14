@@ -2240,6 +2240,26 @@ Priority: optional
 Description: Proxmox VE Documentation - mediawiki plugin
  This package contains tools to view Proxmox VE Documentation with mediakiki.
 
+Package: pve-edk2-firmware
+Version: 3.20200531-1
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 264202
+Filename: dev/main/binary-all/pve-edk2-firmware_3.20200531-1_all.deb
+Size: 2490468
+MD5sum: a799968a7252126783bd06cfd8fa7552
+SHA1: 8a4975a85ba098412b313d62106474f978fcecf3
+SHA256: d01c2c63708dfe028ef4bb14ccb331d7b1541bd8f18db6637b6c234b524ea323
+Section: misc
+Priority: optional
+Homepage: http://www.tianocore.org
+Description: edk2 based firmware modules for virtual machines
+ Contains OVMF and AAVMF. Open Virtual Machine Firmware (OVMF) is a build of
+ EDK II for virtual machines. It includes full support for UEFI, including
+ Secure Boot, allowing use of UEFI in place of a traditional BIOS in your VM.
+ AAVMF offers the same for AARCH64 (ARM64) based VMs.
+ Proxmox VE specific release with disabled secure boot.
+
 Package: pve-firewall
 Version: 4.2-2
 Architecture: arm64

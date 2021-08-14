@@ -2,7 +2,7 @@
 DIST=dev/main
 R=/root/build
 
-LIST="ceph corosync-pve criu extjs ifupdown2 libpve-u2f-server-perl libqb librados2-perl lxc novnc-pve proxmox-archive-keyring proxmox-backup proxmox-i18n proxmox-mini-journalreader proxmox-widget-toolkit pve-access-control pve-apiclient pve-client pve-cluster pve-common pve-container pve-docs pve-firewall pve-guest-common pve-ha-manager pve-http-server pve-lxc-syscalld pve-manager pve-qemu pve-rs pve-storage pve-xtermjs pve-server qemu-server spiceterm vncterm prebuilt"
+LIST="ceph corosync-pve criu extjs ifupdown2 libpve-u2f-server-perl libqb librados2-perl lxc novnc-pve proxmox-archive-keyring proxmox-backup proxmox-i18n proxmox-mini-journalreader proxmox-widget-toolkit pve-access-control pve-apiclient pve-client pve-cluster pve-common pve-container pve-docs pve-edk2-firmware pve-firewall pve-guest-common pve-ha-manager pve-http-server pve-lxc-syscalld pve-manager pve-qemu pve-rs pve-storage pve-xtermjs pve-server qemu-server spiceterm vncterm prebuilt"
 
 for i in ${LIST}
 do
