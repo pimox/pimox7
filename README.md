@@ -10,7 +10,7 @@ Requirements
 
 Setup
 ---
-0. *Make sure you have set the hostname of the Pi in /etc/hostname, given it a static IP and put the hostname and IP address in /etc/hosts. If you don't do this then the install will fail!*
+0. *Make sure you have set the hostname of the Pi in /etc/hostname, given it a static IP and put the hostname and IP address in /etc/hosts. If you don't do this then the install will fail!* Also, remove any IPv6 configuration for the network (it's probably auto and this upsets the installer).
 1. sudo -s
 2. curl https://gitlab.com/pimox/pimox7/-/raw/master/KEY.gpg | apt-key add -
 3. curl https://gitlab.com/pimox/pimox7/-/raw/master/pimox.list > /etc/apt/sources.list.d/pimox.list
