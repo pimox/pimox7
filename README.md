@@ -8,14 +8,15 @@ Requirements
 * Raspberry Pi 4
 * Pre-installed Debian based 64-bit OS ___(not 32-bit)___
 
-Setup
+Prechecks
 ---
-0. *Make sure you have set the hostname of the Pi in /etc/hostname, given it a static IP and put the hostname and IP address in /etc/hosts. If you don't do this then the install will fail!* Also, remove any IPv6 configuration for the network (it's probably auto and this upsets the installer).
+1. Give the Pi a fixed IP address in /etc/network/interfaces. You cannot use dhcp.
+2. Remove any IPv6 addresses in /etc/network/interfaces.
+
+Install
+---
 1. sudo -s
-2. curl https://gitlab.com/pimox/pimox7/-/raw/master/KEY.gpg | apt-key add -
-3. curl https://gitlab.com/pimox/pimox7/-/raw/master/pimox.list > /etc/apt/sources.list.d/pimox.list
-4. apt update
-5. apt install proxmox-ve
+2. curl https://gitlab.com/pimox/pimox7/-/raw/master/pimox.sh | sh
 
 Notes
 ---

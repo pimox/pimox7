@@ -2393,7 +2393,7 @@ Package: pve-manager
 Version: 7.0-11
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 9932
+Installed-Size: 9930
 Depends: apt-transport-https | apt (>= 1.5~), ca-certificates, cstream, dtach, fonts-font-awesome, gdisk, hdparm, ifupdown2 (>= 2.0.1-1+pve8) | ifenslave (>= 2.6), libapt-pkg-perl, libc6 (>= 2.17), libcrypt-ssleay-perl, libfile-readbackwards-perl, libfilesys-df-perl, libjs-extjs (>= 6.0.1), libjson-perl, liblwp-protocol-https-perl, libnet-dns-perl, libproxmox-acme-perl, libpve-access-control (>= 7.0-2), libpve-cluster-api-perl, libpve-cluster-perl (>= 6.1-6), libpve-common-perl (>= 7.0-2), libpve-guest-common-perl (>= 4.0-2), libpve-http-server-perl (>= 3.2-1), libpve-rs-perl (>= 0.2.2), libpve-storage-perl (>= 7.0-10), librados2-perl, libtemplate-perl, libterm-readline-gnu-perl, liburi-perl, libuuid-perl, libwww-perl (>= 6.04-1), logrotate, lsb-base, lzop, zstd, novnc-pve (>= 1.2.0-2~), pciutils, perl (>= 5.10.0-19), postfix | mail-transport-agent, proxmox-mini-journalreader, proxmox-widget-toolkit (>= 3.3-6), pve-cluster (>= 6.0-4), pve-container (>= 4.0-9), pve-docs, pve-firewall, pve-ha-manager, pve-i18n (>= 1.0-3), pve-xtermjs (>= 4.7.0-1), qemu-server (>= 6.2-17), rsync, spiceterm, systemd, vncterm, wget, perl:any
 Suggests: libpve-network-perl (>= 0.5-1)
 Conflicts: vlan, vzdump
@@ -2401,10 +2401,10 @@ Breaks: libpve-network-perl (<< 0.5-1)
 Replaces: vlan, vzdump
 Provides: vlan, vzdump
 Filename: dev/main/binary-arm64/pve-manager_7.0-11_arm64.deb
-Size: 2055876
-MD5sum: b7efb071953dc76667bb7906b5af2125
-SHA1: 655270694836d263c6461c0a232b5690c6f20d3d
-SHA256: 19d62dbd5cf86adb8ec2246af9f9cf210d8a55146c87dbc89061c71c96d3e7e4
+Size: 2055944
+MD5sum: de0cd662de67e94bf8ae1f19d248bca3
+SHA1: ca7255362b023802ebfb7b111fe172aaef245d0e
+SHA256: b9009befbcd1a027d7314bf89babc430668c4f1eaaab64e2b6046c8ded3618e7
 Section: admin
 Priority: optional
 Description: Proxmox Virtual Environment Management Tools
