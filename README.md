@@ -10,13 +10,16 @@ Requirements
 
 Prechecks
 ---
-1. Give the Pi a fixed IP address in /etc/network/interfaces. You cannot use dhcp.
-2. Remove any IPv6 addresses in /etc/network/interfaces.
+1. In /etc/network/interfaces, give the Pi a static IP address. You cannot use dhcp.
+2. In /etc/network/interfaces, remove any IPv6 addresses.
+3. In /etc/hostname, make sure the Pi has a name.
+4. In /etc/hosts, make sure this hostname corresponds to the static IP you previous set.
 
 Install
 ---
-1. sudo -s
-2. curl https://gitlab.com/pimox/pimox7/-/raw/master/pimox.sh | sh
+1. Do this at the console, not over a network. The network will be reconfigured as part of the install.
+2. sudo -s
+3. curl https://gitlab.com/pimox/pimox7/-/raw/master/pimox.sh | sh
 
 Notes
 ---
