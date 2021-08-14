@@ -2780,3 +2780,33 @@ Description: VNC Terminal Emulator
  With vncterm you can start commands and export its standard input and
  output to any VNC client (simulating a xterm Terminal).
 
+Package: zfsutils-linux
+Source: zfs-linux
+Version: 2.0.3-9
+Architecture: arm64
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Installed-Size: 1458
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: libnvpair3linux (= 2.0.3-9), libuutil3linux (= 2.0.3-9), libzfs4linux (= 2.0.3-9), libzpool4linux (= 2.0.3-9), python3, libblkid1 (>= 2.16), libc6 (>= 2.17), libuuid1 (>= 2.16)
+Recommends: lsb-base, zfs-modules | zfs-dkms, zfs-zed
+Suggests: nfs-kernel-server, samba-common-bin (>= 3.0.23), zfs-initramfs | zfs-dracut
+Conflicts: zfs, zfs-fuse
+Breaks: openrc, spl (<< 0.7.9-2), spl-dkms (<< 0.8.0~rc1), zfs-dkms (>> 2.0.3-9...), zfs-dkms (<< 2.0.3-9)
+Replaces: spl (<< 0.7.9-2), spl-dkms
+Provides: zfsutils
+Filename: dev/main/binary-arm64/zfsutils-linux_2.0.3-9_arm64.deb
+Size: 467168
+MD5sum: d544504ed996813703bd9353a84bca50
+SHA1: 53f50af6970b852eceeae73eb210fadde4928fd7
+SHA256: b173f09aefceb83a2bd8f58fa420f7a872677deb9d49da2fafa2c83750d7a8f5
+Section: contrib/admin
+Priority: optional
+Homepage: https://zfsonlinux.org/
+Description: command-line tools to manage OpenZFS filesystems
+ OpenZFS is a storage platform that encompasses the functionality of
+ traditional filesystems and volume managers. It supports data checksums,
+ compression, encryption, snapshots, and more.
+ .
+ This package provides the zfs and zpool commands to create and administer
+ OpenZFS filesystems.
+
