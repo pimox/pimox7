@@ -70,6 +70,21 @@ Description: common utilities to mount and interact with a ceph storage cluster
  block and file system storage.  This is a collection
  of common tools that allow one to interact with and administer a Ceph cluster.
 
+Package: ceph-dkms
+Version: 0.0.2
+Architecture: all
+Maintainer: Tim <tim.j.wilkinson@gmail.com>
+Installed-Size: 1511
+Depends: dkms (>= 2.1.0.0)
+Filename: dev/main/binary-all/ceph-dkms_0.0.2_all.deb
+Size: 282912
+MD5sum: d461a09ff31dc8cd568ad00515e80acb
+SHA1: 6fe566a7b695ef019e8daf163ab0a597e20a0595
+SHA256: ebece780909250762a06ac075a9868fefa8b3e4897b2d42f7177e27002ec0b22
+Section: admin
+Priority: optional
+Description: DKMS to build in-kernel Ceph modules
+
 Package: ceph-fuse
 Source: ceph
 Version: 16.2.5-pve1
@@ -2107,15 +2122,15 @@ Version: 7.0-2
 Architecture: all
 Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 27
-Depends: apt, openssh-client, openssh-server, proxmox-archive-keyring, pve-manager, pve-qemu-kvm, qemu-server, spiceterm, vncterm, zfsutils-linux
+Depends: apt, openssh-client, openssh-server, proxmox-archive-keyring, pve-manager, pve-qemu-kvm, qemu-server, spiceterm, vncterm, zfsutils-linux, chrony, ksmtuned, ceph-dkms
 Conflicts: proxmox-ve-3.10.0, proxmox-virtual-environment, pve-kernel
 Replaces: proxmox-ve-3.10.0, proxmox-virtual-environment, pve-kernel
 Provides: proxmox-virtual-environment
 Filename: dev/main/binary-all/proxmox-ve_7.0-2_all.deb
-Size: 5828
-MD5sum: cb783965f6d336b59fc779c234f99fe7
-SHA1: 31760eb05eb837393da36cdc73534c9d95473239
-SHA256: b87aa2008ce0d6b9f1fd4767883b64c4157a443bff6911b995b922a99606d9e3
+Size: 5848
+MD5sum: cb5ea37e6983810106296a0059cebe98
+SHA1: 75391b53cd01a79d3dc5ac060049fe576dc4b972
+SHA256: bf74e6b020442acd151ace20b85695ef2c71665beda623fbcde2236d23fee6cc
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
