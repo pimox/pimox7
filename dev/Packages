@@ -2102,6 +2102,29 @@ Description: Minimal systemd Journal Reader
  A minimal application to read the last X lines of the systemd journal or the
  last X lines before a cursor.
 
+Package: proxmox-ve
+Version: 7.0-2
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 27
+Depends: apt, openssh-client, openssh-server, proxmox-archive-keyring, pve-manager, pve-qemu-kvm, qemu-server, spiceterm, vncterm
+Conflicts: proxmox-ve-3.10.0, proxmox-virtual-environment, pve-kernel
+Replaces: proxmox-ve-3.10.0, proxmox-virtual-environment, pve-kernel
+Provides: proxmox-virtual-environment
+Filename: dev/main/binary-all/proxmox-ve_7.0-2_all.deb
+Size: 5816
+MD5sum: 9cfffe4f36587cf42d0da476f7dc09fc
+SHA1: 2fa0e8cfc469143f018c756c9b14a27e93280b9d
+SHA256: 65cfa10106aa5e0a1e06b8c842b89326d0b5998fff3d31cd9e8223edca884446
+Section: admin
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox Virtual Environment
+ The Proxmox Virtual Environment is an easy to use Open Source
+ virtualization platform for running Virtual Appliances and Virtual
+ Machines. This is a meta package which will install everything
+ needed.
+
 Package: proxmox-widget-toolkit
 Version: 3.3-6
 Architecture: all
@@ -2310,6 +2333,25 @@ Section: perl
 Priority: optional
 Description: Proxmox VE HA Simulator
  This is a simple GUI to simulate the behavior of a Proxmox VE HA cluster.
+
+Package: pve-headers
+Source: proxmox-ve
+Version: 7.0-2
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 10
+Depends: pve-headers-5.11
+Filename: dev/main/binary-all/pve-headers_7.0-2_all.deb
+Size: 3608
+MD5sum: ecf4aaec810ba11c05083c407fae7e38
+SHA1: 9a80f105b195ee79d2f4a7310abf56e4dd4323ff
+SHA256: adc6b0492161049738587da5e69cdf73586dc9ce152926e7a655c57c37d2243a
+Section: admin
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Default Proxmox VE Kernel Headers
+ This is a metapackage which will install the kernel headers for the
+ current default kernel.
 
 Package: pve-i18n
 Source: proxmox-i18n
