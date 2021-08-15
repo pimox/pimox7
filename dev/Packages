@@ -2087,13 +2087,13 @@ Source: rust-proxmox-backup
 Version: 2.0.9-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 10011
+Installed-Size: 10023
 Depends: qrencode, libacl1 (>= 2.2.23), libc6 (>= 2.28), libfuse3-3 (>= 3.2.3), libgcc-s1 (>= 4.2), libssl1.1 (>= 1.1.0), libstdc++6 (>= 4.1.1), libzstd1 (>= 1.4.0)
 Filename: dev/main/binary-arm64/proxmox-backup-client_2.0.9-1_arm64.deb
-Size: 2258320
-MD5sum: f43b408a324697cf6333bce2083f7e5c
-SHA1: 31d87b8542743dc757653ec029cc84c6f04f6857
-SHA256: d41fb54969f03e8026cf96f693b428f56bf2e4fd1c6971b08c319bd535619a27
+Size: 2277140
+MD5sum: 35e01735895529c93e387c2d127ea696
+SHA1: 481c342877476ef398fa558ccfe77079d2540b93
+SHA256: 8159efba9536eaac3fcb5a371b56502db2dc38c5d157f9600733efa2a35bfa82
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -2106,15 +2106,15 @@ Source: rust-proxmox-backup
 Version: 2.0.9-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 11369
+Installed-Size: 11393
 Depends: libacl1 (>= 2.2.23), libc6 (>= 2.28), libgcc-s1 (>= 4.2), libssl1.1 (>= 1.1.0), libstdc++6 (>= 4.1.1), libuuid1 (>= 2.16), libzstd1 (>= 1.4.0)
 Recommends: pve-qemu-kvm (>= 5.0.0-9), proxmox-backup-restore-image
 Breaks: proxmox-backup-restore-image (<< 0.3.1)
 Filename: dev/main/binary-arm64/proxmox-backup-file-restore_2.0.9-1_arm64.deb
-Size: 2284516
-MD5sum: 8819170b2081f271c084e4894eb4c86b
-SHA1: e4aaf4f26385f69b018524408892fee1c8f31ab5
-SHA256: 436f2feb839d76b92de2a124d0a02469a6f9638f0a6df46acdf33a1958bc253a
+Size: 2292116
+MD5sum: f5159c8fc08fe2dc942ce2033185db88
+SHA1: 2b45eef62f04d72d21a419bf5552db437f159f2e
+SHA256: 420de20d957f0a1ff47242617818e39a8758d2e7d1934817130d47db072de17e
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -2128,14 +2128,14 @@ Source: rust-proxmox-backup
 Version: 2.0.9-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 58036
+Installed-Size: 57984
 Depends: fonts-font-awesome, libjs-extjs (>= 7~), libjs-qrcodejs (>= 1.20201119), libproxmox-acme-plugins, libsgutils2-2 (>= 1.43), libzstd1 (>= 1.4.0), lvm2, openssh-server, pbs-i18n, postfix | mail-transport-agent, proxmox-backup-docs, proxmox-mini-journalreader, proxmox-widget-toolkit (>= 3.3-2), pve-xtermjs (>= 4.7.0-1), sg3-utils, smartmontools, libapt-pkg6.0 (>= 1.9~), libc6 (>= 2.28), libcrypt1 (>= 1:4.1.0), libcurl3-gnutls (>= 7.16.2), libgcc-s1 (>= 4.2), libpam0g (>= 0.99.7.1), libssl1.1 (>= 1.1.1), libstdc++6 (>= 5.2), libsystemd0, libudev1 (>= 183), libuuid1 (>= 2.16)
 Recommends: zfsutils-linux, ifupdown2
 Filename: dev/main/binary-arm64/proxmox-backup-server_2.0.9-1_arm64.deb
-Size: 12860380
-MD5sum: 227cc55d1ce2d079f88d355fe88f845c
-SHA1: b775026edbf63a7d9ffbc2726650fbc0ab6e75f1
-SHA256: 7b5bff6727e738f9611a8c2ee809a7fd109b839dc09a63b3409cb3a20f81b826
+Size: 12859764
+MD5sum: e219bc62e8ee112821db0b502c5fbe9a
+SHA1: 2d29e7666a0c747e1a4c7b1f6bc0528fd11c37e8
+SHA256: 2cdd2f30903bf6fbef022b13109f41b1b0e066bbcce46482a7e7748b8416b452
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -2294,10 +2294,10 @@ Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 25575
 Depends: libjs-extjs, perl:any
 Filename: dev/main/binary-all/pve-docs_7.0-5_all.deb
-Size: 12554260
-MD5sum: fc7162d948a0fdf761a934770bcad941
-SHA1: 4e078285abd8d3343f4a62c134fc4aad52b36869
-SHA256: 050140e2083315651b837cc7affb072480aa09b59cc82d2e8a5be6d3a32aaa58
+Size: 12554352
+MD5sum: ccc0fb65cab4287f03643d5bf18a10db
+SHA1: ef1c174cb5eea4bcf9b568891982d645f71bbc60
+SHA256: b2a6fa41d93f0abc3d77dc330c4e8c64f2046ff4311e8abd474b6d743b2d11df
 Section: doc
 Priority: optional
 Description: Proxmox VE Documentation
@@ -2459,10 +2459,10 @@ Breaks: libpve-network-perl (<< 0.5-1)
 Replaces: vlan, vzdump
 Provides: vlan, vzdump
 Filename: dev/main/binary-arm64/pve-manager_7.0-11_arm64.deb
-Size: 2056032
-MD5sum: b37ecf7a494f74f7e4ceb7f99cccd024
-SHA1: 1b6e984bc4c3cab5215ba0404528ba28b3df73d9
-SHA256: ccaa8bff7ca7033f59b6855c732ec9700aac44b5408f5b98f97453f613644a00
+Size: 2056668
+MD5sum: d2c02fca35968a32a1dd0ce2520faa82
+SHA1: d4ff4d3608fd5660439a5586e9b8e734ce40b8fc
+SHA256: 852bd1d416f565f85778525c0a35288e062e1a7da2458f0b9c2e997570ce65e6
 Section: admin
 Priority: optional
 Description: Proxmox Virtual Environment Management Tools
@@ -2498,10 +2498,10 @@ Installed-Size: 2164
 Depends: libc6 (>= 2.18), libcurl3-gnutls (>= 7.16.2), libgcc-s1 (>= 4.2), libuuid1 (>= 2.16)
 Built-Using: rustc (= 1.52.1+dfsg1-1~exp3)
 Filename: dev/main/binary-arm64/pve-xtermjs_4.12.0-1_arm64.deb
-Size: 541096
-MD5sum: 72066e7413dfbb69ef6387e66d72a9c2
-SHA1: cd3978454b7d6f209cfd1d2852490d9eba1f21d6
-SHA256: 5771f4585afef72102da11f78e23e8bed39c7d0e30b83866b3ff74fd7fea2f7e
+Size: 540976
+MD5sum: d6d632d6e56a068ac429e6c5680097eb
+SHA1: f80350c5b355d1a18d3d07806c0d61b506b08b9c
+SHA256: 0b62ba1f8512e8e57d6ce788dab98bdb39b57e3c0585bd5d312adc51e4457077
 Section: admin
 Priority: optional
 Multi-Arch: allowed
