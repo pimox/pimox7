@@ -6,7 +6,7 @@ Pimox is a port of Proxmox to the Raspberry Pi allowing you to build a Proxmox c
 Requirements
 ---
 * Raspberry Pi 4
-* Pre-installed Debian based 64-bit OS ___(not 32-bit)___
+* Pre-installed Debian __Bullseye__ based 64-bit OS ___(not 32-bit)___
 
 Prechecks
 ---
