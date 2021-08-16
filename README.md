@@ -23,6 +23,6 @@ Install
 
 Notes
 ---
-1. This repo just contains the precompiled debian packages. The original Proxmox sources can be found at git.proxmox.com
-2. The (very minimally) patched sources to rebuild this can be found at github.com/pimox
+1. This repo just contains the precompiled debian packages. The original Proxmox sources can be found at https://git.proxmox.com
+2. The (very minimally) patched sources to rebuild this can be found at https://github.com/pimox
 
