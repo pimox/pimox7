@@ -19,7 +19,7 @@ Install
 ---
 1. Do this at the console, not over a network. The network will be reconfigured as part of the install.
 2. sudo -s
-3. curl https://gitlab.com/pimox/pimox7/-/raw/master/pimox.sh | sh
+3. curl https://raw.githubusercontent.com/pimox/pimox7/master/pimox.sh | sh
 
 Notes
 ---
