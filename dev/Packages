@@ -755,33 +755,6 @@ Description: Network Interface Management tool similar to ifupdown
  /usr/share/doc/ifupdown2/README.rst for details about ifupdown2. Examples
  are available under /usr/share/doc/ifupdown2/examples.
 
-Package: libcephfs-dev
-Source: ceph
-Version: 16.2.5-pve1
-Architecture: arm64
-Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
-Installed-Size: 121
-Depends: libcephfs2 (= 16.2.5-pve1)
-Conflicts: libceph-dev, libceph1-dev, libcephfs2-dev
-Replaces: libceph-dev, libceph1-dev, libcephfs2-dev
-Filename: dev/main/binary-arm64/libcephfs-dev_16.2.5-pve1_arm64.deb
-Size: 25708
-MD5sum: d5e12fcc493f0bfbcbadccb0bb202a9b
-SHA1: b990e1552f549abb3979afd2aaa49cf7e8798c83
-SHA256: d6d390cfef6bc1f19473af30beeb512925fae8d4598456b1d03648083f9a96fa
-Section: libdevel
-Priority: optional
-Homepage: http://ceph.com/
-Description: Ceph distributed file system client library (development files)
- Ceph is a massively scalable, open-source, distributed
- storage system that runs on commodity hardware and delivers object,
- block and file system storage.  This is a
- shared library allowing applications to access a Ceph distributed
- file system via a POSIX-like interface.
- .
- This package contains development files needed for building applications that
- link against libcephfs.
-
 Package: libcephfs-java
 Source: ceph
 Version: 16.2.5-pve1
@@ -840,41 +813,6 @@ Description: Ceph distributed file system client library
  shared library allowing applications to access a Ceph distributed
  file system via a POSIX-like interface.
 
-Package: libcfg-dev
-Source: corosync
-Version: 3.1.2-pve2
-Architecture: arm64
-Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 28
-Depends: libcorosync-common-dev (= 3.1.2-pve2), libcfg7 (= 3.1.2-pve2)
-Filename: dev/main/binary-arm64/libcfg-dev_3.1.2-pve2_arm64.deb
-Size: 7528
-MD5sum: 8bf4ab47832dba4c1f76d35659c2bc08
-SHA1: 7960f9cb1d3fdc707429672efd131fd036d74ce4
-SHA256: 73a426234283edb6d04da778b69488814f0dff21c8665a430521cd806e294ceb
-Section: libdevel
-Priority: optional
-Multi-Arch: same
-Homepage: https://corosync.github.io/corosync/
-Description: cluster engine CFG library development
- The Corosync Cluster Engine is a Group Communication
- System with additional features for implementing high availability within
- applications. The project provides four C Application Programming Interface
- features:
- .
-  * A closed process group communication model with virtual synchrony
-    guarantees for creating replicated state machines.
-  * A simple availability manager that restarts the application process
-    when it has failed.
-  * A configuration and statistics in-memory database that provide the
-    ability to set, retrieve, and receive change notifications of
-    information.
-  * A quorum system that notifies applications when quorum is achieved
-    or lost.
- .
- This package contains the headers and other necessary files to build
- applications or libraries that use the CFG library.
-
 Package: libcfg7
 Source: corosync
 Version: 3.1.2-pve2
@@ -908,41 +846,6 @@ Description: cluster engine CFG library
     or lost.
  .
  This package contains the CFG library.
-
-Package: libcmap-dev
-Source: corosync
-Version: 3.1.2-pve2
-Architecture: arm64
-Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 74
-Depends: libcorosync-common-dev (= 3.1.2-pve2), libcmap4 (= 3.1.2-pve2)
-Filename: dev/main/binary-arm64/libcmap-dev_3.1.2-pve2_arm64.deb
-Size: 39640
-MD5sum: e60bccbf3d30494fb28a268b7f64b350
-SHA1: 130e1b2344330bd62afccddb4f0d4beaa9d6e7d8
-SHA256: ec3d26fe301d64cda1cf6bcafc1381ad4dde2793cd4d6dd961182f8b50d7e05d
-Section: libdevel
-Priority: optional
-Multi-Arch: same
-Homepage: https://corosync.github.io/corosync/
-Description: cluster engine CMAP library development
- The Corosync Cluster Engine is a Group Communication
- System with additional features for implementing high availability within
- applications. The project provides four C Application Programming Interface
- features:
- .
-  * A closed process group communication model with virtual synchrony
-    guarantees for creating replicated state machines.
-  * A simple availability manager that restarts the application process
-    when it has failed.
-  * A configuration and statistics in-memory database that provide the
-    ability to set, retrieve, and receive change notifications of
-    information.
-  * A quorum system that notifies applications when quorum is achieved
-    or lost.
- .
- This package contains the headers and other necessary files to build
- applications or libraries that use the Configuration Map library.
 
 Package: libcmap4
 Source: corosync
@@ -978,41 +881,6 @@ Description: cluster engine CMAP library
  .
  This package contains the Configuration Map library.
 
-Package: libcorosync-common-dev
-Source: corosync
-Version: 3.1.2-pve2
-Architecture: arm64
-Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 35
-Depends: libqb-dev, libcorosync-common4 (= 3.1.2-pve2)
-Filename: dev/main/binary-arm64/libcorosync-common-dev_3.1.2-pve2_arm64.deb
-Size: 8060
-MD5sum: 85f08c17ab655358b77d93fb02ec42f1
-SHA1: 5ba36f901d4c6beca8e628caecc51d9475b2c0e8
-SHA256: 918289289941f98dc6a52e3f33e6f9016e793dde51bdfd349408a499a4a56f22
-Section: libdevel
-Priority: optional
-Multi-Arch: same
-Homepage: https://corosync.github.io/corosync/
-Description: cluster engine common development
- The Corosync Cluster Engine is a Group Communication
- System with additional features for implementing high availability within
- applications. The project provides four C Application Programming Interface
- features:
- .
-  * A closed process group communication model with virtual synchrony
-    guarantees for creating replicated state machines.
-  * A simple availability manager that restarts the application process
-    when it has failed.
-  * A configuration and statistics in-memory database that provide the
-    ability to set, retrieve, and receive change notifications of
-    information.
-  * A quorum system that notifies applications when quorum is achieved
-    or lost.
- .
- This package contains the headers and other necessary files to build
- applications or libraries that use the Corosync libraries.
-
 Package: libcorosync-common4
 Source: corosync
 Version: 3.1.2-pve2
@@ -1045,41 +913,6 @@ Description: cluster engine common library
     or lost.
  .
  This package contains the Corosync common library.
-
-Package: libcpg-dev
-Source: corosync
-Version: 3.1.2-pve2
-Architecture: arm64
-Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 74
-Depends: libcorosync-common-dev (= 3.1.2-pve2), libcpg4 (= 3.1.2-pve2)
-Filename: dev/main/binary-arm64/libcpg-dev_3.1.2-pve2_arm64.deb
-Size: 43872
-MD5sum: 6d51f166b579ee563c39c64b6e00bde1
-SHA1: af6023f1e1fdfba5037bbc211a5d4dd574566d5f
-SHA256: ba6f8812f8fa9409fb1aabd24be4c6bb921452dd76e0a67cc7d8f71095cf8e7a
-Section: libdevel
-Priority: optional
-Multi-Arch: same
-Homepage: https://corosync.github.io/corosync/
-Description: cluster engine CPG library development
- The Corosync Cluster Engine is a Group Communication
- System with additional features for implementing high availability within
- applications. The project provides four C Application Programming Interface
- features:
- .
-  * A closed process group communication model with virtual synchrony
-    guarantees for creating replicated state machines.
-  * A simple availability manager that restarts the application process
-    when it has failed.
-  * A configuration and statistics in-memory database that provide the
-    ability to set, retrieve, and receive change notifications of
-    information.
-  * A quorum system that notifies applications when quorum is achieved
-    or lost.
- .
- This package contains the headers and other necessary files to build
- applications or libraries that use the Closed Process Group library.
 
 Package: libcpg4
 Source: corosync
@@ -1248,6 +1081,26 @@ Size: 1439900
 MD5sum: c8ad2334e81c4ca5a387729378dc0631
 SHA1: cf7f935ca626d5ae6b49b3f4980ab0a115df41ed
 SHA256: e4738d1d6cfeda9ab3e5267708456de6531a354433ee58a2e8c7052a0e5d8e5e
+Section: admin
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox Backup Server client library for QEMU
+ This library contains the library to access the Proxmox Backup server from
+ within QEMU.
+
+Package: libproxmox-backup-qemu0
+Source: proxmox-backup-qemu
+Version: 1.2.0-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 5266
+Depends: libc6 (>= 2.25), libgcc-s1 (>= 4.2), libssl1.1 (>= 1.1.0), libstdc++6 (>= 4.1.1), libzstd1 (>= 1.4.0)
+Breaks: pve-qemu-kvm (<< 5.2.0-1)
+Filename: dev/main/binary-arm64/libproxmox-backup-qemu0_1.2.0-1_arm64.deb
+Size: 1298952
+MD5sum: 1c352bc70317d121cf282605b9bcfa68
+SHA1: 4d63d583bcfbed871c7fcf786c54c06b41e72bc9
+SHA256: 68bf73c9d663c867ea9d73bca965da1efd25416331ba26d2ab22d9aa12416179
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -1439,31 +1292,6 @@ Homepage: https://www.proxmox.com/
 Description: Perl bindings for libu2f-server
  This package contains libu2f-server perl binding used by Proxmox VE.
 
-Package: libqb-dev
-Source: libqb
-Version: 1.0.3-1~bpo9
-Architecture: arm64
-Maintainer: Debian HA Maintainers <debian-ha-maintainers@lists.alioth.debian.org>
-Installed-Size: 269
-Depends: libqb0 (= 1.0.3-1~bpo9), libc6 (>= 2.17)
-Suggests: libqb-doc
-Filename: dev/main/binary-arm64/libqb-dev_1.0.3-1~bpo9_arm64.deb
-Size: 143744
-MD5sum: 2d1e2afffd26d647e677d7166b180119
-SHA1: f40d424b68482465b45573b278cbfd6b7785e547
-SHA256: 98df5eeed47cae39bcdab8254c607f4189ce58ca2c9f6ad8a70bd939a7ba44b3
-Section: libdevel
-Priority: optional
-Homepage: https://github.com/clusterlabs/libqb/wiki
-Description: high performance client server features library (devel files)
- libqb provides a set of high performance client-server
- reusable features. It offers high performance logging, tracing, IPC and poll.
- Its initial features were spun off the Corosync cluster communication suite
- to make them accessible for other projects.
- .
- This package contains libqb's development files. You will need it to develop
- applications using libqb.
-
 Package: libqb-doc
 Source: libqb
 Version: 1.0.3-1~bpo9
@@ -1511,41 +1339,6 @@ Description: high performance client server features library
  .
  This package contains the libqb library itself.
 
-Package: libquorum-dev
-Source: corosync
-Version: 3.1.2-pve2
-Architecture: arm64
-Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 50
-Depends: libcorosync-common-dev (= 3.1.2-pve2), libquorum5 (= 3.1.2-pve2)
-Filename: dev/main/binary-arm64/libquorum-dev_3.1.2-pve2_arm64.deb
-Size: 26220
-MD5sum: 9c1272d2d2294582389c2ce2efa4dbb5
-SHA1: f0672f828719bc0112f5a88a3970e85d0831668d
-SHA256: 58272e8a96851cf99f61f0ab688c867adf9c7e02a6e61c5faecddef3d49e17c5
-Section: libdevel
-Priority: optional
-Multi-Arch: same
-Homepage: https://corosync.github.io/corosync/
-Description: cluster engine Quorum library development
- The Corosync Cluster Engine is a Group Communication
- System with additional features for implementing high availability within
- applications. The project provides four C Application Programming Interface
- features:
- .
-  * A closed process group communication model with virtual synchrony
-    guarantees for creating replicated state machines.
-  * A simple availability manager that restarts the application process
-    when it has failed.
-  * A configuration and statistics in-memory database that provide the
-    ability to set, retrieve, and receive change notifications of
-    information.
-  * A quorum system that notifies applications when quorum is achieved
-    or lost.
- .
- This package contains the headers and other necessary files to build
- applications or libraries that use the Quorum library.
-
 Package: libquorum5
 Source: corosync
 Version: 3.1.2-pve2
@@ -1579,32 +1372,6 @@ Description: cluster engine Quorum library
     or lost.
  .
  This package contains the Quorum library.
-
-Package: librados-dev
-Source: ceph
-Version: 16.2.5-pve1
-Architecture: arm64
-Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
-Installed-Size: 1170
-Depends: librados2 (= 16.2.5-pve1), libc6 (>= 2.17), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)
-Conflicts: librados1-dev, librados2-dev
-Replaces: librados1-dev, librados2-dev
-Filename: dev/main/binary-arm64/librados-dev_16.2.5-pve1_arm64.deb
-Size: 244892
-MD5sum: 209ffe9908b26a9d9b1df96e46d917ca
-SHA1: 4fc696ef4d8addb9a07b224d3d9283c5ff353fa4
-SHA256: 56c517be91e28418c0ccc8fb8d65bce80ec929b682f73f26871cfe252328ac0b
-Section: libdevel
-Priority: optional
-Homepage: http://ceph.com/
-Description: RADOS distributed object store client library (development files)
- RADOS is a reliable, autonomic distributed object storage cluster
- developed as part of the Ceph distributed storage system.  This is a
- shared library allowing applications to access the distributed object
- store using a simple file-like interface.
- .
- This package contains development files needed for building applications that
- link against librados.
 
 Package: librados2
 Source: ceph
@@ -1646,53 +1413,6 @@ Homepage: https://www.proxmox.com/
 Description: Perl bindings for librados
  This package contains librados perl binding used by Proxmox VE.
 
-Package: libradospp-dev
-Source: ceph
-Version: 16.2.5-pve1
-Architecture: arm64
-Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
-Installed-Size: 127
-Depends: librados-dev (= 16.2.5-pve1)
-Filename: dev/main/binary-arm64/libradospp-dev_16.2.5-pve1_arm64.deb
-Size: 31844
-MD5sum: a18af373d0db3715a67e04895153d521
-SHA1: 91b3c1f369d96588eb6a5e83428e55c902dbccff
-SHA256: 114dfbcc16583ee594786a325b8fc73bfe9a3fc75b052260e2720f7ffc621a0a
-Section: libdevel
-Priority: optional
-Homepage: http://ceph.com/
-Description: RADOS distributed object store client C++ library (development files)
- RADOS is a reliable, autonomic distributed object storage cluster
- developed as part of the Ceph distributed storage system.  This is a
- shared library allowing applications to access the distributed object
- store using a simple file-like interface.
- .
- This package contains development files needed for building C++ applications that
- link against librados.
-
-Package: libradosstriper-dev
-Source: ceph
-Version: 16.2.5-pve1
-Architecture: arm64
-Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
-Installed-Size: 47
-Depends: libradosstriper1 (= 16.2.5-pve1)
-Filename: dev/main/binary-arm64/libradosstriper-dev_16.2.5-pve1_arm64.deb
-Size: 14048
-MD5sum: 9a1edeb6656921079b31519bdfd0df70
-SHA1: a814f822b009088743a96a22df5b45a76033cf7d
-SHA256: 1ae662ffdf28cabf122daee7e358bb61ef6ddc359bcd47a6307a60ed7b980da1
-Section: libdevel
-Priority: optional
-Homepage: http://ceph.com/
-Description: RADOS striping interface (development files)
- libradosstriper is a striping interface built on top of the rados
- library, allowing to stripe bigger objects onto several standard
- rados objects using an interface very similar to the rados one.
- .
- This package contains development files needed for building applications that
- link against libradosstriper.
-
 Package: libradosstriper1
 Source: ceph
 Version: 16.2.5-pve1
@@ -1712,32 +1432,6 @@ Description: RADOS striping interface
  Striping interface built on top of the rados library, allowing
  to stripe bigger objects onto several standard rados objects using
  an interface very similar to the rados one.
-
-Package: librbd-dev
-Source: ceph
-Version: 16.2.5-pve1
-Architecture: arm64
-Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
-Installed-Size: 121
-Depends: librados-dev (= 16.2.5-pve1), librbd1 (= 16.2.5-pve1)
-Conflicts: librbd1-dev
-Replaces: librbd1-dev
-Filename: dev/main/binary-arm64/librbd-dev_16.2.5-pve1_arm64.deb
-Size: 24256
-MD5sum: cdd581044b5d050f8608cd85a50a936d
-SHA1: f92d3653f3fb1f61ce8cff8db10c60d6885f1f9e
-SHA256: 264f9c484b3c53967714bc66f8a7b23e1740f1dbc58dea4da9739d7a3f5f128a
-Section: libdevel
-Priority: optional
-Homepage: http://ceph.com/
-Description: RADOS block device client library (development files)
- RBD is a block device striped across multiple distributed objects
- in RADOS, a reliable, autonomic distributed object storage cluster
- developed as part of the Ceph distributed storage system.  This is a
- shared library allowing applications to manage these block devices.
- .
- This package contains development files needed for building applications that
- link against librbd1.
 
 Package: librbd1
 Source: ceph
@@ -1759,30 +1453,6 @@ Description: RADOS block device client library
  in RADOS, a reliable, autonomic distributed object storage cluster
  developed as part of the Ceph distributed storage system.  This is a
  shared library allowing applications to manage these block devices.
-
-Package: librgw-dev
-Source: ceph
-Version: 16.2.5-pve1
-Architecture: arm64
-Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
-Installed-Size: 30
-Depends: librados-dev (= 16.2.5-pve1), librgw2 (= 16.2.5-pve1)
-Filename: dev/main/binary-arm64/librgw-dev_16.2.5-pve1_arm64.deb
-Size: 11964
-MD5sum: d436bea1c2eea9f7cdc9d17d71377752
-SHA1: c34e8dec86e825e02a9fa16267e44b0e3d6a945f
-SHA256: bbd21d177750ce6109768befb099580d09f3625ca50ded560fedc6e6852b92c0
-Section: libdevel
-Priority: optional
-Homepage: http://ceph.com/
-Description: RADOS client library (development files)
- RADOS is a distributed object store used by the Ceph distributed
- storage system.  This package provides a REST gateway to the
- object store that aims to implement a superset of Amazon's S3
- service.
- .
- This package contains development files needed for building applications
- that link against librgw2.
 
 Package: librgw2
 Source: ceph
@@ -1806,41 +1476,6 @@ Description: RADOS Gateway client library
  service.
  .
  This package contains the library interface and headers only.
-
-Package: libsam-dev
-Source: corosync
-Version: 3.1.2-pve2
-Architecture: arm64
-Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 61
-Depends: libcorosync-common-dev (= 3.1.2-pve2), libsam4 (= 3.1.2-pve2)
-Filename: dev/main/binary-arm64/libsam-dev_3.1.2-pve2_arm64.deb
-Size: 32592
-MD5sum: 46bcba84ebe3c29fe6d53d4df9a32fb3
-SHA1: 084cdd2e309e4db22d75af741fffe223ad07fcbe
-SHA256: 87fcacf78782197b2ad1d8c2ace145fad2e9d78486747bc5961a394313386ced
-Section: libdevel
-Priority: optional
-Multi-Arch: same
-Homepage: https://corosync.github.io/corosync/
-Description: cluster engine SAM library development
- The Corosync Cluster Engine is a Group Communication
- System with additional features for implementing high availability within
- applications. The project provides four C Application Programming Interface
- features:
- .
-  * A closed process group communication model with virtual synchrony
-    guarantees for creating replicated state machines.
-  * A simple availability manager that restarts the application process
-    when it has failed.
-  * A configuration and statistics in-memory database that provide the
-    ability to set, retrieve, and receive change notifications of
-    information.
-  * A quorum system that notifies applications when quorum is achieved
-    or lost.
- .
- This package contains the headers and other necessary files to build
- applications or libraries that use the Simple Availability Manager library.
 
 Package: libsam4
 Source: corosync
@@ -1897,63 +1532,6 @@ Description: SQLite3 VFS for Ceph
  .
  This packages contains the loadable extension module for SQLite3.
 
-Package: libsqlite3-mod-ceph-dev
-Source: ceph
-Version: 16.2.5-pve1
-Architecture: arm64
-Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
-Installed-Size: 18
-Depends: libsqlite3-mod-ceph (= 16.2.5-pve1), libsqlite3-dev
-Filename: dev/main/binary-arm64/libsqlite3-mod-ceph-dev_16.2.5-pve1_arm64.deb
-Size: 10292
-MD5sum: aa4cd09677228f0115ebd3e91bc9b9cd
-SHA1: a89836ca28f0de6b7266f571f5bb6cb63b1b3241
-SHA256: 62d38364a36954144ce13d2b2a447061ed5bedae1f12c81e0dcd94093ebc7253
-Section: libdevel
-Priority: optional
-Homepage: http://ceph.com/
-Description: SQLite3 VFS for Ceph (development files)
- A SQLite3 VFS for storing and manipulating databases stored on Ceph's RADOS
- distributed object store.
- .
- This package contains development files needed for building applications that
- link against libsqlite3-mod-ceph.
-
-Package: libvotequorum-dev
-Source: corosync
-Version: 3.1.2-pve2
-Architecture: arm64
-Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 65
-Depends: libcorosync-common-dev (= 3.1.2-pve2), libvotequorum8 (= 3.1.2-pve2)
-Filename: dev/main/binary-arm64/libvotequorum-dev_3.1.2-pve2_arm64.deb
-Size: 38036
-MD5sum: e94eb373b8c350ef0c1d91d649b3d103
-SHA1: 197b7f055e021b0a4eb5085a0d6e0a4ed1378ac0
-SHA256: 7b7ad66f134c8e2dbf3dc775cbe3f7f73a40ef7e4316faac754ba55c6573fee6
-Section: libdevel
-Priority: optional
-Multi-Arch: same
-Homepage: https://corosync.github.io/corosync/
-Description: cluster engine Votequorum library development
- The Corosync Cluster Engine is a Group Communication
- System with additional features for implementing high availability within
- applications. The project provides four C Application Programming Interface
- features:
- .
-  * A closed process group communication model with virtual synchrony
-    guarantees for creating replicated state machines.
-  * A simple availability manager that restarts the application process
-    when it has failed.
-  * A configuration and statistics in-memory database that provide the
-    ability to set, retrieve, and receive change notifications of
-    information.
-  * A quorum system that notifies applications when quorum is achieved
-    or lost.
- .
- This package contains the headers and other necessary files to build
- applications or libraries that use the Votequorum library.
-
 Package: libvotequorum8
 Source: corosync
 Version: 3.1.2-pve2
@@ -2007,28 +1585,6 @@ Section: admin
 Priority: optional
 Homepage: https://linuxcontainers.org
 Description: Linux containers userspace tools
- Containers provides resource management through control groups and
- resource isolation through namespaces. The linux containers, lxc, aims
- to use these new functionalities to provide an userspace container
- object which provides full resource isolation and resource control for
- an applications or a system.
-
-Package: lxc-pve-dev
-Source: lxc-pve
-Version: 4.0.9-4
-Architecture: arm64
-Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 63
-Depends: lxc-pve (= 4.0.9-4)
-Filename: dev/main/binary-arm64/lxc-pve-dev_4.0.9-4_arm64.deb
-Size: 15196
-MD5sum: c5c52b20e5f64d185b87241946f44946
-SHA1: 6699c6581b92e98dd2147647ad1e7b39c39e3f5c
-SHA256: 016d7ff7ed6a551bb0ee257538e43960493671aab2a0850972f93909810d3e6a
-Section: libdevel
-Priority: optional
-Homepage: https://linuxcontainers.org
-Description: Linux Containers userspace tools (development)
  Containers provides resource management through control groups and
  resource isolation through namespaces. The linux containers, lxc, aims
  to use these new functionalities to provide an userspace container
@@ -2218,24 +1774,6 @@ Priority: optional
 Homepage: https://www.proxmox.com
 Description: ExtJS Helper Classes for Proxmox
  ExtJS Helper Classes to easy access to Proxmox APIs.
-
-Package: proxmox-widget-toolkit-dev
-Source: proxmox-widget-toolkit
-Version: 3.3-6
-Architecture: all
-Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 57
-Filename: dev/main/binary-all/proxmox-widget-toolkit-dev_3.3-6_all.deb
-Size: 21128
-MD5sum: fa04e49f3a632d0cad76f176545b1c7d
-SHA1: 9f2ff23691733554058eb7c9eb8cfc5c3eaf93c4
-SHA256: 7fc513b8845a13f5f60f0434d41cbb508946056f8386ac082fede4ea52e204a0
-Section: web
-Priority: optional
-Homepage: https://www.proxmox.com
-Description: Development dependencies for Proxmox Projects
- Contains some common javascript code that are dev-dependencies,
- for various Proxmox projects.
 
 Package: pve-client
 Version: 0.1-1rpve1
@@ -2708,25 +2246,6 @@ Priority: optional
 Homepage: https://www.proxmox.com
 Description: Qemu Server Tools
  This package contains the Qemu Server tools used by Proxmox VE
-
-Package: rados-objclass-dev
-Source: ceph
-Version: 16.2.5-pve1
-Architecture: arm64
-Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
-Installed-Size: 20
-Depends: librados-dev (= 16.2.5-pve1)
-Filename: dev/main/binary-arm64/rados-objclass-dev_16.2.5-pve1_arm64.deb
-Size: 10120
-MD5sum: 71020d739dcb09da35f57fadd7d372c8
-SHA1: 0c57db903a48eb836917ba517e088dc10fa9463d
-SHA256: 4751a8d2722e87e35d14838dab66c78067c429815fa0df836d4b0f18797839bd
-Section: libdevel
-Priority: optional
-Homepage: http://ceph.com/
-Description: RADOS object class development kit.
- .
- This package contains development files needed for building RADOS object class plugins.
 
 Package: radosgw
 Source: ceph
