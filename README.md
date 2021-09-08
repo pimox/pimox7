@@ -6,7 +6,7 @@ Pimox is a port of Proxmox to the Raspberry Pi allowing you to build a Proxmox c
 Requirements
 ---
 * Raspberry Pi 4
-* Pre-installed Debian __Bullseye__ based 64-bit OS ___(not 32-bit)___
+* Pre-installed Debian __Bullseye__ based  ___64-bit___ OS (not 32bit)
 
 Prechecks
 ---
@@ -21,8 +21,20 @@ Install
 2. sudo -s
 3. curl https://raw.githubusercontent.com/pimox/pimox7/master/pimox.sh | sh
 
+RPiOS64 autoinstall
+---
+0. Flash and startup the latest image from https://downloads.raspberrypi.org/raspios_arm64/ .
+1. sudo -s
+2. curl https://raw.githubusercontent.com/TuxfeatMac/pimox7/e5681fcf2d4e7dc6fe25e99d9972d6d68326930a/RPiOS64autoinstall.sh > RPiOS64autoinstall.sh
+3. nano RPiOS64autoinstall.sh
+5. Adjust network and hostname settings.
+6. chmod +x RPiOS64autoinstall.sh
+7. ./RPiOS64autoinstall.sh
+8. Type a new root password.
+9. Retype new password.
+10. Do __not__ touch it untill, reboot is done.
+
 Notes
 ---
 1. This repo just contains the precompiled debian packages. The original Proxmox sources can be found at https://git.proxmox.com
 2. The (very minimally) patched sources to rebuild this can be found at https://github.com/pimox
-
