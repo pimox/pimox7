@@ -1,7 +1,7 @@
 # !/bin/bash
 #################################################################
-# Name:        RPiOS64fullautoinst.sh     Version:      0.0.1   #
-# Created:     07.09.2021                 Modified: 08.09.2021  #
+# Name:        RPiOS64fullautoinst.sh     Version:      0.0.2   #
+# Created:     07.09.2021                 Modified: 10.09.2021  #
 # Author:      TuxfeatMac J.T.                                  #
 # Purpose:     full automated Pimox7 installation RPi4B, RPi3B+ #
 #################################################################
@@ -15,6 +15,7 @@ HOSTNAME='RPiX-PVE-X'           # set the new hostname
 #### ADVANCED SETTINGS ##########################################
 PI3_ZRAM='1664'                 # zram 1,6GB
 PI3_SWAP='384'                  # dphys-swapfile 0,4GB
+CT_STATS='true'                 # fix cmdline.txt for GUI stats
 #PI4_ZRAM='no install'
 #PI4_SWAP='will be removed'
 #################################################################
@@ -91,7 +92,18 @@ if [ $RPIMOD == 4 ]
 fi
  apt autoremove -y
 
-# INSTALL PIMOX7 AND REBOOT######################################
+# FIX CONTAINER STATS NOT SHOWING UP IN WEB GUI ####################
+if [ "$CT_STATS" == "true" ]
+ then
+  if [ "$(cat /boot/cmdline.txt | grep cgroup)" != "" ]
+   then
+    printf "Seems to be already fixed!"
+   else
+    sed -i "1 s|$| cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1|" /boot/cmdline.txt
+  fi
+fi
+
+# INSTALL PIMOX7 AND REBOOT#########################################
 DEBIAN_FRONTEND=noninteractive apt install -y -o Dpkg::Options::="--force-confdef" proxmox-ve
 printf "
 =========================================
