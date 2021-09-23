@@ -70,7 +70,7 @@ if [ "$CORRECT" != "y" ]
   while [[ ! "$GATEWAY" =~ ^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$  ]]
    do
     printf " --->$RED $GATEWAY $NORMAL<--- Is NOT an valid IPv4 GATEWAY, try again...\n"
-    read -p " THE GATEWAY IP ! E.G. 192.168.0.1 : " GATEWAY
+    read -p "THE GATEWAY IP ! E.G. 192.168.0.1 : " GATEWAY
   done
 fi
 
@@ -88,7 +88,7 @@ ALL EXISTING REPOSITORIES IN : $YELLOW /etc/apt/sources.list $NORMAL WILL BE $RE
 
 $GRAY# Raspberry Pi OS 11 Bullseye Repo$NORMAL
 deb http://archive.raspberrypi.org/debian/ bullseye main
-$GRAY# Pimox 7 Development Repo | PVE 7$NORMAL
+$GRAY# Pimox 7 Development Repo$NORMAL
 deb https://raw.githubusercontent.com/pimox/pimox7/master/ dev/
 $GRAY# Debian 11 Bullseye Repo$NORMAL
 deb http://deb.debian.org/debian bullseye main contrib
@@ -140,7 +140,7 @@ apt install -y gnupg            # nmon #screen
 rm -f /etc/apt/sources.list.d/*.list
 printf "# Raspberry Pi OS 11 Bullseye Repo
 deb http://archive.raspberrypi.org/debian/ bullseye main
-# Pimox 7 Development Repo | PVE 7
+# PiMox 7 Development Repo
 deb https://raw.githubusercontent.com/pimox/pimox7/master/ dev/
 # Debian 11 Bullseye Repo
 deb http://deb.debian.org/debian bullseye main contrib
