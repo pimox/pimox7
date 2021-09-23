@@ -49,14 +49,14 @@ read -p "Enter new hostname e.g. RPi4-01-PVE : " HOSTNAME
 while [[ ! "$HOSTNAME" =~ ^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])$  ]]
  do
   printf " --->$RED $HOSTNAME $NORMAL<--- Is NOT an valid HOSTNAME, try again...\n"
-  read -p "enter new hostname e.g.: RPi4-01-PVE  : " HOSTNAME
+  read -p "Enter new hostname e.g.: RPi4-01-PVE  : " HOSTNAME
 done
 
 #### IP AND NETMASK ! ###########################################
 read -p "Enter new static IP and NETMASK e.g. 192.168.0.100/24 : " RPI_IP
 while [[ ! "$RPI_IP" =~ ^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}+\/[0-9]+$ ]]
  do
-  printf " --->$RED $RPI_IP $NORMAL<--- Is NOT an valid IPv4 address with netmask, try again...\n"
+  printf " --->$RED $RPI_IP $NORMAL<--- Is NOT an valid IPv4 ADDRESS with NETMASK, try again...\n"
   read -p "IPADDRESS & NETMASK ! E.G.: 192.168.0.100/24 : " RPI_IP
 done
 RPI_IP_ONLY=$(echo "$RPI_IP" | cut -d '/' -f 1)
@@ -69,7 +69,7 @@ if [ "$CORRECT" != "y" ]
   read -p "Enter the gateway  e.g. 192.168.0.1 : " GATEWAY
   while [[ ! "$GATEWAY" =~ ^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$  ]]
    do
-    printf " --->$RED $GATEWAY $NORMAL<--- Is NOT an valid IPv4 gateway, try again...\n"
+    printf " --->$RED $GATEWAY $NORMAL<--- Is NOT an valid IPv4 GATEWAY, try again...\n"
     read -p " THE GATEWAY IP ! E.G. 192.168.0.1 : " GATEWAY
   done
 fi
@@ -107,11 +107,11 @@ gateway $GREEN$GATEWAY$NORMAL
 
 =========================================================================================
 THE HOSTNAMES IN : $YELLOW /etc/hosts $NORMAL WILL BE $RED OVERWRITTEN $NORMAL !!! WITH :
-127.0.0.1  localhost
-$RPI_IP    $HOSTNAME
+127.0.0.1\tlocalhost
+$RPI_IP_ONLY\t$HOSTNAME
 
 =========================================================================================
-THESE STATEMENTS WILL BE $RED ADDED $NORMAL TO THE $YELLOW /boot/cmdline.txt $NORMAL IF NOT EXISTENT :
+THESE STATEMENTS WILL BE $RED ADDED $NORMAL TO THE $YELLOW /boot/cmdline.txt $NORMAL IF NONE EXISTENT :
 
 cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1
 
@@ -158,13 +158,13 @@ printf "auto lo
 iface lo inet loopback
 auto eth0
 iface eth0 inet static
-address $RPI_IP_ONLY
+address $RPI_IP
 gateway $GATEWAY\n" > /etc/network/interfaces
 
 #### SET NEW HOSTNAME ###########################################
 hostnamectl set-hostname $HOSTNAME
 printf "127.0.0.1\tlocalhost
-$RPI_IP\t$HOSTNAME" > /etc/hosts
+$RPI_IP_ONLY\t$HOSTNAME" > /etc/hosts
 
 #### REMOVE DHCP, CLEAN UP #########################################
 apt purge -y dhcpcd5
