@@ -8,6 +8,10 @@ Requirements
 * Raspberry Pi 4
 * Pre-installed Debian __Bullseye__ based  ___64-bit___ OS (not 32bit)
 
+autoinstall
+---
+* see autoinstall
+
 Prechecks
 ---
 1. In /etc/network/interfaces, give the Pi a static IP address. You cannot use dhcp.
@@ -20,14 +24,6 @@ Install
 1. Do this at the console, not over a network. The network will be reconfigured as part of the install.
 2. sudo -s
 3. curl https://raw.githubusercontent.com/pimox/pimox7/master/pimox.sh | sh
-
-RPiOS64 autoinstall
----
-1. Flash and startup the latest image from https://downloads.raspberrypi.org/raspios_arm64/ .
-2. sudo -s
-3. curl https://raw.githubusercontent.com/TuxfeatMac/pimox7/master/RPiOS64autoinstall.sh > RPiOS64autoinstall.sh
-4. chmod +x RPiOS64autoinstall.sh
-5. ./RPiOS64autoinstall.sh
 
 Notes
 ---
