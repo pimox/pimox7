@@ -1,1 +1,3 @@
-#
+# NOT READY YET ! ...
+
+- CT's not working 
