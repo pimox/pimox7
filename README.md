@@ -3,9 +3,8 @@ Pimox - Proxmox V7 for the Raspberry Pi
 
 Pimox is a port of Proxmox to the Raspberry Pi allowing you to build a Proxmox cluster of Rapberry Pi's or even a hybrid cluster of Pis and x86 hardware.
 
-Requirements
+Requirements ( manual installation )
 ---
-(manual installation)
 * Raspberry Pi 4
 * Pre-installed Debian __Bullseye__ based  ___64-bit___ OS (not 32bit)
 
