@@ -8,10 +8,6 @@ Requirements
 * Raspberry Pi 4
 * Pre-installed Debian __Bullseye__ based  ___64-bit___ OS (not 32bit)
 
-autoinstall
----
-* see autoinstall
-
 Prechecks
 ---
 1. In /etc/network/interfaces, give the Pi a static IP address. You cannot use dhcp.
@@ -24,6 +20,10 @@ Install
 1. Do this at the console, not over a network. The network will be reconfigured as part of the install.
 2. sudo -s
 3. curl https://raw.githubusercontent.com/pimox/pimox7/master/pimox.sh | sh
+
+Fully automated install from "scratch"
+---
+* see autoinstall folder
 
 Notes
 ---
