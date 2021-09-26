@@ -6,3 +6,9 @@ DietPi OS full automated Pimox7 install
 4. (optional) Adjust options in "Automation_Custom_Script.sh"
 5. Insert the sd card into the pi and power it up.
 6. Wait till reboot is done.
+
+
+---
+Notes
+---
+Thanks @vonloschz for the inspiration
