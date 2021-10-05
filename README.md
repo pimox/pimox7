@@ -25,7 +25,7 @@ RPiOS64 autoinstall
 ---
 0. Flash and startup the latest image from https://downloads.raspberrypi.org/raspios_arm64/ .
 1. sudo -s
-2. curl https://raw.githubusercontent.com/TuxfeatMac/pimox7/master/RPiOS64autoinstall.sh > RPiOS64autoinstall.sh
+2. curl https://raw.githubusercontent.com/pimox/pimox7/master/RPiOS64autoinstall.sh > RPiOS64autoinstall.sh
 3. nano RPiOS64autoinstall.sh
 5. Adjust network and hostname settings.
 6. chmod +x RPiOS64autoinstall.sh
