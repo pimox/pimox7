@@ -76,10 +76,10 @@ Recommends: btrfs-tools, ceph-mds (= 16.2.6-pve2), librados2 (= 16.2.6-pve2), li
 Breaks: ceph (<< 10), ceph-test (<< 12.2.2-14), libpve-storage-perl (<= 5.0-25), python-ceph (<< 0.92-1223)
 Replaces: ceph (<< 10), ceph-common (<< 0.78-500), ceph-test (<< 12.2.2-14), python-ceph (<< 0.92-1223)
 Filename: dev/main/binary-arm64/ceph-base_16.2.6-pve2_arm64.deb
-Size: 5127908
-MD5sum: a21a200fcb860b92c30732db33081990
-SHA1: 7634bf74a7e6983c309ef986b6295c44bcebc196
-SHA256: a2198e2571071754afc081412cc85fdd31fdb4b926ad795c0b64f2a2d4cd0a41
+Size: 5128248
+MD5sum: 5b1a210cb4db949b0f4c12e900634e3d
+SHA1: 709f652e9985d7b90c98fbb5e62b213715b69fb7
+SHA256: 47aebf5ea41b9878cdeec3e3f46afa64a4412dee4d786639f08bc0e624f52156
 Section: admin
 Priority: optional
 Homepage: http://ceph.com/
@@ -129,10 +129,10 @@ Conflicts: ceph-client-tools
 Breaks: ceph (<< 10), ceph-fs-common (<< 11.0), ceph-test (<< 9.0.3-1646), libpve-storage-perl (<= 5.0-25), librbd1 (<< 0.92-1238), python-ceph (<< 0.92-1223), radosgw (<< 12.0.3)
 Replaces: ceph (<< 10), ceph-client-tools, ceph-fs-common (<< 11.0), ceph-test (<< 9.0.3-1646), librbd1 (<< 0.92-1238), python-ceph (<< 0.92-1223), radosgw (<< 12.0.3)
 Filename: dev/main/binary-arm64/ceph-common_16.2.6-pve2_arm64.deb
-Size: 18983284
-MD5sum: 7f9de9b49f22184e01ee06aeaf3a1a17
-SHA1: 47654f3cca09a0c0e5b8a959bd91e5cff5ba6232
-SHA256: f5e1b5ee4df1fd0051defcc8da24a145b6b82e57e2c81e73227a5c4b51ffe8e4
+Size: 18984436
+MD5sum: 7171847ff9d47d35a781ff3058cfc053
+SHA1: 5cf9f5dedacc11c6e1197e275a49d6c7e53de055
+SHA256: f90766d9c20011c0de030bd6c0b5ccd951113b64106d0cb596087c7968aa7502
 Section: admin
 Priority: optional
 Homepage: http://ceph.com/
@@ -149,10 +149,10 @@ Maintainer: Tim <tim.j.wilkinson@gmail.com>
 Installed-Size: 1511
 Depends: dkms (>= 2.1.0.0)
 Filename: dev/main/binary-all/ceph-dkms_0.0.2_all.deb
-Size: 282912
-MD5sum: d461a09ff31dc8cd568ad00515e80acb
-SHA1: 6fe566a7b695ef019e8daf163ab0a597e20a0595
-SHA256: ebece780909250762a06ac075a9868fefa8b3e4897b2d42f7177e27002ec0b22
+Size: 282844
+MD5sum: 06c81f132b29233e5d06d4e26106da1c
+SHA1: c53926c8015a13cb0c7697f72c0b36db07258e8d
+SHA256: 32f799d6d35e4957751f62bc12c2025571e162b290830d92709ef299199cb777
 Section: admin
 Priority: optional
 Description: DKMS to build in-kernel Ceph modules
@@ -191,12 +191,12 @@ Version: 16.2.6-pve2
 Architecture: arm64
 Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
 Installed-Size: 2382
-Depends: libc6 (>= 2.30), libfuse3-3 (>= 3.2.3), libgcc-s1 (>= 3.0), librados2, libstdc++6 (>= 9), python3:any, fuse
+Depends: libc6 (>= 2.30), libfuse2 (>= 2.9), libgcc-s1 (>= 3.0), librados2, libstdc++6 (>= 9), python3:any, fuse
 Filename: dev/main/binary-arm64/ceph-fuse_16.2.6-pve2_arm64.deb
-Size: 692172
-MD5sum: 90ea16bdfee9d777495106c775c29e49
-SHA1: a9088de6bfe3f98bf62ada6df18635eadc8fc559
-SHA256: 20a8684b2299a4742ed781519678c6344980b6a42ce254ffda3ec521aea9c2ef
+Size: 691944
+MD5sum: 5d9902249dc0ef91f202da0843f27768
+SHA1: f29f36cec2b1662d8e3e219dcea486c36444a607
+SHA256: a2ba9219aa151517f0f27c733ee9e0a96a05900dc00e71b98a441805d4d3ce53
 Section: admin
 Priority: optional
 Homepage: http://ceph.com/
@@ -242,10 +242,10 @@ Architecture: all
 Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
 Installed-Size: 266
 Filename: dev/main/binary-all/ceph-grafana-dashboards_16.2.6-pve2_all.deb
-Size: 23336
-MD5sum: a498ebd229f633b87c864dbfd164bc9b
-SHA1: 7a83fc88026bd145bab892b48fc1657083c502eb
-SHA256: db83bb54f40da87254a4850a591606d2e913625532df033d2713a0b1d76fc10e
+Size: 23312
+MD5sum: c0fbf3e15d45512523eaa0a0bff83b9f
+SHA1: e66b107f3935a13f4d9272c25b262c40da5be4b4
+SHA256: 482e587d8de362c03b69f27fcf9c74656a18fa4b97ddad923810336756eea73f
 Section: admin
 Priority: optional
 Homepage: http://ceph.com/
@@ -286,10 +286,10 @@ Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
 Installed-Size: 485
 Depends: ceph-common (= 16.2.6-pve2), librados2 (= 16.2.6-pve2), libc6 (>= 2.28), libgcc-s1 (>= 3.0), libstdc++6 (>= 9)
 Filename: dev/main/binary-arm64/ceph-immutable-object-cache_16.2.6-pve2_arm64.deb
-Size: 139548
-MD5sum: d36ed4de11ceda969bef2b6c76ec48c2
-SHA1: ded3e302a5fa4b333067ca8a1b371e8b75e11259
-SHA256: e6972ea52a0adc4f173a38f687f2599339f3ce91a725156afbee3c2986f7445e
+Size: 139608
+MD5sum: ef04815f42eaae61bb32ac039bf22b39
+SHA1: 740e6ddc520fda0b6b8c50b1d6647785cd784abb
+SHA256: b08de4eff20b78f44dd83c3df632d6083ed041b4987d73a7dd7e23edc7e89c5f
 Section: admin
 Priority: optional
 Homepage: http://ceph.com/
@@ -336,10 +336,10 @@ Recommends: ceph-fuse (= 16.2.6-pve2), libcephfs2 (= 16.2.6-pve2)
 Breaks: ceph (<< 0.93-417)
 Replaces: ceph (<< 0.93-417)
 Filename: dev/main/binary-arm64/ceph-mds_16.2.6-pve2_arm64.deb
-Size: 1931068
-MD5sum: 17592b5f46bb740a086fec71c4cc75cc
-SHA1: 0c1189e2e52c59d74c303a369323e5deda3ef6be
-SHA256: a8a127977467bf252bb5f2cfc889eae8bae0f71e3c51559772f7144dc31fc381
+Size: 1930172
+MD5sum: 3b97ffaa8382535f9e8e61f1bd93dd32
+SHA1: 67a9300cd958a730580e12f77ddfee6655170200
+SHA256: 8e36a4e992b0d16f7af5b80b3dcb74bbb9121667aba9ccd43eddcf7287fe5ee5
 Section: admin
 Priority: optional
 Homepage: http://ceph.com/
@@ -388,10 +388,10 @@ Suggests: ceph-mgr-dashboard, ceph-mgr-diskprediction-local, ceph-mgr-k8sevents,
 Breaks: ceph (<< 0.93-417)
 Replaces: ceph (<< 0.93-417)
 Filename: dev/main/binary-arm64/ceph-mgr_16.2.6-pve2_arm64.deb
-Size: 1277896
-MD5sum: 7ca77e8df6fd83a7de9c813145ac10c0
-SHA1: 733ec40724628a8accc3878d0a2af0e810ec8721
-SHA256: b483d9d92989a6dfc03526305d2d050aa361462f56540f946ad2cd64469de554
+Size: 1277844
+MD5sum: 77524c99a702872e7ff2bc5a61bfbdc1
+SHA1: a2706133ba7973eaf8ce758e18ad2353cb8b8381
+SHA256: f36194cd2c91e4b3fd619febc0a18bc85be3f114916cef512209df65bdeda563
 Section: admin
 Priority: optional
 Homepage: http://ceph.com/
@@ -435,10 +435,10 @@ Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
 Installed-Size: 481
 Depends: ceph-mgr (= 16.2.6-pve2), cephadm, openssh-client, python3-jinja2
 Filename: dev/main/binary-all/ceph-mgr-cephadm_16.2.6-pve2_all.deb
-Size: 90528
-MD5sum: ef8015ccc2dcd9ab1bfabad2a889aae8
-SHA1: 9b944a8f0213db6f5cac3f3364985a43a78a857c
-SHA256: ff96eb321e0927a3eea5d45fb9c806ca3e224edef619ecc7082bbe17c9f7efd3
+Size: 90520
+MD5sum: 3136cc3b71526a791e48c82c2dc93999
+SHA1: 6952934b7c20d0a870f67f09c585c8b1334fed85
+SHA256: ba5c2e953f209d28a02553305c72ced5059efa5eeedc37351e7f8fbaac987710
 Section: admin
 Priority: optional
 Homepage: http://ceph.com/
@@ -486,10 +486,10 @@ Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
 Installed-Size: 15165
 Depends: ceph-mgr (= 16.2.6-pve2), python3-cherrypy3, python3-jwt, python3-bcrypt, python3-werkzeug, python3-routes
 Filename: dev/main/binary-all/ceph-mgr-dashboard_16.2.6-pve2_all.deb
-Size: 2456524
-MD5sum: 9ba999ad8b5a453d1421de53deefc083
-SHA1: 52aa80d8ecd1ede8e960e83aef5a5b1e9f7aa268
-SHA256: 18118426b0aea3124a2f46c938f0ebd2007d931dd97b7afe0996f11d1fb0426d
+Size: 2456016
+MD5sum: 51cf11bd159506217b41544d291a6836
+SHA1: 43b4b730ac33c11f7ae8a04475b4229584f11b20
+SHA256: 394499fd866d0402fe29237d2ce9cba5aa230e9db7ab15dc0be805cdec3770a2
 Section: admin
 Priority: optional
 Homepage: http://ceph.com/
@@ -536,10 +536,10 @@ Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
 Installed-Size: 67199
 Depends: ceph-mgr (= 16.2.6-pve2), python3-numpy, python3-scipy, python3-sklearn
 Filename: dev/main/binary-all/ceph-mgr-diskprediction-local_16.2.6-pve2_all.deb
-Size: 7891212
-MD5sum: 1dedd661be88db507bf4df87c2e42516
-SHA1: 7560e7a80b9e99578bd5238ad3f0c1a5045719f8
-SHA256: 1d9553232a2b8c7b2b965556f18bb92bef3012415835135a1a1db64b270f81ca
+Size: 7893256
+MD5sum: 1d6fc4a4c300b3e5b76b94c68e948c3d
+SHA1: 9877c0999b7c23d6019e4888a7769bd427f474a7
+SHA256: a885bda959f296ebdeb4f116e871b3501606f219b0a733515f5cb293cdf6ff28
 Section: admin
 Priority: optional
 Homepage: http://ceph.com/
@@ -634,10 +634,10 @@ Depends: python3-dateutil, python3-openssl
 Breaks: ceph-mgr (<< 15.1.0)
 Replaces: ceph-mgr (<< 15.1.0)
 Filename: dev/main/binary-all/ceph-mgr-modules-core_16.2.6-pve2_all.deb
-Size: 192968
-MD5sum: d6ebe841cf37be4784a4c70bb07e852a
-SHA1: ddd66fbe2eadc4f2322d07bfd1bd33f063228ab0
-SHA256: 7ff696be8020592cc2764e196748ff58dfef20802a759137e18ef83bbfb88800
+Size: 192836
+MD5sum: 6e6e51dcfbd5ace0c16afac6cd892161
+SHA1: dfdcb7d7ea31f3465c2c8b446e7b24ee032a84b5
+SHA256: 7e0c1e749a506ca6dcfa83c385237810e8ccd4e26ad6a44d69d29b3a5be62b2e
 Section: admin
 Priority: optional
 Homepage: http://ceph.com/
@@ -681,10 +681,10 @@ Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
 Installed-Size: 147
 Depends: ceph-mgr (= 16.2.6-pve2), python3-jsonpatch
 Filename: dev/main/binary-all/ceph-mgr-rook_16.2.6-pve2_all.deb
-Size: 27664
-MD5sum: b5c7b409d5f302602e8f89b9308ae53e
-SHA1: b1c4e7a8b004cf53ad361e7f97238f72316cc438
-SHA256: 34ce3e5b1e8805bfd2f198f6b3e97b90c8433963b2275dacdc6878db8304b76c
+Size: 27640
+MD5sum: 8e9dcc4bbb8d5bfc38c539059338a24a
+SHA1: 92048f2b5a1e2aabd03029affba60d09b354e982
+SHA256: 91a38a328cfc7ddc2146dd25e026042503c48f240ba79c3ae2709578b9cd25af
 Section: admin
 Priority: optional
 Homepage: http://ceph.com/
@@ -736,10 +736,10 @@ Recommends: nvme-cli, smartmontools
 Breaks: ceph (<< 10), ceph-test (<< 12.2.2-14)
 Replaces: ceph (<< 10), ceph-test (<< 12.2.2-14)
 Filename: dev/main/binary-arm64/ceph-mon_16.2.6-pve2_arm64.deb
-Size: 6243100
-MD5sum: 7b5d57c47d403d9144653df2a9d50169
-SHA1: 3b5e920ce4c73d443965a25ded36d45d2657e347
-SHA256: df4fcd2b45e950b4f3138b61378cd050f7ea5d2e032ed63f6b177ade5e54e123
+Size: 6239956
+MD5sum: cb239af7fc6744bc60cc481d376664ec
+SHA1: ec9939262eaaee2a252f6eee5e55c50b04727447
+SHA256: f9b42091ce95a2ff72e19dd31ebb6b7fecd73591f665ac1fda6121a460ab7e61
 Section: admin
 Priority: optional
 Homepage: http://ceph.com/
@@ -785,16 +785,16 @@ Source: ceph
 Version: 16.2.6-pve2
 Architecture: arm64
 Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
-Installed-Size: 109185
-Depends: ceph-base (= 16.2.6-pve2), lvm2, sudo, python3-ceph-common, python3.9:any, python3:any, libaio1 (>= 0.3.93), libblkid1 (>= 2.17.2), libc6 (>= 2.30), libfuse3-3 (>= 3.2.3), libgcc-s1 (>= 4.5), libgoogle-perftools4, libibverbs1 (>= 1.1.6), libleveldb1d, liblttng-ust0 (>= 2.5.0), liblz4-1 (>= 0.0~r130), librados2, librdmacm1 (>= 1.0.15), libsnappy1v5 (>= 1.1.8), libssl1.1 (>= 1.1.0), libstdc++6 (>= 9), libudev1 (>= 183), zlib1g (>= 1:1.1.4)
+Installed-Size: 109178
+Depends: ceph-base (= 16.2.6-pve2), lvm2, sudo, python3.9:any, python3:any, libaio1 (>= 0.3.93), libblkid1 (>= 2.17.2), libc6 (>= 2.30), libfuse2 (>= 2.8), libgcc-s1 (>= 4.5), libgoogle-perftools4, libibverbs1 (>= 1.1.6), libleveldb1d, liblttng-ust0 (>= 2.5.0), liblz4-1 (>= 0.0~r130), librados2, librdmacm1 (>= 1.0.15), libsnappy1v5 (>= 1.1.8), libssl1.1 (>= 1.1.0), libstdc++6 (>= 9), libudev1 (>= 183), zlib1g (>= 1:1.1.4)
 Recommends: nvme-cli, smartmontools
 Breaks: ceph (<< 10), ceph-test (<< 12.2.2-14)
 Replaces: ceph (<< 10), ceph-test (<< 12.2.2-14)
 Filename: dev/main/binary-arm64/ceph-osd_16.2.6-pve2_arm64.deb
-Size: 22847040
-MD5sum: 5c07de434acac8aff375f1b3fd09aed6
-SHA1: f2a9f0998c8c3ca2d5633c0c67f42da97ef1e324
-SHA256: 81a2a66fc7c593bbb667ef5e4e46c20d7e71a369067b02fd813d50f6f8c936c4
+Size: 22836740
+MD5sum: 2442b61dd58caf9e5caa4727803d8dcd
+SHA1: ce8dfd62aec77c005a9ce709fa0aa74018efcf61
+SHA256: c3c62abc759f13448ede2d833976922cdc6eda94ae1434e5f991206327545666
 Section: admin
 Priority: optional
 Homepage: http://ceph.com/
@@ -931,10 +931,10 @@ Depends: ceph-common, curl, jq, socat, xmlstarlet, libaio1 (>= 0.3.93), libblkid
 Breaks: ceph-base (<< 1)
 Replaces: ceph-base (<< 11)
 Filename: dev/main/binary-arm64/ceph-test_16.2.6-pve2_arm64.deb
-Size: 41410500
-MD5sum: cb0d38c96a2597d792ff3069ee19e671
-SHA1: 08e0aecb79854b4a899e66f928be6917f7cfa284
-SHA256: f982ce772a05c5df26e66b7efedc23516ad7fb5baa0216b0117a5ebf32ad1c7e
+Size: 41410492
+MD5sum: 30218d122ac748221abb676562ee0792
+SHA1: 759df642a0f61d0ceb3f7d308c01b5042d3234bd
+SHA256: d622894b42647805c782a99e56cf3172262f620c7d0961462522a69f415e2ac6
 Section: admin
 Priority: optional
 Homepage: http://ceph.com/
@@ -1149,6 +1149,38 @@ Description: cluster engine daemon and utilities
  .
  This package contains the Corosync daemon and some administration tools.
 
+Package: corosync
+Version: 3.1.5-pve1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 637
+Depends: libc6 (>= 2.17), libcfg7 (>= 3.1.0), libcmap4 (>= 2.99.3), libcorosync-common4 (>= 1.99.9), libcpg4 (>= 1.1.0), libknet1 (>= 1.18), libnozzle1 (>= 1.6), libqb100 (>= 2.0.3), libquorum5 (>= 1.99.9), libstatgrab10, libsystemd0, libvotequorum8 (>= 2.4.2), lsb-base (>= 3.0-6), adduser, xsltproc
+Filename: dev/main/binary-arm64/corosync_3.1.5-pve1_arm64.deb
+Size: 227028
+MD5sum: 739385aa1ab00695f1a9b0a1e61a777e
+SHA1: 38ffbe7a2bea46e715e7af47e06b9fcba4913a7c
+SHA256: bed08a6145de6d2535d86ecca0394df6d8f22c4d96f746a00356c34fa2cde22a
+Section: admin
+Priority: optional
+Homepage: https://corosync.github.io/corosync/
+Description: cluster engine daemon and utilities
+ The Corosync Cluster Engine is a Group Communication
+ System with additional features for implementing high availability within
+ applications. The project provides four C Application Programming Interface
+ features:
+ .
+  * A closed process group communication model with virtual synchrony
+    guarantees for creating replicated state machines.
+  * A simple availability manager that restarts the application process
+    when it has failed.
+  * A configuration and statistics in-memory database that provide the
+    ability to set, retrieve, and receive change notifications of
+    information.
+  * A quorum system that notifies applications when quorum is achieved
+    or lost.
+ .
+ This package contains the Corosync daemon and some administration tools.
+
 Package: corosync-doc
 Source: corosync
 Version: 3.1.2-pve2
@@ -1161,6 +1193,41 @@ Size: 10136884
 MD5sum: e5f747d5278a8f0baf24d035c93586b6
 SHA1: 0c7ee46d9ab1ff87023bfdb4e2167988c6dcb56a
 SHA256: 1cf040e14f3b5d7d1193c45a586e2957b55c9421cb5398c09bc8872a0da2aa53
+Section: doc
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://corosync.github.io/corosync/
+Description: cluster engine HTML documentation
+ The Corosync Cluster Engine is a Group Communication
+ System with additional features for implementing high availability within
+ applications. The project provides four C Application Programming Interface
+ features:
+ .
+  * A closed process group communication model with virtual synchrony
+    guarantees for creating replicated state machines.
+  * A simple availability manager that restarts the application process
+    when it has failed.
+  * A configuration and statistics in-memory database that provide the
+    ability to set, retrieve, and receive change notifications of
+    information.
+  * A quorum system that notifies applications when quorum is achieved
+    or lost.
+ .
+ This package contains the Corosync HTML manuals and the API documentation
+ generated by Doxygen.
+
+Package: corosync-doc
+Source: corosync
+Version: 3.1.5-pve1
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 29712
+Recommends: w3m | www-browser
+Filename: dev/main/binary-all/corosync-doc_3.1.5-pve1_all.deb
+Size: 10136800
+MD5sum: a85716d95979456ffc8ac0bc5680197e
+SHA1: 57dafec6d1430fb58a9882ec8a9adf209bf80742
+SHA256: 4e7091f1ac91a7632655d05e15e997ad1f3fe04cc16e821c185abcc2a36339a6
 Section: doc
 Priority: optional
 Multi-Arch: foreign
@@ -1219,6 +1286,41 @@ Description: cluster engine notification daemon
  .
  This package contains the DBus/SNMP notification daemon for Corosync events.
 
+Package: corosync-notifyd
+Source: corosync
+Version: 3.1.5-pve1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 78
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: libc6 (>= 2.17), libcfg7 (>= 2.99.5), libcmap4 (>= 2.99.3), libcorosync-common4 (>= 1.99.9), libdbus-1-3 (>= 1.9.14), libqb100 (>= 2.0.3), libquorum5 (>= 1.99.9), libsnmp40 (>= 5.9+dfsg), libsystemd0, corosync, lsb-base (>= 3.0-6)
+Recommends: dbus
+Filename: dev/main/binary-arm64/corosync-notifyd_3.1.5-pve1_arm64.deb
+Size: 21104
+MD5sum: cdc679f09c2d0b1fbe0dadf3a2b504c9
+SHA1: 7fad52ec03a1dabe8012099111af21a55c497523
+SHA256: f8420636ee83b41ec346ec06c56799569fd101d2533a6845a31f7080c21f13e4
+Section: admin
+Priority: optional
+Homepage: https://corosync.github.io/corosync/
+Description: cluster engine notification daemon
+ The Corosync Cluster Engine is a Group Communication
+ System with additional features for implementing high availability within
+ applications. The project provides four C Application Programming Interface
+ features:
+ .
+  * A closed process group communication model with virtual synchrony
+    guarantees for creating replicated state machines.
+  * A simple availability manager that restarts the application process
+    when it has failed.
+  * A configuration and statistics in-memory database that provide the
+    ability to set, retrieve, and receive change notifications of
+    information.
+  * A quorum system that notifies applications when quorum is achieved
+    or lost.
+ .
+ This package contains the DBus/SNMP notification daemon for Corosync events.
+
 Package: corosync-vqsim
 Source: corosync
 Version: 3.1.2-pve2
@@ -1231,6 +1333,40 @@ Size: 55236
 MD5sum: a971b1754c07c96a7138ea320852c075
 SHA1: cc783992efdfd73aab5b2c1984900d2ae08820bf
 SHA256: 96ccbabd0699b5d5747bb1f1a64ab268f0d72b1d335e5cc514000805c7e29cf3
+Section: admin
+Priority: optional
+Homepage: https://corosync.github.io/corosync/
+Description: cluster engine votequorum simulator
+ The Corosync Cluster Engine is a Group Communication
+ System with additional features for implementing high availability within
+ applications. The project provides four C Application Programming Interface
+ features:
+ .
+  * A closed process group communication model with virtual synchrony
+    guarantees for creating replicated state machines.
+  * A simple availability manager that restarts the application process
+    when it has failed.
+  * A configuration and statistics in-memory database that provide the
+    ability to set, retrieve, and receive change notifications of
+    information.
+  * A quorum system that notifies applications when quorum is achieved
+    or lost.
+ .
+ This package contains the Corosync votequorum simulator.  It
+ can simulate multiple nodes, network splits and a basic quorum device.
+
+Package: corosync-vqsim
+Source: corosync
+Version: 3.1.5-pve1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 166
+Depends: libc6 (>= 2.17), libcorosync-common4 (>= 1.99.9), libqb100 (>= 2.0.3), libreadline8 (>= 6.0)
+Filename: dev/main/binary-arm64/corosync-vqsim_3.1.5-pve1_arm64.deb
+Size: 55276
+MD5sum: 16cf73baf2c49045fa5223f581d12bd4
+SHA1: 499f942ecb4095aa97a216dd4daa80c9d42f6e51
+SHA256: 19e413ab3ad96c892575006c527603e0a1451e13c89f2405f4b3a6a0c3156eab
 Section: admin
 Priority: optional
 Homepage: https://corosync.github.io/corosync/
@@ -1306,6 +1442,33 @@ Description: Network Interface Management tool similar to ifupdown
  python-mako for large scale interface deployments. See
  /usr/share/doc/ifupdown2/README.rst for details about ifupdown2. Examples
  are available under /usr/share/doc/ifupdown2/examples.
+
+Package: libcephfs-dev
+Source: ceph
+Version: 16.2.6-pve2
+Architecture: arm64
+Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
+Installed-Size: 122
+Depends: libcephfs2 (= 16.2.6-pve2)
+Conflicts: libceph-dev, libceph1-dev, libcephfs2-dev
+Replaces: libceph-dev, libceph1-dev, libcephfs2-dev
+Filename: dev/main/binary-arm64/libcephfs-dev_16.2.6-pve2_arm64.deb
+Size: 25792
+MD5sum: f2a33fa7f5e62c5e1a690beee6caccf8
+SHA1: 2631c4d36ed1efb0df0b51f73b62874ac1625240
+SHA256: f1e0cc5714a8309f77d0451f0ba9d8926bc3e1feaac3f721337e6c9e5b9a463c
+Section: libdevel
+Priority: optional
+Homepage: http://ceph.com/
+Description: Ceph distributed file system client library (development files)
+ Ceph is a massively scalable, open-source, distributed
+ storage system that runs on commodity hardware and delivers object,
+ block and file system storage.  This is a
+ shared library allowing applications to access a Ceph distributed
+ file system via a POSIX-like interface.
+ .
+ This package contains development files needed for building applications that
+ link against libcephfs.
 
 Package: libcephfs-java
 Source: ceph
@@ -1423,6 +1586,41 @@ Description: Ceph distributed file system client library
  shared library allowing applications to access a Ceph distributed
  file system via a POSIX-like interface.
 
+Package: libcfg-dev
+Source: corosync
+Version: 3.1.5-pve1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 28
+Depends: libcorosync-common-dev (= 3.1.5-pve1), libcfg7 (= 3.1.5-pve1)
+Filename: dev/main/binary-arm64/libcfg-dev_3.1.5-pve1_arm64.deb
+Size: 7548
+MD5sum: 64fd8fdb25286383a9a98c87b37d9538
+SHA1: 7f9178d2335c5499ef82e49bd64bf722e304e677
+SHA256: 63d52b37ac4cec7ba964f0173f8f814dd4537d6b4a91f93a08a5846c07defba8
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://corosync.github.io/corosync/
+Description: cluster engine CFG library development
+ The Corosync Cluster Engine is a Group Communication
+ System with additional features for implementing high availability within
+ applications. The project provides four C Application Programming Interface
+ features:
+ .
+  * A closed process group communication model with virtual synchrony
+    guarantees for creating replicated state machines.
+  * A simple availability manager that restarts the application process
+    when it has failed.
+  * A configuration and statistics in-memory database that provide the
+    ability to set, retrieve, and receive change notifications of
+    information.
+  * A quorum system that notifies applications when quorum is achieved
+    or lost.
+ .
+ This package contains the headers and other necessary files to build
+ applications or libraries that use the CFG library.
+
 Package: libcfg7
 Source: corosync
 Version: 3.1.2-pve2
@@ -1456,6 +1654,75 @@ Description: cluster engine CFG library
     or lost.
  .
  This package contains the CFG library.
+
+Package: libcfg7
+Source: corosync
+Version: 3.1.5-pve1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 33
+Depends: libc6 (>= 2.17), libcorosync-common4 (>= 1.99.9), libqb100 (>= 2.0.1)
+Filename: dev/main/binary-arm64/libcfg7_3.1.5-pve1_arm64.deb
+Size: 10512
+MD5sum: 48eb4c521a382da9d8a0a1c3d821032e
+SHA1: dda05cd42e7f04e29065d43165d7305f2f1a8e6f
+SHA256: e0219204ed761990fbb18c6d1443055a703615353023522d18f89d949ed30dd9
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://corosync.github.io/corosync/
+Description: cluster engine CFG library
+ The Corosync Cluster Engine is a Group Communication
+ System with additional features for implementing high availability within
+ applications. The project provides four C Application Programming Interface
+ features:
+ .
+  * A closed process group communication model with virtual synchrony
+    guarantees for creating replicated state machines.
+  * A simple availability manager that restarts the application process
+    when it has failed.
+  * A configuration and statistics in-memory database that provide the
+    ability to set, retrieve, and receive change notifications of
+    information.
+  * A quorum system that notifies applications when quorum is achieved
+    or lost.
+ .
+ This package contains the CFG library.
+
+Package: libcmap-dev
+Source: corosync
+Version: 3.1.5-pve1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 74
+Depends: libcorosync-common-dev (= 3.1.5-pve1), libcmap4 (= 3.1.5-pve1)
+Filename: dev/main/binary-arm64/libcmap-dev_3.1.5-pve1_arm64.deb
+Size: 39668
+MD5sum: 69ee212092ff6d3a2a0d35198ff7ef10
+SHA1: 884028e65e678b5ff353dfc1b6359f833151737c
+SHA256: 97cda9b330b4ba3524da055f39944c0e358fad2a47fb0f2186db24f346bfe87b
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://corosync.github.io/corosync/
+Description: cluster engine CMAP library development
+ The Corosync Cluster Engine is a Group Communication
+ System with additional features for implementing high availability within
+ applications. The project provides four C Application Programming Interface
+ features:
+ .
+  * A closed process group communication model with virtual synchrony
+    guarantees for creating replicated state machines.
+  * A simple availability manager that restarts the application process
+    when it has failed.
+  * A configuration and statistics in-memory database that provide the
+    ability to set, retrieve, and receive change notifications of
+    information.
+  * A quorum system that notifies applications when quorum is achieved
+    or lost.
+ .
+ This package contains the headers and other necessary files to build
+ applications or libraries that use the Configuration Map library.
 
 Package: libcmap4
 Source: corosync
@@ -1491,6 +1758,75 @@ Description: cluster engine CMAP library
  .
  This package contains the Configuration Map library.
 
+Package: libcmap4
+Source: corosync
+Version: 3.1.5-pve1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 42
+Depends: libc6 (>= 2.17), libcorosync-common4 (>= 1.99.9), libqb100 (>= 2.0.1)
+Filename: dev/main/binary-arm64/libcmap4_3.1.5-pve1_arm64.deb
+Size: 12132
+MD5sum: 99743058e9264df11a2134c8c3b4eecf
+SHA1: ef10e596906e1b16b9715da55cd5584c0ba8d6dd
+SHA256: c23bd81cc8b0e6f86a5060a73b8c5e9d55528ad2724d4ac3791c246041d14d23
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://corosync.github.io/corosync/
+Description: cluster engine CMAP library
+ The Corosync Cluster Engine is a Group Communication
+ System with additional features for implementing high availability within
+ applications. The project provides four C Application Programming Interface
+ features:
+ .
+  * A closed process group communication model with virtual synchrony
+    guarantees for creating replicated state machines.
+  * A simple availability manager that restarts the application process
+    when it has failed.
+  * A configuration and statistics in-memory database that provide the
+    ability to set, retrieve, and receive change notifications of
+    information.
+  * A quorum system that notifies applications when quorum is achieved
+    or lost.
+ .
+ This package contains the Configuration Map library.
+
+Package: libcorosync-common-dev
+Source: corosync
+Version: 3.1.5-pve1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 35
+Depends: libqb-dev, libcorosync-common4 (= 3.1.5-pve1)
+Filename: dev/main/binary-arm64/libcorosync-common-dev_3.1.5-pve1_arm64.deb
+Size: 8076
+MD5sum: ffc79d606b5fd040c7db7ed78885657b
+SHA1: bbc048edc6391d2575811e099c5d67e857366e62
+SHA256: 7ddfcce7c48265b80ed199e5d08a291e5a45cc11d3a841a59832c37808080cf9
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://corosync.github.io/corosync/
+Description: cluster engine common development
+ The Corosync Cluster Engine is a Group Communication
+ System with additional features for implementing high availability within
+ applications. The project provides four C Application Programming Interface
+ features:
+ .
+  * A closed process group communication model with virtual synchrony
+    guarantees for creating replicated state machines.
+  * A simple availability manager that restarts the application process
+    when it has failed.
+  * A configuration and statistics in-memory database that provide the
+    ability to set, retrieve, and receive change notifications of
+    information.
+  * A quorum system that notifies applications when quorum is achieved
+    or lost.
+ .
+ This package contains the headers and other necessary files to build
+ applications or libraries that use the Corosync libraries.
+
 Package: libcorosync-common4
 Source: corosync
 Version: 3.1.2-pve2
@@ -1524,6 +1860,74 @@ Description: cluster engine common library
  .
  This package contains the Corosync common library.
 
+Package: libcorosync-common4
+Source: corosync
+Version: 3.1.5-pve1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 28
+Filename: dev/main/binary-arm64/libcorosync-common4_3.1.5-pve1_arm64.deb
+Size: 7572
+MD5sum: 215e4e10e0caa183c930373f84637c40
+SHA1: 8c06ad53a36756dae7bb8dd88608438d64f55602
+SHA256: 066648838315cfb15ffad620569114d2e397a7a34d99df4c17a3d6ca2897ab18
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://corosync.github.io/corosync/
+Description: cluster engine common library
+ The Corosync Cluster Engine is a Group Communication
+ System with additional features for implementing high availability within
+ applications. The project provides four C Application Programming Interface
+ features:
+ .
+  * A closed process group communication model with virtual synchrony
+    guarantees for creating replicated state machines.
+  * A simple availability manager that restarts the application process
+    when it has failed.
+  * A configuration and statistics in-memory database that provide the
+    ability to set, retrieve, and receive change notifications of
+    information.
+  * A quorum system that notifies applications when quorum is achieved
+    or lost.
+ .
+ This package contains the Corosync common library.
+
+Package: libcpg-dev
+Source: corosync
+Version: 3.1.5-pve1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 74
+Depends: libcorosync-common-dev (= 3.1.5-pve1), libcpg4 (= 3.1.5-pve1)
+Filename: dev/main/binary-arm64/libcpg-dev_3.1.5-pve1_arm64.deb
+Size: 43892
+MD5sum: 5b3d7704f6bf1cce6de5313cb7553109
+SHA1: 6ff4ad24476a1b16b2d8cfed7f081c5125a12e1c
+SHA256: bc8c5d526877bfe8428e3bc16c710bd521e35992b709744a7dfaee1ddc575470
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://corosync.github.io/corosync/
+Description: cluster engine CPG library development
+ The Corosync Cluster Engine is a Group Communication
+ System with additional features for implementing high availability within
+ applications. The project provides four C Application Programming Interface
+ features:
+ .
+  * A closed process group communication model with virtual synchrony
+    guarantees for creating replicated state machines.
+  * A simple availability manager that restarts the application process
+    when it has failed.
+  * A configuration and statistics in-memory database that provide the
+    ability to set, retrieve, and receive change notifications of
+    information.
+  * A quorum system that notifies applications when quorum is achieved
+    or lost.
+ .
+ This package contains the headers and other necessary files to build
+ applications or libraries that use the Closed Process Group library.
+
 Package: libcpg4
 Source: corosync
 Version: 3.1.2-pve2
@@ -1536,6 +1940,40 @@ Size: 13968
 MD5sum: 87b81be885221a9ceaf969f7c0c4ca6e
 SHA1: a2e1545924afc1bcf10c0d926e77d3bbe75692da
 SHA256: b131d2d72b58475ef48e3bcabb76cf2863d87f3ac83d74dfbe8b1b66e1153c03
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://corosync.github.io/corosync/
+Description: cluster engine CPG library
+ The Corosync Cluster Engine is a Group Communication
+ System with additional features for implementing high availability within
+ applications. The project provides four C Application Programming Interface
+ features:
+ .
+  * A closed process group communication model with virtual synchrony
+    guarantees for creating replicated state machines.
+  * A simple availability manager that restarts the application process
+    when it has failed.
+  * A configuration and statistics in-memory database that provide the
+    ability to set, retrieve, and receive change notifications of
+    information.
+  * A quorum system that notifies applications when quorum is achieved
+    or lost.
+ .
+ This package contains the Closed Process Group library.
+
+Package: libcpg4
+Source: corosync
+Version: 3.1.5-pve1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 41
+Depends: libc6 (>= 2.17), libcorosync-common4 (>= 1.99.9), libqb100 (>= 2.0.1)
+Filename: dev/main/binary-arm64/libcpg4_3.1.5-pve1_arm64.deb
+Size: 13988
+MD5sum: a544e0348f72084844682c3ce74ffb66
+SHA1: 4479bca59b87a77b3b6c417fb2addbe4c11999b7
+SHA256: 7a6fd3eba3bc84be1a33b1f328ac06cf75ee80d5889f543c245e70001e257e05
 Section: libs
 Priority: optional
 Multi-Arch: same
@@ -1597,10 +2035,10 @@ Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 22491
 Breaks: proxmox-widget-toolkit (<< 3.1-1)
 Filename: dev/main/binary-all/libjs-extjs_7.0.0-1_all.deb
-Size: 2819748
-MD5sum: 3627fbab2b33b8fd4dc337c694e23594
-SHA1: cc7901b06e3a731b0094b2d9bf96dc59aa442ff2
-SHA256: b9a32f6bd87c3f5da818e3d774f1789ab606d846b1bb3e93a24f229b774d0540
+Size: 2819620
+MD5sum: e95f1549e49deaf9b5d45d5cddb51a94
+SHA1: e857c51090b4db4ef5f283a35fc314dc27d885d4
+SHA256: 6e97a8c0ea9267122c26a9da7cde4ddf1422e841ed33b417d82fc4106ba1f7a6
 Section: web
 Priority: optional
 Homepage: https://www.sencha.com/
@@ -1639,10 +2077,10 @@ Depends: libpve-common-perl (>= 6~), libproxmox-acme-plugins, perl:any
 Breaks: libpve-common-perl (<< 6.0-20)
 Replaces: libpve-common-perl (<< 6.0-20)
 Filename: dev/main/binary-all/libproxmox-acme-perl_1.3.0_all.deb
-Size: 9720
-MD5sum: 5470db05048bfd71b19820ee675628d4
-SHA1: aa6faa1bd0735cdc359ccb64f824711e826e072d
-SHA256: e24c8ba470d4370dbfcd492c17a7409d282c7fb1322dd51a09e09ea2db93f0d6
+Size: 9704
+MD5sum: f47f2c9a65bbeda5648a033d37859f95
+SHA1: ea8c1e5eae50a8de7a428efbcc3461b457ed5b25
+SHA256: 1436e14127a50fb87c2d6eed2723ec278266ac7d3f46445266837bcb3d4dfb08
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -1677,16 +2115,16 @@ Source: libproxmox-acme
 Version: 1.3.0
 Architecture: all
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 744
+Installed-Size: 745
 Depends: coreutils (>= 8.30-1), curl (>= 7.64.0-1), sed (>= 4.7-1)
 Recommends: idn
 Breaks: libproxmox-acme-perl (<< 1.1.0)
 Replaces: libproxmox-acme-perl (<< 1.1.0)
 Filename: dev/main/binary-all/libproxmox-acme-plugins_1.3.0_all.deb
-Size: 110216
-MD5sum: 393a4f856ef9063ada19db3d04fe91e0
-SHA1: 3faa83c0782731f98c35dd38651bd2dfa5099952
-SHA256: 0d24caa1dfe287c0179d4e96fdc608c6c72e246693374e6dc9e647f2509b3173
+Size: 110284
+MD5sum: 92e79f992fc0555d9f535afe2e772318
+SHA1: 6f58e6e9045ed4e60c5ebb03726755850480f672
+SHA256: 5c8a81e38e1e664959c57726766715bf13d1f81451822a1e3f39e46af5916029
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -1734,6 +2172,25 @@ Description: Proxmox Backup Server client library for QEMU
  This library contains the library to access the Proxmox Backup server from
  within QEMU.
 
+Package: libproxmox-backup-qemu0-dev
+Source: proxmox-backup-qemu
+Version: 1.2.0-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 26
+Depends: libproxmox-backup-qemu0
+Filename: dev/main/binary-arm64/libproxmox-backup-qemu0-dev_1.2.0-1_arm64.deb
+Size: 6284
+MD5sum: 41526bad81ae286068cba384d20a4713
+SHA1: 06ac9f58b286a57127b3bbf307acdf62bdca7afe
+SHA256: b6dc87278cb58ec94233aec2ec6a33f38700dffc00001b619cfdf09f3b2e5e08
+Section: admin
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox Backup Server client library for QEMU development files
+ This library contains the library to access the Proxmox Backup server from
+ within QEMU.
+
 Package: libpve-access-control
 Version: 7.0-4
 Architecture: all
@@ -1742,10 +2199,29 @@ Installed-Size: 210
 Depends: libauthen-pam-perl, libcrypt-openssl-random-perl, libcrypt-openssl-rsa-perl, libjson-perl, libjson-xs-perl, libmime-base32-perl, libnet-ldap-perl, libnet-ssleay-perl, libpve-common-perl (>= 6.0-18), libpve-cluster-perl, libpve-rs-perl, libpve-u2f-server-perl (>= 1.0-2), libuuid-perl, pve-cluster (>= 6.1-4), perl:any
 Breaks: pve-manager (<= 6.0-9)
 Filename: dev/main/binary-all/libpve-access-control_7.0-4_all.deb
-Size: 41624
-MD5sum: d0c0eb641e0bf08927a47ab7859f2316
-SHA1: 5817e604f47df8878a7a598817b61244efb01bfc
-SHA256: b6013415c4066241e4a7e8b3424a14379b666318cedc77068f3ed5f78a429692
+Size: 41652
+MD5sum: 1ef5aa054ab676cd213a3338116a8e24
+SHA1: b1c71cc1929b93ade3c9128720919291ade31248
+SHA256: 30c3371c457ccb8157518fba07b50dcb47a3a49a22713301b6830e254a920b28
+Section: perl
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox VE access control library
+ This package contains the role based user management and access
+ control function used by Proxmox VE.
+
+Package: libpve-access-control
+Version: 7.0-5
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 228
+Depends: libauthen-pam-perl, libcrypt-openssl-random-perl, libcrypt-openssl-rsa-perl, libjson-perl, libjson-xs-perl, libmime-base32-perl, libnet-ldap-perl, libnet-ssleay-perl, libpve-common-perl (>= 6.0-18), libpve-cluster-perl, libpve-rs-perl, libpve-u2f-server-perl (>= 1.0-2), libuuid-perl, pve-cluster (>= 6.1-4), perl:any
+Breaks: pve-manager (<= 6.0-9)
+Filename: dev/main/binary-all/libpve-access-control_7.0-5_all.deb
+Size: 57316
+MD5sum: bd8b308592e08c7b0b9bfa8def70d97b
+SHA1: 5d78c1f70404fef25b1c0c95862f858e60914aa9
+SHA256: 11683de44abcf73dcffbc774dcea42139a9b8b84bf0d141aa0d06523bd9ff60d
 Section: perl
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -1760,10 +2236,10 @@ Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 34
 Depends: libcrypt-ssleay-perl, libhttp-message-perl, libio-socket-ssl-perl, libjson-perl, liburi-perl, libwww-perl, perl:any
 Filename: dev/main/binary-all/libpve-apiclient-perl_3.2-1_all.deb
-Size: 7992
-MD5sum: c4295ee3421c038c0bb9c793c0ffb817
-SHA1: a4458114e647d92000a189500fd3be5bb54e471c
-SHA256: aab7f2a67238da82be4340b0d02a25f6b4a9776708f8a33e9a0b0f41647810a7
+Size: 7984
+MD5sum: df89318dc6dea1a96f51eaffe4999c62
+SHA1: e5cb2bb84fb5baf795bcf5a4df3e7fe4fd4c20de
+SHA256: 6dbd4166d727ae0e709c5ac424c50cf666fcca572a1512382b71a144d443e087
 Section: perl
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -1780,10 +2256,10 @@ Depends: faketime, libcrypt-ssleay-perl, libdigest-hmac-perl, libpve-access-cont
 Breaks: pve-cluster (<= 6.0-7)
 Replaces: pve-cluster (<= 6.0-7)
 Filename: dev/main/binary-all/libpve-cluster-api-perl_7.0-3_all.deb
-Size: 43984
-MD5sum: e9ef4c23e832be34aa79de85a89de185
-SHA1: 8769f72960766b831bd3877ee5ec0098863f8345
-SHA256: ad764b288e1b1841784fa3d305ea68820632ec1e15e127eed73243a92c63ae8c
+Size: 43960
+MD5sum: c235d5a0ae4c5c46d70dd7cf8426478c
+SHA1: 21321af40f0a5da0da6bacac100a207f52dad133
+SHA256: 3d31c3a339041b1300028a308a47b0db651daf1122a8c99d27b74e398812f368
 Section: admin
 Priority: optional
 Description: Proxmox Virtual Environment cluster Perl API modules.
@@ -1794,19 +2270,36 @@ Source: pve-cluster
 Version: 7.0-3
 Architecture: all
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 53
+Installed-Size: 55
 Depends: libcrypt-ssleay-perl, libpve-apiclient-perl, libpve-common-perl (>= 6.0-7~), librrds-perl, rrdcached, perl:any
 Breaks: pve-cluster (<= 6.0-7)
 Replaces: pve-cluster (<= 6.0-7)
 Filename: dev/main/binary-all/libpve-cluster-perl_7.0-3_all.deb
-Size: 22988
-MD5sum: 6cb6a4a78953e8be2a29f4be111c31df
-SHA1: 77e03f04aec77227547c7e40827f2e1f872bb073
-SHA256: cb4bcbe31bfb68f31ded51312736753d466129d8efb28ec3a0b3ccdb0932c1e6
+Size: 23340
+MD5sum: 897efbc726c857e3d11242bbaa11e5d2
+SHA1: d3056b23b65ee6ceed150af1ccf672114f1acde3
+SHA256: 2b520aae5b73c8615a844d02efacc0b9bd2a719907b75e76b3ec0ecfa96f4c49
 Section: admin
 Priority: optional
 Description: Proxmox Virtual Environment cluster Perl modules.
  This package contains various cluster-related perl modules.
+
+Package: libpve-common-perl
+Version: 7.0-10
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 426
+Depends: libclone-perl, libcrypt-openssl-random-perl, libcrypt-openssl-rsa-perl, libdevel-cycle-perl, libfilesys-df-perl, libhttp-daemon-perl, libhttp-message-perl, libio-stringy-perl, libjson-perl, liblinux-inotify2-perl, libmime-base32-perl, libnet-dbus-perl, libnet-ip-perl, libnetaddr-ip-perl, libproxmox-acme-perl, libstring-shellquote-perl, libtimedate-perl, liburi-perl, libwww-perl, libyaml-libyaml-perl, perl:any
+Breaks: ifupdown2 (<< 2.0.1-1+pve5), pmg-api (<< 6.1-7), pve-container (<< 3.0-9), pve-manager (<< 5.2-5), qemu-server (<< 5.0-49)
+Filename: dev/main/binary-all/libpve-common-perl_7.0-10_all.deb
+Size: 112240
+MD5sum: 90731a4757167459ae205d96e5eeedbd
+SHA1: ac18b7159edf99f0571fb2b34edfa8173be4ee65
+SHA256: 5f6622fc04cccd618cbd09fa4000b5ddc901050cbef38c91d659e9cad1d3ecd0
+Section: perl
+Priority: optional
+Description: Proxmox VE base library
+ This package contains the base library used by other Proxmox VE components.
 
 Package: libpve-common-perl
 Version: 7.0-6
@@ -1834,10 +2327,10 @@ Depends: libpve-cluster-perl, libpve-common-perl (>= 4.0-89), libpve-storage-per
 Breaks: libpve-common-perl (<< 4.0-89), pve-container (<< 3.1-4), pve-manager (<< 6.0-10), qemu-server (<< 6.1-19)
 Replaces: libpve-common-perl (<< 4.0-89), pve-manager (<< 4.4-10)
 Filename: dev/main/binary-all/libpve-guest-common-perl_4.0-2_all.deb
-Size: 24720
-MD5sum: d85e044b28523ba1d35e45143ed85d58
-SHA1: 5d00e0ac1e682e2fe629797f8ac0c0cbe54c119a
-SHA256: 72a472803265c9cdcb25c8260982a383126f238d63b2e3550f1b4abfb63d6ed2
+Size: 24708
+MD5sum: 42564d8d6e453fb53caec0e35ce76d9a
+SHA1: c13574f776072f94695c65b80d9ea43e28c50e02
+SHA256: 52dc17ac8af703c610696fd8ac487f72b3e3563e1dec40e99c28b90e390415a2
 Section: perl
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -1853,10 +2346,10 @@ Installed-Size: 95
 Depends: libanyevent-http-perl, libanyevent-perl (>= 7.140-3), libcrypt-ssleay-perl, libhtml-parser-perl, libhttp-date-perl, libhttp-message-perl, libio-socket-ssl-perl, libjs-jquery, libjs-bootstrap, libjson-perl, libnet-ip-perl, libpve-common-perl (>= 6.0-13), liburi-perl, perl:any
 Breaks: pmg-api (<< 6.1-5), pve-manager (<< 6.1-6)
 Filename: dev/main/binary-all/libpve-http-server-perl_4.0-2_all.deb
-Size: 24196
-MD5sum: 1ebfbbe57bb7b5402c6ab1b66143b018
-SHA1: dcbdc3cfa381ae33ed00db5d27e198bef247f73a
-SHA256: 20f017a10fb06f76a61ffc931b4f3568a4d396a68ee22fc34177846d1cb2d54a
+Size: 24188
+MD5sum: 7acef3186634f8605256dab908575403
+SHA1: 67e685cf28cc3ecf7659154dba4e47c64c39dbce
+SHA256: eaadea001a0aaf139e2662a957779a2e86b6590a24230b2874f8c24670a0c54c
 Section: perl
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -1868,13 +2361,13 @@ Package: libpve-rs-perl
 Version: 0.2.3
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 2093
-Depends: perl, perlapi-5.32.1, libc6 (>= 2.28), libcurl3-gnutls (>= 7.16.2), libgcc-s1 (>= 4.2), libssl1.1 (>= 1.1.0), libuuid1 (>= 2.16)
+Installed-Size: 2117
+Depends: perl, perlapi-5.32.1, libc6 (>= 2.28), libcurl3-gnutls (>= 7.16.2), libgcc-s1 (>= 4.2), libssl1.1 (>= 1.1.0)
 Filename: dev/main/binary-arm64/libpve-rs-perl_0.2.3_arm64.deb
-Size: 691860
-MD5sum: ad772b02a2279fef4405be6fb389fa65
-SHA1: 9535df84a4f85385ee6743bcc75821b6e29fa54f
-SHA256: df644f90cce0f9745da03766baabb3d1617db2f4bf7290f36a59f857b49b9413
+Size: 700900
+MD5sum: 7897d941d846edd6034efb8f1e3e74b4
+SHA1: 153a1401e62e5b29e4817039f46c99178103f1c7
+SHA256: 9250d3938877124bfca44c7baeee4d90e93692d00dd6044667d16073828d77ed
 Section: perl
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -1901,6 +2394,25 @@ Homepage: https://www.proxmox.com
 Description: Proxmox VE storage management library
  This package contains the storage management library used by Proxmox VE.
 
+Package: libpve-storage-perl
+Version: 7.0-12
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 539
+Depends: ceph-common (>= 12.2~), ceph-fuse, cifs-utils, cstream, glusterfs-client (>= 3.4.0-2), libfile-chdir-perl, libpve-apiclient-perl (>= 3.1-1), libpve-cluster-perl, libpve-common-perl (>= 6.4-1), librados2-perl, lvm2, nfs-common, proxmox-backup-client (>= 1.0~), proxmox-backup-file-restore, pve-cluster (>= 5.0-32), smartmontools, smbclient, thin-provisioning-tools, udev, perl:any
+Recommends: zfs-zed
+Breaks: libpve-guest-common-perl (<< 3.0-7), libpve-http-server-perl (<< 4.0-3), pve-container (<< 3.1-2), pve-manager (<< 5.2-12), qemu-server (<< 6.1-14)
+Filename: dev/main/binary-all/libpve-storage-perl_7.0-12_all.deb
+Size: 123088
+MD5sum: 40d347c8cf67f7ca0ee02a95702a5bd6
+SHA1: f8fc3a7c5d3adad4da6b5d10e9b0d89d9852af03
+SHA256: a3801c5da4014215e34ea11ac9fa186a4a9e1040e708aaa61527945298e9a4dd
+Section: perl
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox VE storage management library
+ This package contains the storage management library used by Proxmox VE.
+
 Package: libpve-u2f-server-perl
 Version: 1.1-1
 Architecture: arm64
@@ -1917,6 +2429,31 @@ Priority: optional
 Homepage: https://www.proxmox.com/
 Description: Perl bindings for libu2f-server
  This package contains libu2f-server perl binding used by Proxmox VE.
+
+Package: libqb-dev
+Source: libqb
+Version: 1.0.3-1~bpo9
+Architecture: arm64
+Maintainer: Debian HA Maintainers <debian-ha-maintainers@lists.alioth.debian.org>
+Installed-Size: 269
+Depends: libqb0 (= 1.0.3-1~bpo9), libc6 (>= 2.17)
+Suggests: libqb-doc
+Filename: dev/main/binary-arm64/libqb-dev_1.0.3-1~bpo9_arm64.deb
+Size: 143744
+MD5sum: 2d1e2afffd26d647e677d7166b180119
+SHA1: f40d424b68482465b45573b278cbfd6b7785e547
+SHA256: 98df5eeed47cae39bcdab8254c607f4189ce58ca2c9f6ad8a70bd939a7ba44b3
+Section: libdevel
+Priority: optional
+Homepage: https://github.com/clusterlabs/libqb/wiki
+Description: high performance client server features library (devel files)
+ libqb provides a set of high performance client-server
+ reusable features. It offers high performance logging, tracing, IPC and poll.
+ Its initial features were spun off the Corosync cluster communication suite
+ to make them accessible for other projects.
+ .
+ This package contains libqb's development files. You will need it to develop
+ applications using libqb.
 
 Package: libqb-doc
 Source: libqb
@@ -1965,6 +2502,41 @@ Description: high performance client server features library
  .
  This package contains the libqb library itself.
 
+Package: libquorum-dev
+Source: corosync
+Version: 3.1.5-pve1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 50
+Depends: libcorosync-common-dev (= 3.1.5-pve1), libquorum5 (= 3.1.5-pve1)
+Filename: dev/main/binary-arm64/libquorum-dev_3.1.5-pve1_arm64.deb
+Size: 26216
+MD5sum: 46c4fdb9ec59dbdd4ee3c8990a78ec74
+SHA1: c18ea4f1902fab941bb5ef69b6e672eec0c220e4
+SHA256: e199d79f6fecc4dbc57125c4c6e8bf1980030203c7c6c89dfee53cc2702a8e89
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://corosync.github.io/corosync/
+Description: cluster engine Quorum library development
+ The Corosync Cluster Engine is a Group Communication
+ System with additional features for implementing high availability within
+ applications. The project provides four C Application Programming Interface
+ features:
+ .
+  * A closed process group communication model with virtual synchrony
+    guarantees for creating replicated state machines.
+  * A simple availability manager that restarts the application process
+    when it has failed.
+  * A configuration and statistics in-memory database that provide the
+    ability to set, retrieve, and receive change notifications of
+    information.
+  * A quorum system that notifies applications when quorum is achieved
+    or lost.
+ .
+ This package contains the headers and other necessary files to build
+ applications or libraries that use the Quorum library.
+
 Package: libquorum5
 Source: corosync
 Version: 3.1.2-pve2
@@ -1998,6 +2570,66 @@ Description: cluster engine Quorum library
     or lost.
  .
  This package contains the Quorum library.
+
+Package: libquorum5
+Source: corosync
+Version: 3.1.5-pve1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 29
+Depends: libc6 (>= 2.17), libcorosync-common4 (>= 1.99.9), libqb100 (>= 2.0.1)
+Filename: dev/main/binary-arm64/libquorum5_3.1.5-pve1_arm64.deb
+Size: 9240
+MD5sum: 111d531aa1412ac5b803ffc4ea10a16b
+SHA1: 57e79b8539e8e8b3279abf565d79e823c004faba
+SHA256: 60b46cfaca1eb634c5473d5e3b7b3db65a045b42592273decd3d232f0b6c4052
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://corosync.github.io/corosync/
+Description: cluster engine Quorum library
+ The Corosync Cluster Engine is a Group Communication
+ System with additional features for implementing high availability within
+ applications. The project provides four C Application Programming Interface
+ features:
+ .
+  * A closed process group communication model with virtual synchrony
+    guarantees for creating replicated state machines.
+  * A simple availability manager that restarts the application process
+    when it has failed.
+  * A configuration and statistics in-memory database that provide the
+    ability to set, retrieve, and receive change notifications of
+    information.
+  * A quorum system that notifies applications when quorum is achieved
+    or lost.
+ .
+ This package contains the Quorum library.
+
+Package: librados-dev
+Source: ceph
+Version: 16.2.6-pve2
+Architecture: arm64
+Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
+Installed-Size: 1170
+Depends: librados2 (= 16.2.6-pve2), libc6 (>= 2.17), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)
+Conflicts: librados1-dev, librados2-dev
+Replaces: librados1-dev, librados2-dev
+Filename: dev/main/binary-arm64/librados-dev_16.2.6-pve2_arm64.deb
+Size: 244952
+MD5sum: 025777ad1ee2346e7a20e5b1a458ea19
+SHA1: d233f6b2c9ffcdd0d9c5721ddf9a1bd58644b4cc
+SHA256: b567d653652ec9c8a67555dce4e6c663452ff9a49e0ab0a2619ba134ee370cd9
+Section: libdevel
+Priority: optional
+Homepage: http://ceph.com/
+Description: RADOS distributed object store client library (development files)
+ RADOS is a reliable, autonomic distributed object storage cluster
+ developed as part of the Ceph distributed storage system.  This is a
+ shared library allowing applications to access the distributed object
+ store using a simple file-like interface.
+ .
+ This package contains development files needed for building applications that
+ link against librados.
 
 Package: librados2
 Source: ceph
@@ -2052,15 +2684,62 @@ Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 38
 Depends: libpve-access-control, librados2 (>= 0.67.5), perl (>= 5.20.1-5), perlapi-5.32.1, libc6 (>= 2.17)
 Filename: dev/main/binary-arm64/librados2-perl_1.2-1_arm64.deb
-Size: 8736
-MD5sum: 34ac19b21a81e2eed8d07ae722771611
-SHA1: df906a2913929fda9152457c7c08b0ec6b330f73
-SHA256: feed6c3dea6b9abce5bd31ea8b65831f8a122ac99ce90336b59e8edbab45966b
+Size: 8732
+MD5sum: f5814e32bc5e52ca3be3e49deab0a4c8
+SHA1: 2682c687237abf44526aafa42a650fb4cef579ba
+SHA256: 6d21810e041e6207e497c512b80950e41ace0400ea2ee30c9c9362ad47167273
 Section: perl
 Priority: optional
 Homepage: https://www.proxmox.com/
 Description: Perl bindings for librados
  This package contains librados perl binding used by Proxmox VE.
+
+Package: libradospp-dev
+Source: ceph
+Version: 16.2.6-pve2
+Architecture: arm64
+Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
+Installed-Size: 127
+Depends: librados-dev (= 16.2.6-pve2)
+Filename: dev/main/binary-arm64/libradospp-dev_16.2.6-pve2_arm64.deb
+Size: 31832
+MD5sum: a8fb6d790373512ee93752ddaf3036dd
+SHA1: c1722e1dddca84b7c393c5766f524ee0e0737f09
+SHA256: d09ef42fb8529fe1f704f2276ea94053d5d788f27a624f5b0c9ba724edd74f5e
+Section: libdevel
+Priority: optional
+Homepage: http://ceph.com/
+Description: RADOS distributed object store client C++ library (development files)
+ RADOS is a reliable, autonomic distributed object storage cluster
+ developed as part of the Ceph distributed storage system.  This is a
+ shared library allowing applications to access the distributed object
+ store using a simple file-like interface.
+ .
+ This package contains development files needed for building C++ applications that
+ link against librados.
+
+Package: libradosstriper-dev
+Source: ceph
+Version: 16.2.6-pve2
+Architecture: arm64
+Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
+Installed-Size: 47
+Depends: libradosstriper1 (= 16.2.6-pve2)
+Filename: dev/main/binary-arm64/libradosstriper-dev_16.2.6-pve2_arm64.deb
+Size: 14040
+MD5sum: cfab4a2a249e48f1095b65c74eeecc87
+SHA1: bae08bea741e827cfe3bf61d9b3267cf39a8b48e
+SHA256: 4dc0f92c36833734040810ed61d82e0c4db4e29fd6d5521c713a7c4e25684a10
+Section: libdevel
+Priority: optional
+Homepage: http://ceph.com/
+Description: RADOS striping interface (development files)
+ libradosstriper is a striping interface built on top of the rados
+ library, allowing to stripe bigger objects onto several standard
+ rados objects using an interface very similar to the rados one.
+ .
+ This package contains development files needed for building applications that
+ link against libradosstriper.
 
 Package: libradosstriper1
 Source: ceph
@@ -2101,6 +2780,32 @@ Description: RADOS striping interface
  Striping interface built on top of the rados library, allowing
  to stripe bigger objects onto several standard rados objects using
  an interface very similar to the rados one.
+
+Package: librbd-dev
+Source: ceph
+Version: 16.2.6-pve2
+Architecture: arm64
+Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
+Installed-Size: 121
+Depends: librados-dev (= 16.2.6-pve2), librbd1 (= 16.2.6-pve2)
+Conflicts: librbd1-dev
+Replaces: librbd1-dev
+Filename: dev/main/binary-arm64/librbd-dev_16.2.6-pve2_arm64.deb
+Size: 24272
+MD5sum: 45feb05ab43da84a3a73d5b8a0b163be
+SHA1: fe94509259229b1275627e661433dd360b87c0f7
+SHA256: 43573e3a8d7a01ff8601c47dd2947848b2a3940662a6477d5474a7c35a5a0c7c
+Section: libdevel
+Priority: optional
+Homepage: http://ceph.com/
+Description: RADOS block device client library (development files)
+ RBD is a block device striped across multiple distributed objects
+ in RADOS, a reliable, autonomic distributed object storage cluster
+ developed as part of the Ceph distributed storage system.  This is a
+ shared library allowing applications to manage these block devices.
+ .
+ This package contains development files needed for building applications that
+ link against librbd1.
 
 Package: librbd1
 Source: ceph
@@ -2143,6 +2848,30 @@ Description: RADOS block device client library
  in RADOS, a reliable, autonomic distributed object storage cluster
  developed as part of the Ceph distributed storage system.  This is a
  shared library allowing applications to manage these block devices.
+
+Package: librgw-dev
+Source: ceph
+Version: 16.2.6-pve2
+Architecture: arm64
+Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
+Installed-Size: 30
+Depends: librados-dev (= 16.2.6-pve2), librgw2 (= 16.2.6-pve2)
+Filename: dev/main/binary-arm64/librgw-dev_16.2.6-pve2_arm64.deb
+Size: 11960
+MD5sum: c00e07473a00baa14a4b7c7c03c820c3
+SHA1: 63a4ec8586c739e7c2c246d30ab4c191b86a5771
+SHA256: 7496384529b8da6f0ba6615a644d2c815644289aebadf57bae94faf9d9c5858a
+Section: libdevel
+Priority: optional
+Homepage: http://ceph.com/
+Description: RADOS client library (development files)
+ RADOS is a distributed object store used by the Ceph distributed
+ storage system.  This package provides a REST gateway to the
+ object store that aims to implement a superset of Amazon's S3
+ service.
+ .
+ This package contains development files needed for building applications
+ that link against librgw2.
 
 Package: librgw2
 Source: ceph
@@ -2190,6 +2919,41 @@ Description: RADOS Gateway client library
  .
  This package contains the library interface and headers only.
 
+Package: libsam-dev
+Source: corosync
+Version: 3.1.5-pve1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 61
+Depends: libcorosync-common-dev (= 3.1.5-pve1), libsam4 (= 3.1.5-pve1)
+Filename: dev/main/binary-arm64/libsam-dev_3.1.5-pve1_arm64.deb
+Size: 32612
+MD5sum: 90ff8dce74a8fd5d710f92fd7ed844ff
+SHA1: efd6d019e7899224c0aa4b82e5fc82e147af786d
+SHA256: e17e390ec8adee0dc1e3c706b1e2f6694dd352bc94b78f618d10d4cf0f4bb80a
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://corosync.github.io/corosync/
+Description: cluster engine SAM library development
+ The Corosync Cluster Engine is a Group Communication
+ System with additional features for implementing high availability within
+ applications. The project provides four C Application Programming Interface
+ features:
+ .
+  * A closed process group communication model with virtual synchrony
+    guarantees for creating replicated state machines.
+  * A simple availability manager that restarts the application process
+    when it has failed.
+  * A configuration and statistics in-memory database that provide the
+    ability to set, retrieve, and receive change notifications of
+    information.
+  * A quorum system that notifies applications when quorum is achieved
+    or lost.
+ .
+ This package contains the headers and other necessary files to build
+ applications or libraries that use the Simple Availability Manager library.
+
 Package: libsam4
 Source: corosync
 Version: 3.1.2-pve2
@@ -2202,6 +2966,40 @@ Size: 12524
 MD5sum: 6af07eb7539a4b0fae3d79dbc2e15dc3
 SHA1: 0cde925bf577c3330ec2b0bf62447544d5422780
 SHA256: f0bf29e6bb097f7edc5bfb6f27ab6636e1fe5d5ec62ee8e9457a56c3257922ef
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://corosync.github.io/corosync/
+Description: cluster engine SAM library
+ The Corosync Cluster Engine is a Group Communication
+ System with additional features for implementing high availability within
+ applications. The project provides four C Application Programming Interface
+ features:
+ .
+  * A closed process group communication model with virtual synchrony
+    guarantees for creating replicated state machines.
+  * A simple availability manager that restarts the application process
+    when it has failed.
+  * A configuration and statistics in-memory database that provide the
+    ability to set, retrieve, and receive change notifications of
+    information.
+  * A quorum system that notifies applications when quorum is achieved
+    or lost.
+ .
+ This package contains the Simple Availability Manager library.
+
+Package: libsam4
+Source: corosync
+Version: 3.1.5-pve1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 41
+Depends: libc6 (>= 2.17), libcmap4 (>= 1.99.9), libquorum5 (>= 1.99.9)
+Filename: dev/main/binary-arm64/libsam4_3.1.5-pve1_arm64.deb
+Size: 12552
+MD5sum: 52679c776ba8e25a02906f6ddda31139
+SHA1: 43445f2fa821d7c33105fba88f5e0616ec7906b7
+SHA256: f8e6f4c45475b77cec09d65eafdf3810902622882df4a6e9891411aa48eef9f7
 Section: libs
 Priority: optional
 Multi-Arch: same
@@ -2266,6 +3064,63 @@ Description: SQLite3 VFS for Ceph
  .
  This packages contains the loadable extension module for SQLite3.
 
+Package: libsqlite3-mod-ceph-dev
+Source: ceph
+Version: 16.2.6-pve2
+Architecture: arm64
+Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
+Installed-Size: 18
+Depends: libsqlite3-mod-ceph (= 16.2.6-pve2), libsqlite3-dev
+Filename: dev/main/binary-arm64/libsqlite3-mod-ceph-dev_16.2.6-pve2_arm64.deb
+Size: 10292
+MD5sum: 779c5f2b9e77abc742f7db78314c7fff
+SHA1: f958e781249c56092f2a11d15eff9f5d826f15a3
+SHA256: fc57af0e150f20492033145ae81a9faa352e1cad4dc83ec14c34c3a31f475cc5
+Section: libdevel
+Priority: optional
+Homepage: http://ceph.com/
+Description: SQLite3 VFS for Ceph (development files)
+ A SQLite3 VFS for storing and manipulating databases stored on Ceph's RADOS
+ distributed object store.
+ .
+ This package contains development files needed for building applications that
+ link against libsqlite3-mod-ceph.
+
+Package: libvotequorum-dev
+Source: corosync
+Version: 3.1.5-pve1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 65
+Depends: libcorosync-common-dev (= 3.1.5-pve1), libvotequorum8 (= 3.1.5-pve1)
+Filename: dev/main/binary-arm64/libvotequorum-dev_3.1.5-pve1_arm64.deb
+Size: 38108
+MD5sum: 3815b1769e48474615b9f805d31cf98a
+SHA1: 1c51a20e2d0d08f92ce7a78e99c32ab871720780
+SHA256: d9d9aebf07456a7ea2d666acd2009723046168ee434f5a296c517eefe713eb86
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://corosync.github.io/corosync/
+Description: cluster engine Votequorum library development
+ The Corosync Cluster Engine is a Group Communication
+ System with additional features for implementing high availability within
+ applications. The project provides four C Application Programming Interface
+ features:
+ .
+  * A closed process group communication model with virtual synchrony
+    guarantees for creating replicated state machines.
+  * A simple availability manager that restarts the application process
+    when it has failed.
+  * A configuration and statistics in-memory database that provide the
+    ability to set, retrieve, and receive change notifications of
+    information.
+  * A quorum system that notifies applications when quorum is achieved
+    or lost.
+ .
+ This package contains the headers and other necessary files to build
+ applications or libraries that use the Votequorum library.
+
 Package: libvotequorum8
 Source: corosync
 Version: 3.1.2-pve2
@@ -2300,6 +3155,40 @@ Description: cluster engine Votequorum library
  .
  This package contains the Votequorum library.
 
+Package: libvotequorum8
+Source: corosync
+Version: 3.1.5-pve1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 33
+Depends: libc6 (>= 2.17), libcorosync-common4 (>= 1.99.9), libqb100 (>= 2.0.1)
+Filename: dev/main/binary-arm64/libvotequorum8_3.1.5-pve1_arm64.deb
+Size: 10132
+MD5sum: 5de301508ee74cdf98cd11c37b79015c
+SHA1: 834f2963efa9cede9f61514b7ee91d8f6294ecbb
+SHA256: 7a4a75ea605d1abe70be291e367e716cb0187132be52d29dcc8a55b4ec0d6944
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://corosync.github.io/corosync/
+Description: cluster engine Votequorum library
+ The Corosync Cluster Engine is a Group Communication
+ System with additional features for implementing high availability within
+ applications. The project provides four C Application Programming Interface
+ features:
+ .
+  * A closed process group communication model with virtual synchrony
+    guarantees for creating replicated state machines.
+  * A simple availability manager that restarts the application process
+    when it has failed.
+  * A configuration and statistics in-memory database that provide the
+    ability to set, retrieve, and receive change notifications of
+    information.
+  * A quorum system that notifies applications when quorum is achieved
+    or lost.
+ .
+ This package contains the Votequorum library.
+
 Package: lxc-pve
 Version: 4.0.9-4
 Architecture: arm64
@@ -2311,10 +3200,10 @@ Breaks: pve-container (<< 3.1-1)
 Replaces: liblxc1, lxc
 Provides: liblxc1, lxc
 Filename: dev/main/binary-arm64/lxc-pve_4.0.9-4_arm64.deb
-Size: 2284340
-MD5sum: fdfbf15de4b7acaa3831c925f6cf809f
-SHA1: 946cf099f77c8d7061929e5365e4e5d1ca30e423
-SHA256: f2f31fa1424f0895493fd6f39908d9b75d56984fd85176eca85bc0bec8e8d71c
+Size: 2284316
+MD5sum: 4b62fe441c0ee76719f1e77681b01bfc
+SHA1: e2c9609de97eea1d2921727d72d5499e0cea1ab3
+SHA256: bfa54ea631fa5b153625d12ad0373f4b30fe663713275990b2a0a2cad3e18f4f
 Section: admin
 Priority: optional
 Homepage: https://linuxcontainers.org
@@ -2324,6 +3213,49 @@ Description: Linux containers userspace tools
  to use these new functionalities to provide an userspace container
  object which provides full resource isolation and resource control for
  an applications or a system.
+
+Package: lxc-pve-dev
+Source: lxc-pve
+Version: 4.0.9-4
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 63
+Depends: lxc-pve (= 4.0.9-4)
+Filename: dev/main/binary-arm64/lxc-pve-dev_4.0.9-4_arm64.deb
+Size: 15192
+MD5sum: a3114baff0216604a9229b6ed0235ba1
+SHA1: 298117d90c91e8902bbbe9e9740765bf0a969afa
+SHA256: 191ed783563a86dd4c2f15ac1fdfdaf328cadbc6dde8f73487249a090697b623
+Section: libdevel
+Priority: optional
+Homepage: https://linuxcontainers.org
+Description: Linux Containers userspace tools (development)
+ Containers provides resource management through control groups and
+ resource isolation through namespaces. The linux containers, lxc, aims
+ to use these new functionalities to provide an userspace container
+ object which provides full resource isolation and resource control for
+ an applications or a system.
+
+Package: node-es6-module-transpiler
+Version: 0.10.0-2
+Architecture: all
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Installed-Size: 154
+Depends: node-ast-util, node-esprima-fb, node-posix-getopt, node-recast, node-reserved, nodejs
+Filename: dev/main/binary-all/node-es6-module-transpiler_0.10.0-2_all.deb
+Size: 30462
+MD5sum: 9df25e9c7a9b377f2c9dc454d0f99e30
+SHA1: 68503ae8c5ca07800179442c856b06a646cf92a2
+SHA256: 2293ec1b65fc770c17fd970017c624b49664ebe39bbd4d797d2dbd02e4f69fb8
+Section: web
+Priority: optional
+Homepage: http://esnext.github.io/es6-module-transpiler
+Description: Module transpiler from ECMAScript 6 for Node.js
+ This is an experimental compiler that allows you to write your JavaScript
+ using a subset of the current ES6 module syntax, and compile it into various
+ formats.
+ .
+ Node.js is an event-based server-side JavaScript engine.
 
 Package: novnc-pve
 Version: 1.2.0-2
@@ -2359,6 +3291,23 @@ Homepage: https://www.proxmox.com
 Description: Internationalization support for Proxmox Backup Server
  This package provides the translations into all available languages.
 
+Package: pbs-i18n
+Source: proxmox-i18n
+Version: 2.5-1
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 373
+Filename: dev/main/binary-all/pbs-i18n_2.5-1_all.deb
+Size: 92204
+MD5sum: 6f4d0ecca8fc4f2a3c895a190c66faab
+SHA1: e7cc7c6e3e1b7c17d2f4f37e24bb45e9f776a77b
+SHA256: 81e24295f08607925a3a7cbe4ad9c51df03901c7a2725bf5b499bcf89e1a6ced
+Section: perl
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Internationalization support for Proxmox Backup Server
+ This package provides the translations into all available languages.
+
 Package: pmg-i18n
 Source: proxmox-i18n
 Version: 2.4-1
@@ -2376,16 +3325,33 @@ Homepage: https://www.proxmox.com
 Description: Internationalization support for Proxmox Mail Gateway
  This package provides the translations into all available languages.
 
+Package: pmg-i18n
+Source: proxmox-i18n
+Version: 2.5-1
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 544
+Filename: dev/main/binary-all/pmg-i18n_2.5-1_all.deb
+Size: 134124
+MD5sum: de6046c86b4f41c9f8a5cf3be52355f5
+SHA1: b34768cd9363362b1a9a2475d18e8dd268259121
+SHA256: 843be9e202c568e2d8684d9b7625a5a7ef04289efb1f8b71a9224db5a87470a4
+Section: perl
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Internationalization support for Proxmox Mail Gateway
+ This package provides the translations into all available languages.
+
 Package: proxmox-archive-keyring
 Version: 2.0
 Architecture: all
 Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 21
 Filename: dev/main/binary-all/proxmox-archive-keyring_2.0_all.deb
-Size: 4564
-MD5sum: 991f17e94879d98cc658e8107a8a5c81
-SHA1: ca7a1e32c359115be531e495242b099f52ecea7d
-SHA256: 4b08f3cd0447ba10cb5e67bbe2355c6cd3ca2f38ed737a3afb4956d7f7fdd3a3
+Size: 4560
+MD5sum: 3104dba9c214f6bbca15e74c7c46c134
+SHA1: 8e05887de937441cfde5e0b7a8463482d523028d
+SHA256: 4e8dc3e4cbf51e16d4c617b878c473f8917fa1b664d810f672b535286f066689
 Section: misc
 Priority: optional
 Description: Proxmox APT archive keyring
@@ -2480,10 +3446,10 @@ Conflicts: proxmox-ve-3.10.0, proxmox-virtual-environment, pve-kernel
 Replaces: proxmox-ve-3.10.0, proxmox-virtual-environment, pve-kernel
 Provides: proxmox-virtual-environment
 Filename: dev/main/binary-all/proxmox-ve_7.0-2_all.deb
-Size: 5848
-MD5sum: cb5ea37e6983810106296a0059cebe98
-SHA1: 75391b53cd01a79d3dc5ac060049fe576dc4b972
-SHA256: bf74e6b020442acd151ace20b85695ef2c71665beda623fbcde2236d23fee6cc
+Size: 5836
+MD5sum: 88579dc9a1a7dd03ac0711289e979563
+SHA1: 1ab90b0d251de0a36e73b96233aa94b09cbdbe22
+SHA256: e28414075971cbbdc11e533ac21e1d92ffc77e4393065a3705addbd7dc235154
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -2499,15 +3465,33 @@ Architecture: all
 Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 428
 Filename: dev/main/binary-all/proxmox-widget-toolkit_3.3-6_all.deb
-Size: 105568
-MD5sum: 653aa0473e38def9ccbbf0938e9febe0
-SHA1: ebf2f141a7020100c1cb29318698430962c2edb5
-SHA256: c8d52b979d9bf8a53694bedd0d9b87dd011d42ca3f2712e83dae22c339e329e2
+Size: 105624
+MD5sum: 48a029596b050917491c9aab9c8edac8
+SHA1: 60399b912eb8c67c9628d6c1361683729b55c386
+SHA256: 709d3eaeee88758d180908e14b6222967a95daf960195c12d3517414f229f965
 Section: web
 Priority: optional
 Homepage: https://www.proxmox.com
 Description: ExtJS Helper Classes for Proxmox
  ExtJS Helper Classes to easy access to Proxmox APIs.
+
+Package: proxmox-widget-toolkit-dev
+Source: proxmox-widget-toolkit
+Version: 3.3-6
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 57
+Filename: dev/main/binary-all/proxmox-widget-toolkit-dev_3.3-6_all.deb
+Size: 21132
+MD5sum: f4ec5c7298abe2282b596e06d6b55b01
+SHA1: f991e38aa239307987df7e9d708eda948d2891b7
+SHA256: 34b55e7546c1cfd1c3b2ae28eb428a0668ea95dffaed19822ab8c687bb237af1
+Section: web
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Development dependencies for Proxmox Projects
+ Contains some common javascript code that are dev-dependencies,
+ for various Proxmox projects.
 
 Package: pve-client
 Version: 0.1-1rpve1
@@ -2516,10 +3500,10 @@ Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 688
 Depends: libpve-apiclient-perl, libclone-perl, libdevel-cycle-perl, libnet-ip-perl, libfilesys-df-perl, libstring-shellquote-perl
 Filename: dev/main/binary-all/pve-client_0.1-1rpve1_all.deb
-Size: 110916
-MD5sum: 82b1b7de2359acef3f415fa3acd4b00a
-SHA1: d0f2844b6261fbf33c8383c71dac70ed65506060
-SHA256: 6cba5b969857c09412b5075dcdc2644806ecc5d3f6bb24b7ea9d8e30259bfae3
+Size: 110888
+MD5sum: 39a6b3676e292df14ad0ada8f5418b4d
+SHA1: 5a4a432b22621d929f840ee985fbede69fff7760
+SHA256: 5fcaab8e020fbe821038087786a5143a9b3a54e19f322b1ddd514c1a096b3089
 Section: perl
 Priority: optional
 Homepage: http://www.proxmox.com
@@ -2534,10 +3518,10 @@ Installed-Size: 397
 Depends: corosync (>= 2.3.4-1), fuse, libfuse2 (>= 2.9.2-4), libglib2.0-0 (>= 2.42.1-1), libpve-common-perl (>= 6.0-7~), libqb100 (>= 2.0.1-1), libsqlite3-0 (>= 3.20.0), sqlite3, systemd, perl, perlapi-5.32.1, libc6 (>= 2.17), libcmap4 (>= 1.99.9), libcpg4 (>= 2.3.4-1), libquorum5 (>= 2.3.4-1), librrd8 (>= 1.4~rc2)
 Breaks: libpve-access-control (<= 6.0-3), libpve-guest-common-perl (<= 3.0-2), libpve-storage-perl (<= 6.0-9), pve-container (<= 3.0-10), pve-ha-manager (<= 3.0-3), pve-manager (<= 6.0-12), qemu-server (<= 6.0-13)
 Filename: dev/main/binary-arm64/pve-cluster_7.0-3_arm64.deb
-Size: 107004
-MD5sum: b232994f8b55fe79aa7d94b6a9e68caf
-SHA1: 75bfb35a0c2f29346573fd9d6b318f2b39f4f856
-SHA256: 43437dafb82fe8628a0aa7b8843175bb1c02d2a43d3ebb207ed27bbe596422d1
+Size: 106904
+MD5sum: 0fa0a244514757db40a96a55ab4c8119
+SHA1: f74a81ab488ec6820c97326a2d7bb4fdd2317e56
+SHA256: f958ab36eff59ff54c890f9c47bf360bc20ba0a6f2fb94ba085241742d9df770
 Section: admin
 Priority: optional
 Description: "pmxcfs" distributed cluster filesystem for Proxmox Virtual Environment.
@@ -2545,16 +3529,32 @@ Description: "pmxcfs" distributed cluster filesystem for Proxmox Virtual Environ
  consistent view of config and other files.
 
 Package: pve-container
+Version: 4.0-11
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 480
+Depends: file, libpve-cluster-perl, libpve-common-perl (>= 6.0-19), libpve-guest-common-perl (>= 3.0-9), libpve-storage-perl (>= 6.3-8), lxc-pve, pve-cluster (>= 4.0-8), pve-ha-manager (>= 3.0-9), pve-lxc-syscalld, xz-utils, perl:any
+Filename: dev/main/binary-all/pve-container_4.0-11_all.deb
+Size: 123640
+MD5sum: 80dfce605a0f660426580783e7bfbc02
+SHA1: b432dfbe70d22ef2b46e6e1f48cdf7589b675bdf
+SHA256: eabd88b2bece31a173ef3099e68a06becbfa0f2980972ce767b132e58336770a
+Section: perl
+Priority: optional
+Description: Proxmox VE Container management tool
+ Tool to manage Linux Containers on Proxmox VE.
+
+Package: pve-container
 Version: 4.0-9
 Architecture: all
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 474
+Installed-Size: 475
 Depends: file, libpve-cluster-perl, libpve-common-perl (>= 6.0-19), libpve-guest-common-perl (>= 3.0-9), libpve-storage-perl (>= 6.3-8), lxc-pve, pve-cluster (>= 4.0-8), pve-ha-manager (>= 3.0-9), pve-lxc-syscalld, xz-utils, perl:any
 Filename: dev/main/binary-all/pve-container_4.0-9_all.deb
-Size: 120836
-MD5sum: da29e1b274044022483f32d03b1d0527
-SHA1: 02f738470061036b8c61f5cd7321653a3946b619
-SHA256: 31919cf5a66572bbc8a2d989619e3ad866bf179263d643cd6e2694e61cbe757f
+Size: 122624
+MD5sum: c56f3cf89405204baa40c702e589c2ba
+SHA1: aa24b3a21a1d4a3530b356398435b6120e8451b7
+SHA256: 44a9a73644c35e3712f08658c52b92ff60e4805889cdf47e72105dd8bcfacb30
 Section: perl
 Priority: optional
 Description: Proxmox VE Container management tool
@@ -2565,13 +3565,13 @@ Source: pve-docs
 Version: 7.0-5
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 750
+Installed-Size: 770
 Depends: asciidoc-base, libpve-common-perl, source-highlight, xmlto, perl:any
 Filename: dev/main/binary-arm64/pve-doc-generator_7.0-5_arm64.deb
-Size: 147508
-MD5sum: 10b7d1764f01635b5de4496b64bf6380
-SHA1: 88e8195bcd76dc47821ad741badbc1c9d8e945a5
-SHA256: 68885232d70271bae3bc1b9f61497654b2b880b6dbc3d0645a9dd40e43b0a8ae
+Size: 151916
+MD5sum: 4897e71dabfe8a4ecf3ab19a13033280
+SHA1: 6b7939f63f38f77f3f168312d9f5df348350404a
+SHA256: eb94cb4a186a6b8b60839c0d746b49befae94f36f353bc91dea82d788c97f401
 Section: perl
 Priority: optional
 Description: Proxmox VE Documentation helpers
@@ -2583,13 +3583,13 @@ Package: pve-docs
 Version: 7.0-5
 Architecture: all
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 25575
+Installed-Size: 23329
 Depends: libjs-extjs, perl:any
 Filename: dev/main/binary-all/pve-docs_7.0-5_all.deb
-Size: 12554352
-MD5sum: ccc0fb65cab4287f03643d5bf18a10db
-SHA1: ef1c174cb5eea4bcf9b568891982d645f71bbc60
-SHA256: b2a6fa41d93f0abc3d77dc330c4e8c64f2046ff4311e8abd474b6d743b2d11df
+Size: 12487756
+MD5sum: 374b62284fb182f62f95d38601b2105c
+SHA1: b5297ac9f03e32c6069f9ba02ef6d4b0b214afd4
+SHA256: 9362758f287722ab9d99ada52adb5b0e0b9e8d1dc4f988ec5b530907284cd3ee
 Section: doc
 Priority: optional
 Description: Proxmox VE Documentation
@@ -2600,14 +3600,14 @@ Source: pve-docs
 Version: 7.0-5
 Architecture: all
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 261
+Installed-Size: 264
 Depends: libhtml-parser-perl, libmediawiki-api-perl, pve-docs, perl:any
 Suggests: apache2
 Filename: dev/main/binary-all/pve-docs-mediawiki_7.0-5_all.deb
-Size: 28736
-MD5sum: adbec72a2ee56fde0171b90d59f60755
-SHA1: 27c2d3dfd8879bf5fa3fa3374a046a2ef723dc47
-SHA256: b905e0072cc448c4153e5727989475f0cf3366f6d97e49fcf54ae8bce14172e1
+Size: 28924
+MD5sum: 2c89c036d19c1302e38dc60ad1534218
+SHA1: ff0c3a82f6d06a0719264835dbbc5b61f02a2d1f
+SHA256: 37be6d1b6bd77b0bc81f02c4e44e5afce263f22b7968442e6fbc2754380b0c49
 Section: doc
 Priority: optional
 Description: Proxmox VE Documentation - mediawiki plugin
@@ -2619,10 +3619,10 @@ Architecture: all
 Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 264202
 Filename: dev/main/binary-all/pve-edk2-firmware_3.20200531-1_all.deb
-Size: 2490468
-MD5sum: a799968a7252126783bd06cfd8fa7552
-SHA1: 8a4975a85ba098412b313d62106474f978fcecf3
-SHA256: d01c2c63708dfe028ef4bb14ccb331d7b1541bd8f18db6637b6c234b524ea323
+Size: 2490472
+MD5sum: b734ca0a55335429cda213bf2575e046
+SHA1: 4973c1893faafccc2baf77b7f6afdea2df802db0
+SHA256: 8382bbb6db5c77438f4a0ecf8753a5d74195bf056371ec97446c139b3df89859
 Section: misc
 Priority: optional
 Homepage: http://www.tianocore.org
@@ -2633,6 +3633,24 @@ Description: edk2 based firmware modules for virtual machines
  AAVMF offers the same for AARCH64 (ARM64) based VMs.
  Proxmox VE specific release with disabled secure boot.
 
+Package: pve-eslint
+Version: 7.28.0-1
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 4202
+Depends: node-commander, node-colors, nodejs
+Filename: dev/main/binary-all/pve-eslint_7.28.0-1_all.deb
+Size: 631448
+MD5sum: 92e3ae6fb2e5120b94f81f2abd858be0
+SHA1: 8c704b904adeae5cf5f3c3f144b757df7cf4de84
+SHA256: fe9c32fbd1e0fa3e877af8ec95b8355dc4266844cb6d8e8fc92cc6107db9d845
+Section: devel
+Priority: optional
+Homepage: http://www.proxmox.com
+Description: ESLint for Proxmox Virtual Environment development
+ This package contains a version of eslint used to develop the
+ Proxmox Virtual Environment, and other Proxmox projects, web GUI.
+
 Package: pve-firewall
 Version: 4.2-2
 Architecture: arm64
@@ -2641,10 +3659,27 @@ Installed-Size: 334
 Depends: ebtables, ipset, iptables, libpve-access-control, libpve-cluster-perl, libpve-common-perl, lsb-base, pve-cluster (>= 6.1-6), perl:any, libc6 (>= 2.17), libglib2.0-0 (>= 2.31.18), libnetfilter-conntrack3 (>= 1.0.1), libnetfilter-log1 (>= 0.0.15), libnfnetlink0
 Conflicts: ulogd
 Filename: dev/main/binary-arm64/pve-firewall_4.2-2_arm64.deb
-Size: 70732
-MD5sum: 92d5aaab6e1af67f76ecf1dbc25e195c
-SHA1: 878ea8dc84ec6732e3318f2ab9e263b45e33ca93
-SHA256: 5017d49400b629624b0fb5a90d5f5203e1c4c8c92ce0db8cdbc9e7cca87e3df7
+Size: 70664
+MD5sum: c9d8f4314bf0315f565834ff182575a7
+SHA1: 27e6785bae268b204b328e0ab0b20288431b23de
+SHA256: 613a99d826b16b4dff6d791d03f7900c1bc13ecbaec60658f34d36b4e759ad40
+Section: admin
+Priority: optional
+Description: Proxmox VE Firewall
+ This package contains the Proxmox VE Firewall.
+
+Package: pve-firewall
+Version: 4.2-3
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 334
+Depends: ebtables, ipset, iptables, libpve-access-control, libpve-cluster-perl, libpve-common-perl, lsb-base, pve-cluster (>= 6.1-6), perl:any, libc6 (>= 2.17), libglib2.0-0 (>= 2.31.18), libnetfilter-conntrack3 (>= 1.0.1), libnetfilter-log1 (>= 0.0.15), libnfnetlink0
+Conflicts: ulogd
+Filename: dev/main/binary-arm64/pve-firewall_4.2-3_arm64.deb
+Size: 70708
+MD5sum: fd91f25ebccbfefd831144eb9e8f8102
+SHA1: f0914282012c0ffd58141187efc53dfe534b03fb
+SHA256: dd9ffb7481a13e3cd97c57eac5ab8079da0da16f937a43e5ad82e88ce5c989fe
 Section: admin
 Priority: optional
 Description: Proxmox VE Firewall
@@ -2658,10 +3693,10 @@ Installed-Size: 238
 Depends: libjson-perl, libpve-cluster-perl, libpve-common-perl, pve-cluster (>= 3.0-17), pve-container, qemu-server (>= 6.0-15), systemd, perl:any, libc6 (>= 2.17)
 Conflicts: watchdog
 Filename: dev/main/binary-arm64/pve-ha-manager_3.3-1_arm64.deb
-Size: 56584
-MD5sum: e74efe6af66ce94095c4e296a0c38c71
-SHA1: a1efd2ab9345d438f1ab6c994d2f4fed5acb2789
-SHA256: b9e9f4dacc8edfff0fdb7a35c38e5284942ab7ad2f508badb6ca60f650f8933f
+Size: 56692
+MD5sum: 3dc66594ec1835184dca18c3f72c800b
+SHA1: a8eb598e6f75fa00bbe362159d21cb0ee5c3cc33
+SHA256: 23e17a93049c834917e6bcd8513faba6d12072523f54ed73948d1e8d6e4ce172
 Section: perl
 Priority: optional
 Description: Proxmox VE HA Manager
@@ -2672,13 +3707,13 @@ Source: pve-ha-manager
 Version: 3.3-1
 Architecture: all
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 313
+Installed-Size: 320
 Depends: libclone-perl, libdevel-cycle-perl, libencode-locale-perl, libfilesys-df-perl, libglib-perl, libgtk3-perl, libhttp-message-perl, libjson-perl, libnet-ip-perl, libstring-shellquote-perl, liburi-perl, perl:any
 Filename: dev/main/binary-all/pve-ha-simulator_3.3-1_all.deb
-Size: 70672
-MD5sum: f3675ea9aad79b33d9d9c1d857c78a13
-SHA1: 08679b9daac06e8c82395429dc99e8801b3a9e1b
-SHA256: 9f66056570178fbd4c8b26657e1b004cd73a810501b3aea1e9279f25a9579036
+Size: 71960
+MD5sum: 13e117fbb61e8b5673b47da5a1aafd2c
+SHA1: a1ff34aa76a05c2cb75a1c5d5132d80d62613de4
+SHA256: 57ad43c607c15d3f6c74f3dcbc25db056a36833ea91645262b8d157f31266ac1
 Section: perl
 Priority: optional
 Description: Proxmox VE HA Simulator
@@ -2720,18 +3755,35 @@ Homepage: https://www.proxmox.com
 Description: Internationalization support for Proxmox VE
  This package provides the translations into all available languages.
 
+Package: pve-i18n
+Source: proxmox-i18n
+Version: 2.5-1
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 794
+Filename: dev/main/binary-all/pve-i18n_2.5-1_all.deb
+Size: 198036
+MD5sum: ac2a7fea55c7c769d229ad13ec80ce3d
+SHA1: d41279649028ef8687798fde6da359e315976617
+SHA256: 722f0f05e1b8affa70a27f6722182aa0d7ba6099c8f0bb092d6c0b9c2f5f2e1e
+Section: perl
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Internationalization support for Proxmox VE
+ This package provides the translations into all available languages.
+
 Package: pve-lxc-syscalld
 Source: rust-pve-lxc-syscalld
 Version: 1.0.0-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 670
+Installed-Size: 682
 Depends: libc6 (>= 2.18), libgcc-s1 (>= 4.2), libsystemd0
 Filename: dev/main/binary-arm64/pve-lxc-syscalld_1.0.0-1_arm64.deb
-Size: 217308
-MD5sum: 67e37e62597c26a90361805e744a647a
-SHA1: 2d5e23b289be581e45c3525a4935b2eaf90f6891
-SHA256: 347ef67c3a878a4b48439d1ba2329d1732d485312e5b21b7503049ff35596c53
+Size: 224896
+MD5sum: 13cbbc01ceb813bcba186e387cd5aa22
+SHA1: 6a44fafb773b5e5c116d4c30b9c5b65525304637
+SHA256: f50e1721f3b647ac8ae4d2a404ccbeab0856314c614fb96ea52efdcd9771e997
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -2760,6 +3812,27 @@ Priority: optional
 Description: Proxmox Virtual Environment Management Tools
  This package contains the Proxmox Virtual Environment management tools.
 
+Package: pve-manager
+Version: 7.0-13
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 9914
+Depends: apt-transport-https | apt (>= 1.5~), ca-certificates, cstream, dtach, fonts-font-awesome, gdisk, hdparm, ifupdown2 (>= 2.0.1-1+pve8) | ifenslave (>= 2.6), libapt-pkg-perl, libc6 (>= 2.17), libcrypt-ssleay-perl, libfile-readbackwards-perl, libfilesys-df-perl, libjs-extjs (>= 7.0.0), libjson-perl, liblwp-protocol-https-perl, libnet-dns-perl, libproxmox-acme-perl, libpve-access-control (>= 7.0-2), libpve-cluster-api-perl, libpve-cluster-perl (>= 6.1-6), libpve-common-perl (>= 7.0-2), libpve-guest-common-perl (>= 4.0-2), libpve-http-server-perl (>= 3.2-1), libpve-rs-perl (>= 0.2.2), libpve-storage-perl (>= 7.0-10), librados2-perl, libtemplate-perl, libterm-readline-gnu-perl, liburi-perl, libuuid-perl, libwww-perl (>= 6.04-1), logrotate, lsb-base, lzop, zstd, novnc-pve (>= 1.2.0-2~), pciutils, perl (>= 5.10.0-19), postfix | mail-transport-agent, proxmox-mini-journalreader, proxmox-widget-toolkit (>= 3.3-6), pve-cluster (>= 6.0-4), pve-container (>= 4.0-9), pve-docs, pve-firewall, pve-ha-manager, pve-i18n (>= 1.0-3), pve-xtermjs (>= 4.7.0-1), qemu-server (>= 6.2-17), rsync, spiceterm, systemd, vncterm, wget, perl:any
+Suggests: libpve-network-perl (>= 0.5-1)
+Conflicts: vlan, vzdump
+Breaks: libpve-network-perl (<< 0.5-1)
+Replaces: vlan, vzdump
+Provides: vlan, vzdump
+Filename: dev/main/binary-arm64/pve-manager_7.0-13_arm64.deb
+Size: 2057828
+MD5sum: 836b0cebbee5677f92bbcba3e1ff92c4
+SHA1: ff731eacfffc62e0530b8db4bb21676892f95bb7
+SHA256: bda5e9407fe6f10f6dd52ca2efa3b8722d3bfa5764dca8c0530c5486829de342
+Section: admin
+Priority: optional
+Description: Proxmox Virtual Environment Management Tools
+ This package contains the Proxmox Virtual Environment management tools.
+
 Package: pve-qemu-kvm
 Version: 6.0.0-3
 Architecture: arm64
@@ -2774,6 +3847,27 @@ Size: 22739040
 MD5sum: 54c04f2f3eca361471a6bd231b70ff0c
 SHA1: c59487a9522d87d25fcd42e90f207cc402042ca9
 SHA256: 5763a58abc339bb1671c34b901706c8d6128989f8d77ef377b09198883906bed
+Section: admin
+Priority: optional
+Description: Full virtualization on x86 hardware
+ Using KVM, one can run multiple virtual PCs, each running unmodified Linux or
+ Windows images. Each virtual machine has private virtualized hardware: a
+ network card, disk, graphics adapter, etc.
+
+Package: pve-qemu-kvm
+Version: 6.0.0-4
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 273319
+Depends: ceph-common (>= 0.48), iproute2, libaio1 (>= 0.3.93), libgfapi0 | glusterfs-common (>= 5.6), libgfchangelog0 | glusterfs-common (>= 5.6), libgfdb0 | glusterfs-common (>= 5.6), libgfrpc0 | glusterfs-common (>= 5.6), libgfxdr0 | glusterfs-common (>= 5.6), libglusterfs-dev | glusterfs-common (>= 5.6), libglusterfs0 | glusterfs-common (>= 5.6), libiscsi7 (>= 1.18.0), libjemalloc2, libjpeg62-turbo (>= 1.3.1), libsdl1.2debian, libspice-server1 (>= 0.14.2), libusb-1.0-0 (>= 2:1.0.23~), libusbredirparser1 (>= 0.6-2), libuuid1 (>= 2.16), numactl, libasound2 (>= 1.0.16), libc6 (>= 2.29), libcap-ng0 (>= 0.7.9), libcurl3-gnutls (>= 7.16.3), libfdt1 (>= 1.6.0), libgcc-s1 (>= 3.0), libglib2.0-0 (>= 2.57.2), libgnutls30 (>= 3.7.0), libncursesw6 (>= 6), libnettle8, libnuma1 (>= 2.0.11), libpixman-1-0 (>= 0.30.0), libpng16-16 (>= 1.6.2-1), libproxmox-backup-qemu0 (>= 1.0.3), librados2, librbd1, libseccomp2 (>= 2.1.0), libsnappy1v5 (>= 1.1.8), libstdc++6 (>= 4.6), libsystemd0, libtinfo6 (>= 6), libudev1 (>= 183), liburing1 (>= 0.7), zlib1g (>= 1:1.2.0)
+Conflicts: kvm, pve-kvm, pve-qemu-kvm-2.6.18, qemu, qemu-kvm, qemu-system-arm, qemu-system-common, qemu-system-x86, qemu-utils
+Replaces: pve-kvm, pve-qemu-kvm-2.6.18, qemu-system-arm, qemu-system-x86, qemu-utils
+Provides: qemu-system-arm, qemu-system-x86, qemu-utils
+Filename: dev/main/binary-arm64/pve-qemu-kvm_6.0.0-4_arm64.deb
+Size: 22720804
+MD5sum: 61db888d45633a338c1a7dcfd9ea22f8
+SHA1: 14f978885ddd90cdb9da180ac3ffcce2397cd114
+SHA256: 38bd014f8cc042bf806095da4a72169fa601be9a6ce6e43740a00bdb27260c36
 Section: admin
 Priority: optional
 Description: Full virtualization on x86 hardware
@@ -2878,10 +3972,10 @@ Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
 Installed-Size: 89
 Depends: python3:any
 Filename: dev/main/binary-all/python3-ceph-argparse_16.2.6-pve2_all.deb
-Size: 27028
-MD5sum: 7f6e57a7dd812223cf0c981c153c0850
-SHA1: 2993d18a46e1241bcf778c2bab52fdbd53f6fc38
-SHA256: 515012a8c1574d00d00511296378beb7ef2a747c003d787c6ac50a8bc34ee046
+Size: 27020
+MD5sum: c5820ddcd825a0324c49089a868ec2c9
+SHA1: 6b7224fbc673a2a8763817feadd8cb20caafc685
+SHA256: 27fbf74b86875319c09f2cf88dfd04d10ec92d02f6223a295cf082017aac8e21
 Section: python
 Priority: optional
 Homepage: http://ceph.com/
@@ -2924,10 +4018,10 @@ Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
 Installed-Size: 173
 Depends: python3-yaml, python3:any
 Filename: dev/main/binary-all/python3-ceph-common_16.2.6-pve2_all.deb
-Size: 36236
-MD5sum: 115b24e525204d55d85581cfa04feee1
-SHA1: 1827a8c2a71808d4adca001a34c307b0b304b937
-SHA256: aea044b8b10d22483d887dad52a6c71506213912faf14004106a8c94bd056504
+Size: 36220
+MD5sum: daf46e4e2b7e86c54f9c9b764505d9f2
+SHA1: cc8e2e4689c1ed380566dcf0e350a47e9212eddd
+SHA256: 0d17ba328a465a8840d3c63a61e3bb21570c38cb039c8d291f38aab1c2b3f3f6
 Section: python
 Priority: optional
 Homepage: http://ceph.com/
@@ -2970,10 +4064,10 @@ Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
 Installed-Size: 526
 Depends: libcephfs2 (= 16.2.6-pve2), python3-rados (= 16.2.6-pve2), python3-ceph-argparse (= 16.2.6-pve2), python3 (<< 3.10), python3 (>= 3.9~), python3:any, libc6 (>= 2.17)
 Filename: dev/main/binary-arm64/python3-cephfs_16.2.6-pve2_arm64.deb
-Size: 151012
-MD5sum: 07e61c3762d2d1b35a4fddfff2595e27
-SHA1: 930d8e8af53ff5d80bc39b0ce8c44cd537cd712e
-SHA256: 129f7369ea3b8d5e33d30af1a9a8730cce55e0ea46625c1121f0d22714cf0a59
+Size: 151956
+MD5sum: 515d926d774771eda3fed882278c5229
+SHA1: 1abe7f747ba94ded112907392ef7784e96c76758
+SHA256: b92f5c1ead510a47a2c6bb3c3f7d9267929309358c90e2cb61a7303c11994f7a
 Section: python
 Priority: optional
 Homepage: http://ceph.com/
@@ -3141,6 +4235,43 @@ Homepage: https://www.proxmox.com
 Description: Qemu Server Tools
  This package contains the Qemu Server tools used by Proxmox VE
 
+Package: qemu-server
+Version: 7.0-16
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 758
+Depends: dbus, genisoimage, libio-multiplex-perl, libjson-perl, libjson-xs-perl, libnet-ssleay-perl, libpve-access-control (>= 5.0-7), libpve-cluster-perl, libpve-common-perl (>= 7.0-3), libpve-guest-common-perl (>= 3.1-3), libpve-storage-perl (>= 6.3-8), libterm-readline-gnu-perl, libuuid-perl, libxml-libxml-perl, perl (>= 5.10.0-19), pve-cluster, pve-edk2-firmware (>= 3.20210831-1), pve-firewall, pve-ha-manager (>= 3.0-9), pve-qemu-kvm (>= 3.0.1-62), socat, swtpm, swtpm-tools, perl:any, libc6 (>= 2.17), libglib2.0-0 (>= 2.28.0), libjson-c5 (>= 0.15)
+Breaks: pve-ha-manager (<= 3.0-4), pve-manager (<= 6.0-13)
+Filename: dev/main/binary-arm64/qemu-server_7.0-16_arm64.deb
+Size: 179136
+MD5sum: c3094c5165063616334ed7c94c6fa16c
+SHA1: 0c86e20f85936e05eb4a6b720b2f41ca362fec96
+SHA256: 19b08d20b5bd486b56131e347bc42c41bb8ca299b497fe420b60376044761a7b
+Section: admin
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Qemu Server Tools
+ This package contains the Qemu Server tools used by Proxmox VE
+
+Package: rados-objclass-dev
+Source: ceph
+Version: 16.2.6-pve2
+Architecture: arm64
+Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
+Installed-Size: 20
+Depends: librados-dev (= 16.2.6-pve2)
+Filename: dev/main/binary-arm64/rados-objclass-dev_16.2.6-pve2_arm64.deb
+Size: 10116
+MD5sum: 58bd3e64c47fb45302b9747ee929a9e4
+SHA1: b15c70241b819a53a68ff8d2c3c736c05ab2144f
+SHA256: da60179acd6b81f08924b22ef2bec82626520a7f0a58615f39020ae8830b91c2
+Section: libdevel
+Priority: optional
+Homepage: http://ceph.com/
+Description: RADOS object class development kit.
+ .
+ This package contains development files needed for building RADOS object class plugins.
+
 Package: radosgw
 Source: ceph
 Version: 16.2.5-pve1
@@ -3176,10 +4307,10 @@ Depends: ceph-common (= 16.2.6-pve2), librgw2 (= 16.2.6-pve2), mime-support, lib
 Recommends: ntp | time-daemon
 Suggests: gawk
 Filename: dev/main/binary-arm64/radosgw_16.2.6-pve2_arm64.deb
-Size: 9425672
-MD5sum: 47c778f08c5314c8bc1acaf967e32697
-SHA1: 9284450c932b2543ca234378ba23b378fd5dd6d4
-SHA256: d69d371b5aff6023ffabb736f3b2bb8d16b82ddbbb0e0023232a5aa15fefa2fa
+Size: 9425416
+MD5sum: dd4d249d0c5366ad14944d139de679ac
+SHA1: 78798794c217c049944c51e1a9179f3f10774315
+SHA256: 327f7da92d82c5831fe4697623e5f1269e92af9ebb576f3248f614666b5afba8
 Section: admin
 Priority: optional
 Homepage: http://ceph.com/
@@ -3221,13 +4352,13 @@ Version: 16.2.6-pve2
 Architecture: arm64
 Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
 Installed-Size: 244
-Depends: libc6 (>= 2.28), libfuse3-3 (>= 3.2.3), libgcc-s1 (>= 3.0), librados2, librbd1, libstdc++6 (>= 9)
+Depends: libc6 (>= 2.28), libfuse2 (>= 2.6), libgcc-s1 (>= 3.0), librados2, librbd1, libstdc++6 (>= 9)
 Recommends: fuse
 Filename: dev/main/binary-arm64/rbd-fuse_16.2.6-pve2_arm64.deb
-Size: 78308
-MD5sum: 2d6f24bfc41b617ae4d9ad507b7149d2
-SHA1: e3b13be69119c646af416406d46a67a5dd1977d6
-SHA256: 42935ed8347bd1912e3825dacdd0529e0ea78f02f5d247b5bcf70733e3260b24
+Size: 77828
+MD5sum: f210aed9ef253e260607d63c1244bf19
+SHA1: c78bf82ee9f38aa0f3b2071c23807ce797d7d206
+SHA256: 704f7476d82eec72355ef16bb49165aae7ff5b943d6fff4830c0cc8fb4a7e88e
 Section: admin
 Priority: optional
 Homepage: http://ceph.com/
@@ -3269,10 +4400,10 @@ Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
 Installed-Size: 14437
 Depends: ceph-common (= 16.2.6-pve2), librados2 (= 16.2.6-pve2), libc6 (>= 2.30), libcryptsetup12 (>= 2:2.0), libgcc-s1 (>= 4.5), libgoogle-perftools4, libssl1.1 (>= 1.1.0), libstdc++6 (>= 9)
 Filename: dev/main/binary-arm64/rbd-mirror_16.2.6-pve2_arm64.deb
-Size: 2964300
-MD5sum: 9e5adef058237e3fdb475c7354bee773
-SHA1: 3bfc89ef596728f7945d1a574f2b6c5a11a2be08
-SHA256: df004354478f83d9bac711a17d1d5814741108c8303fbb2e7172d2ef01cf963d
+Size: 2964052
+MD5sum: 0d8e29c09663473fc1abb95fd41aa66b
+SHA1: c694f9540eed37c36d003205a381e39f74e5d086
+SHA256: 7c69128a1fe0cf2fd56f295774568712903c5c0c8ff312b39deaaeade068d266
 Section: admin
 Priority: optional
 Homepage: http://ceph.com/
@@ -3340,10 +4471,10 @@ Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 341
 Depends: libspice-server1 (>= 0.12.2), pve-qemu-kvm, libc6 (>= 2.17), libglib2.0-0 (>= 2.31.8)
 Filename: dev/main/binary-arm64/spiceterm_3.2-2_arm64.deb
-Size: 51916
-MD5sum: 6f9b709a529668221d489b50541ae9d1
-SHA1: 55226df26563e6e95e451c40b396921a5f031dd5
-SHA256: 6f8ad2ac72d3e5eea16acdd3b95f3cfc43eea3ef5cea127be054417bc3896553
+Size: 51912
+MD5sum: 77e917bca5ebc85e6fb71759503ab11c
+SHA1: 24ea30d9244491883f32eff131df2895dfcfb523
+SHA256: 44fc6a7285e8866f4c75357367c539c5c0116f553caccbc13d54a67029bd035a
 Section: admin
 Priority: optional
 Description: SPICE Terminal Emulator
