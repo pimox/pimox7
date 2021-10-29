@@ -2357,6 +2357,25 @@ Description: Proxmox Asynchrounous HTTP Server Implementation
  This package is used as base to implement the REST API in all perl based
  Proxmox projects.
 
+Package: libpve-http-server-perl
+Version: 4.0-3
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 95
+Depends: libanyevent-http-perl, libanyevent-perl (>= 7.140-3), libcrypt-ssleay-perl, libhtml-parser-perl, libhttp-date-perl, libhttp-message-perl, libio-socket-ssl-perl, libjs-bootstrap, libjs-jquery, libjson-perl, libnet-ip-perl, libpve-common-perl (>= 6.0-13), liburi-perl, perl:any
+Breaks: libpve-storage-perl (<< 7.0-11), pmg-api (<< 6.1-5), pve-manager (<< 6.1-6)
+Filename: dev/main/binary-all/libpve-http-server-perl_4.0-3_all.deb
+Size: 24240
+MD5sum: d36fc8ce413e99de16019216b5782aed
+SHA1: 74360122e8d5e6f210140c96509c17d6fb862e5f
+SHA256: 7b48016a93710a69670bdf085d759d7d2912eb6e2f5618f7aef5550e9aff7a4a
+Section: perl
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox Asynchrounous HTTP Server Implementation
+ This package is used as base to implement the REST API in all perl based
+ Proxmox projects.
+
 Package: libpve-rs-perl
 Version: 0.2.3
 Architecture: arm64
