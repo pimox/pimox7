@@ -5693,6 +5693,24 @@ Homepage: https://www.proxmox.com
 Description: Qemu Server Tools
  This package contains the Qemu Server tools used by Proxmox VE
 
+Package: qemu-server
+Version: 7.0-16rpve1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 760
+Depends: dbus, genisoimage, libio-multiplex-perl, libjson-perl, libjson-xs-perl, libnet-ssleay-perl, libpve-access-control (>= 5.0-7), libpve-cluster-perl, libpve-common-perl (>= 7.0-3), libpve-guest-common-perl (>= 3.1-3), libpve-storage-perl (>= 6.3-8), libterm-readline-gnu-perl, libuuid-perl, libxml-libxml-perl, perl (>= 5.10.0-19), pve-cluster, pve-edk2-firmware (>= 3.20210831-1), pve-firewall, pve-ha-manager (>= 3.0-9), pve-qemu-kvm (>= 3.0.1-62), socat, perl:any, libc6 (>= 2.17), libglib2.0-0 (>= 2.28.0), libjson-c5 (>= 0.15)
+Breaks: pve-ha-manager (<= 3.0-4), pve-manager (<= 6.0-13)
+Filename: dev/main/binary-arm64/qemu-server_7.0-16rpve1_arm64.deb
+Size: 179264
+MD5sum: cc0f77655cbad8734e5e6ee43b1123bc
+SHA1: 2ab95a50346e91d3e19679d3742fa26d060434c8
+SHA256: 32d9a2197f710e0fbc25231f58b421068f4850732a6019e004e6b0972b195146
+Section: admin
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Qemu Server Tools
+ This package contains the Qemu Server tools used by Proxmox VE
+
 Package: rados-objclass-dev
 Source: ceph
 Version: 16.2.6-pve2
