@@ -5702,9 +5702,9 @@ Depends: dbus, genisoimage, libio-multiplex-perl, libjson-perl, libjson-xs-perl,
 Breaks: pve-ha-manager (<= 3.0-4), pve-manager (<= 6.0-13)
 Filename: dev/main/binary-arm64/qemu-server_7.0-16rpve1_arm64.deb
 Size: 179264
-MD5sum: cc0f77655cbad8734e5e6ee43b1123bc
-SHA1: 2ab95a50346e91d3e19679d3742fa26d060434c8
-SHA256: 32d9a2197f710e0fbc25231f58b421068f4850732a6019e004e6b0972b195146
+MD5sum: 97ea6f94702f7526ba597185a6780e53
+SHA1: dc67ee0456f9d055338f3bcb33c317889766c495
+SHA256: 5b2d3d3a69c69151cddd97b55b95c6030f932c4d03b03e3ce1e7649249d93f76
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
