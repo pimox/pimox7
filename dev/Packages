@@ -5783,6 +5783,25 @@ Description: Proxmox VE Documentation helpers
  manual pages. This package is required to build most other Proxmox VE
  packages.
 
+Package: pve-doc-generator
+Source: pve-docs
+Version: 7.1-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 777
+Depends: asciidoc-base, libpve-common-perl, source-highlight, xmlto, perl:any
+Filename: dev/main/binary-arm64/pve-doc-generator_7.1-1_arm64.deb
+Size: 153172
+MD5sum: 4cb6147c57aee334d04e2ca6f05e2ef5
+SHA1: 1d256ee6b0d1ac0d4299b7c2917a9b0bcc918d38
+SHA256: dab1fc28dd3b889225ffd1e8d46be0a192a46fa686f01f7c0cf8ecf661a80730
+Section: perl
+Priority: optional
+Description: Proxmox VE Documentation helpers
+ Tool to auto-generate various Proxmox VE Documentation files and
+ manual pages. This package is required to build most other Proxmox VE
+ packages.
+
 Package: pve-docs
 Version: 7.0-5
 Architecture: all
@@ -5794,6 +5813,22 @@ Size: 12487756
 MD5sum: 374b62284fb182f62f95d38601b2105c
 SHA1: b5297ac9f03e32c6069f9ba02ef6d4b0b214afd4
 SHA256: 9362758f287722ab9d99ada52adb5b0e0b9e8d1dc4f988ec5b530907284cd3ee
+Section: doc
+Priority: optional
+Description: Proxmox VE Documentation
+ This package contains the Proxmox VE Documentation files.
+
+Package: pve-docs
+Version: 7.1-1
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 23376
+Depends: libjs-extjs, perl:any
+Filename: dev/main/binary-all/pve-docs_7.1-1_all.deb
+Size: 12505276
+MD5sum: 854f5e762e12f56623dffeb13ece0e56
+SHA1: 63b5545539d9c5254611290ee594034a9c11d115
+SHA256: 04d5c0bfbcdd94a4a86a7e7a0242d73e2a16880956ed5b85c63a86c130e1a43c
 Section: doc
 Priority: optional
 Description: Proxmox VE Documentation
@@ -5812,6 +5847,24 @@ Size: 28924
 MD5sum: 2c89c036d19c1302e38dc60ad1534218
 SHA1: ff0c3a82f6d06a0719264835dbbc5b61f02a2d1f
 SHA256: 37be6d1b6bd77b0bc81f02c4e44e5afce263f22b7968442e6fbc2754380b0c49
+Section: doc
+Priority: optional
+Description: Proxmox VE Documentation - mediawiki plugin
+ This package contains tools to view Proxmox VE Documentation with mediakiki.
+
+Package: pve-docs-mediawiki
+Source: pve-docs
+Version: 7.1-1
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 268
+Depends: libhtml-parser-perl, libmediawiki-api-perl, pve-docs, perl:any
+Suggests: apache2
+Filename: dev/main/binary-all/pve-docs-mediawiki_7.1-1_all.deb
+Size: 29784
+MD5sum: f7bb9580b9be89b517d11480a11b8874
+SHA1: e611c7e550bf587a175c2832bc0a89d14c914ff6
+SHA256: d88de2d3146ae4194e14c5df28e26c73999a9da194a8dfee2346727fa2b642fa
 Section: doc
 Priority: optional
 Description: Proxmox VE Documentation - mediawiki plugin
