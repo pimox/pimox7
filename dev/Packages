@@ -2457,6 +2457,22 @@ Description: cross-browser JavaScript library
  Ext JS is a cross-browser JavaScript library for building rich internet
  applications.
 
+Package: libjs-qrcodejs
+Version: 1.20201119-pve1
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 31
+Filename: dev/main/binary-all/libjs-qrcodejs_1.20201119-pve1_all.deb
+Size: 8376
+MD5sum: 44c9d78abad803ee4845a8ef8c88a5d7
+SHA1: 2e9e1091672005ccfccae23814587c7a99c12e0c
+SHA256: b7c96a64537d35c954ae1cb468e2dfc0bacafed79d014750c9366c5938fa5e98
+Section: web
+Priority: optional
+Homepage: https://davidshimjs.github.io/qrcodejs/
+Description: Cross-Browser JavaScript library for making QRCodes
+ Cross-Browser QRCode generator supporting HTML5 Canvas and table tags.
+
 Package: libproxmox-acme-perl
 Source: libproxmox-acme
 Version: 1.2.0
