@@ -4490,15 +4490,15 @@ Source: rust-proxmox-http
 Version: 0.5.1-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 66
+Installed-Size: 77
 Depends: librust-anyhow-1+default-dev
 Suggests: librust-proxmox-http+base64-dev (= 0.5.1-1), librust-proxmox-http+client-dev (= 0.5.1-1), librust-proxmox-http+futures-dev (= 0.5.1-1), librust-proxmox-http+http-dev (= 0.5.1-1), librust-proxmox-http+http-helpers-dev (= 0.5.1-1), librust-proxmox-http+hyper-dev (= 0.5.1-1), librust-proxmox-http+openssl-dev (= 0.5.1-1), librust-proxmox-http+proxmox-dev (= 0.5.1-1), librust-proxmox-http+proxmox-io-dev (= 0.5.1-1), librust-proxmox-http+tokio-dev (= 0.5.1-1), librust-proxmox-http+tokio-openssl-dev (= 0.5.1-1), librust-proxmox-http+websocket-dev (= 0.5.1-1)
 Provides: librust-proxmox-http+default-dev (= 0.5.1-1), librust-proxmox-http-0+default-dev (= 0.5.1-1), librust-proxmox-http-0-dev (= 0.5.1-1), librust-proxmox-http-0.5+default-dev (= 0.5.1-1), librust-proxmox-http-0.5-dev (= 0.5.1-1), librust-proxmox-http-0.5.1+default-dev (= 0.5.1-1), librust-proxmox-http-0.5.1-dev (= 0.5.1-1)
 Filename: dev/main/binary-arm64/librust-proxmox-http-dev_0.5.1-1_arm64.deb
-Size: 13616
-MD5sum: 5525ccf94f2b74ddfad8f48a0e57cb19
-SHA1: 4886bc05ffefc65a7197f1b37b2cad6720bc71b7
-SHA256: f4b83e5cdb5fa19bf6dcb54637992d3b697a8a0d33d743fa52a857960a65f709
+Size: 15672
+MD5sum: 4b54db02b9911db3077c90bdae3cf0da
+SHA1: 03e6b4fc4173bbbcbb2894e438ff83650188e7ff
+SHA256: 27f7ec01c821112ca813e4c02189bd067fdace1733a15983f4e6fccf4ae6c057
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -4732,6 +4732,28 @@ Description: Proxmox api schema and validation - feature "api-macro" and 1 more
  .
  Additionally, this package also provides the "proxmox-api-macro" feature.
 
+Package: librust-proxmox-schema+api-macro-dev
+Source: rust-proxmox-schema
+Version: 1.0.1-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 9
+Depends: librust-proxmox-schema-dev (= 1.0.1-1), librust-proxmox-api-macro-1+default-dev
+Provides: librust-proxmox-schema+proxmox-api-macro-dev (= 1.0.1-1), librust-proxmox-schema-1+api-macro-dev (= 1.0.1-1), librust-proxmox-schema-1+proxmox-api-macro-dev (= 1.0.1-1), librust-proxmox-schema-1.0+api-macro-dev (= 1.0.1-1), librust-proxmox-schema-1.0+proxmox-api-macro-dev (= 1.0.1-1), librust-proxmox-schema-1.0.1+api-macro-dev (= 1.0.1-1), librust-proxmox-schema-1.0.1+proxmox-api-macro-dev (= 1.0.1-1)
+Filename: dev/main/binary-arm64/librust-proxmox-schema+api-macro-dev_1.0.1-1_arm64.deb
+Size: 1228
+MD5sum: 52cd6c477962bb291e7955ca490f809b
+SHA1: 91757bb7b531a079261347d34f6f4ba260470ff1
+SHA256: ce2333a54744b097a8d9a991835fae9623ea89885104af648841646f2639b1cb
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Proxmox api schema and validation - feature "api-macro" and 1 more
+ This metapackage enables feature "api-macro" for the Rust proxmox-schema crate,
+ by pulling in any additional dependencies needed by that feature.
+ .
+ Additionally, this package also provides the "proxmox-api-macro" feature.
+
 Package: librust-proxmox-schema+libc-dev
 Source: rust-proxmox-schema
 Version: 1.0.0-1
@@ -4745,6 +4767,26 @@ Size: 1168
 MD5sum: eaad637f8efd03c2e03000d1b7a82c3a
 SHA1: 356e1a734e02b544dfe2649e2897094a16901994
 SHA256: a5b17a3778c9582cc34aedb8c196d7b18a0ced84dec986f0327a943ace4c104a
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Proxmox api schema and validation - feature "libc"
+ This metapackage enables feature "libc" for the Rust proxmox-schema crate, by
+ pulling in any additional dependencies needed by that feature.
+
+Package: librust-proxmox-schema+libc-dev
+Source: rust-proxmox-schema
+Version: 1.0.1-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 9
+Depends: librust-proxmox-schema-dev (= 1.0.1-1), librust-libc-0.2+default-dev
+Provides: librust-proxmox-schema-1+libc-dev (= 1.0.1-1), librust-proxmox-schema-1.0+libc-dev (= 1.0.1-1), librust-proxmox-schema-1.0.1+libc-dev (= 1.0.1-1)
+Filename: dev/main/binary-arm64/librust-proxmox-schema+libc-dev_1.0.1-1_arm64.deb
+Size: 1168
+MD5sum: 5fd47c89830275abefc00698b024f5a3
+SHA1: 0ebaf3b55f9d5bf33dfa863a841671aa8f675148
+SHA256: 0b9285599301d85046c77f454bda91b026d48cb5f1348731ae5c44332ac6489a
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -4772,6 +4814,26 @@ Description: Proxmox api schema and validation - feature "nix"
  This metapackage enables feature "nix" for the Rust proxmox-schema crate, by
  pulling in any additional dependencies needed by that feature.
 
+Package: librust-proxmox-schema+nix-dev
+Source: rust-proxmox-schema
+Version: 1.0.1-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 9
+Depends: librust-proxmox-schema-dev (= 1.0.1-1), librust-nix-0.19+default-dev
+Provides: librust-proxmox-schema-1+nix-dev (= 1.0.1-1), librust-proxmox-schema-1.0+nix-dev (= 1.0.1-1), librust-proxmox-schema-1.0.1+nix-dev (= 1.0.1-1)
+Filename: dev/main/binary-arm64/librust-proxmox-schema+nix-dev_1.0.1-1_arm64.deb
+Size: 1168
+MD5sum: 4e797ca9578ff0a17402ec061dd73623
+SHA1: d7257603e64edfd2202df067ce44697ae01bb479
+SHA256: d41dcbbbfb7c93c654891cf0bb07f683d2378caece93787a259d1a5b360a4954
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Proxmox api schema and validation - feature "nix"
+ This metapackage enables feature "nix" for the Rust proxmox-schema crate, by
+ pulling in any additional dependencies needed by that feature.
+
 Package: librust-proxmox-schema+upid-api-impl-dev
 Source: rust-proxmox-schema
 Version: 1.0.0-1
@@ -4785,6 +4847,26 @@ Size: 1196
 MD5sum: b5367e2751b412f3cadd55a9f0092b77
 SHA1: 570754e9c8e2cf01eee5dd6b322bfe0840b2f618
 SHA256: 9390e0103f4ed7fc87a632dc27b8d0fd1ec376ff55a05f353997326ccb3f69a5
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Proxmox api schema and validation - feature "upid-api-impl"
+ This metapackage enables feature "upid-api-impl" for the Rust proxmox-schema
+ crate, by pulling in any additional dependencies needed by that feature.
+
+Package: librust-proxmox-schema+upid-api-impl-dev
+Source: rust-proxmox-schema
+Version: 1.0.1-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 9
+Depends: librust-proxmox-schema-dev (= 1.0.1-1), librust-libc-0.2+default-dev, librust-nix-0.19+default-dev
+Provides: librust-proxmox-schema-1+upid-api-impl-dev (= 1.0.1-1), librust-proxmox-schema-1.0+upid-api-impl-dev (= 1.0.1-1), librust-proxmox-schema-1.0.1+upid-api-impl-dev (= 1.0.1-1)
+Filename: dev/main/binary-arm64/librust-proxmox-schema+upid-api-impl-dev_1.0.1-1_arm64.deb
+Size: 1196
+MD5sum: e52ac53cb2acb77eb5802be4e3712cb1
+SHA1: f6352a1a608f050492a411c8990f8265cc11edab
+SHA256: 283cea8a03fb272acd1630a0c2c1730332c97a6c14f9b65312dad59761cd55c8
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -4806,6 +4888,27 @@ Size: 20504
 MD5sum: 318be380b5cea8d22a3c9beea62c1b90
 SHA1: a90e92583c82c56cfb5c9f9a681b8fcff4bbb6ca
 SHA256: ea793048ddc6c11de92f801b2ac1922228baf35b1058342d45c855cb652d0023
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Proxmox api schema and validation - Rust source code
+ This package contains the source for the Rust proxmox-schema crate, packaged by
+ debcargo for use with cargo and dh-cargo.
+
+Package: librust-proxmox-schema-dev
+Source: rust-proxmox-schema
+Version: 1.0.1-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 111
+Depends: librust-anyhow-1+default-dev, librust-lazy-static-1+default-dev (>= 1.4-~~), librust-regex-1+default-dev (>= 1.2-~~), librust-serde-1+default-dev, librust-serde-json-1+default-dev, librust-textwrap-0.11+default-dev
+Suggests: librust-proxmox-schema+api-macro-dev (= 1.0.1-1), librust-proxmox-schema+libc-dev (= 1.0.1-1), librust-proxmox-schema+nix-dev (= 1.0.1-1), librust-proxmox-schema+upid-api-impl-dev (= 1.0.1-1)
+Provides: librust-proxmox-schema+default-dev (= 1.0.1-1), librust-proxmox-schema+test-harness-dev (= 1.0.1-1), librust-proxmox-schema-1+default-dev (= 1.0.1-1), librust-proxmox-schema-1+test-harness-dev (= 1.0.1-1), librust-proxmox-schema-1-dev (= 1.0.1-1), librust-proxmox-schema-1.0+default-dev (= 1.0.1-1), librust-proxmox-schema-1.0+test-harness-dev (= 1.0.1-1), librust-proxmox-schema-1.0-dev (= 1.0.1-1), librust-proxmox-schema-1.0.1+default-dev (= 1.0.1-1), librust-proxmox-schema-1.0.1+test-harness-dev (= 1.0.1-1), librust-proxmox-schema-1.0.1-dev (= 1.0.1-1)
+Filename: dev/main/binary-arm64/librust-proxmox-schema-dev_1.0.1-1_arm64.deb
+Size: 20604
+MD5sum: 2a1182ab65a67a24a80749ca4c71f218
+SHA1: 76f308ddb49dcd5462eb02a00378db29dcabcc03
+SHA256: e22d008cb6c48f6cf3c534688062c91711adc734cc69fb066abb5eb32cfba765
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -4873,6 +4976,26 @@ Description: Tfa implementation for totp and u2f - feature "libc"
  This metapackage enables feature "libc" for the Rust proxmox-tfa crate, by
  pulling in any additional dependencies needed by that feature.
 
+Package: librust-proxmox-tfa+libc-dev
+Source: rust-proxmox-tfa
+Version: 1.2.0-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 9
+Depends: librust-proxmox-tfa-dev (= 1.2.0-1), librust-libc-0.2+default-dev
+Provides: librust-proxmox-tfa-1+libc-dev (= 1.2.0-1), librust-proxmox-tfa-1.2+libc-dev (= 1.2.0-1), librust-proxmox-tfa-1.2.0+libc-dev (= 1.2.0-1)
+Filename: dev/main/binary-arm64/librust-proxmox-tfa+libc-dev_1.2.0-1_arm64.deb
+Size: 1164
+MD5sum: 5b6ccf09808c522d474ce79666325d71
+SHA1: b01e74bafa59cced6d8356ed9e29a8af93ef36df
+SHA256: 7758fcbdd2d5fc71225fe4997ec0ccf6a78fab5e729f76f6acddb074c25a1528
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Tfa implementation for totp and u2f - feature "libc"
+ This metapackage enables feature "libc" for the Rust proxmox-tfa crate, by
+ pulling in any additional dependencies needed by that feature.
+
 Package: librust-proxmox-tfa+serde-json-dev
 Source: rust-proxmox-tfa
 Version: 1.1.0-1
@@ -4886,6 +5009,26 @@ Size: 1184
 MD5sum: 54281b14e50851e5287f4fb40929d371
 SHA1: 54ca79e7955d3d5708e0ba44262e0ef382ba9f6c
 SHA256: e525f251bcc14d7ac1f36cb642b972cf00d39151e6373f26cb6a892571086c3b
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Tfa implementation for totp and u2f - feature "serde_json"
+ This metapackage enables feature "serde_json" for the Rust proxmox-tfa crate,
+ by pulling in any additional dependencies needed by that feature.
+
+Package: librust-proxmox-tfa+serde-json-dev
+Source: rust-proxmox-tfa
+Version: 1.2.0-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 9
+Depends: librust-proxmox-tfa-dev (= 1.2.0-1), librust-serde-json-1+default-dev
+Provides: librust-proxmox-tfa-1+serde-json-dev (= 1.2.0-1), librust-proxmox-tfa-1.2+serde-json-dev (= 1.2.0-1), librust-proxmox-tfa-1.2.0+serde-json-dev (= 1.2.0-1)
+Filename: dev/main/binary-arm64/librust-proxmox-tfa+serde-json-dev_1.2.0-1_arm64.deb
+Size: 1184
+MD5sum: 5002c0c238de5d3b558067089347f055
+SHA1: 36b7db1cb0e260df8229f14a1c07f26ed83d0b1f
+SHA256: 517c8a6dc29b795abd1562b6e24b0a474232c2ea953fe403dce848c7ff8ac766
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -4913,6 +5056,26 @@ Description: Tfa implementation for totp and u2f - feature "u2f"
  This metapackage enables feature "u2f" for the Rust proxmox-tfa crate, by
  pulling in any additional dependencies needed by that feature.
 
+Package: librust-proxmox-tfa+u2f-dev
+Source: rust-proxmox-tfa
+Version: 1.2.0-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 9
+Depends: librust-proxmox-tfa-dev (= 1.2.0-1), librust-libc-0.2+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev
+Provides: librust-proxmox-tfa-1+u2f-dev (= 1.2.0-1), librust-proxmox-tfa-1.2+u2f-dev (= 1.2.0-1), librust-proxmox-tfa-1.2.0+u2f-dev (= 1.2.0-1)
+Filename: dev/main/binary-arm64/librust-proxmox-tfa+u2f-dev_1.2.0-1_arm64.deb
+Size: 1184
+MD5sum: c45779a37a2be446ccf1d76c11b4e7d8
+SHA1: a89d9b5d2b51d7795b77bd32e91f2f1a2b5c2f97
+SHA256: 8b4fae62905777bd3cae1d92b8e14a5eb953f21af6d9047148ec18f71d9dd1a1
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Tfa implementation for totp and u2f - feature "u2f"
+ This metapackage enables feature "u2f" for the Rust proxmox-tfa crate, by
+ pulling in any additional dependencies needed by that feature.
+
 Package: librust-proxmox-tfa-dev
 Source: rust-proxmox-tfa
 Version: 1.1.0-1
@@ -4927,6 +5090,27 @@ Size: 13328
 MD5sum: 69c3d4a8be473191ed691db5b991a1e1
 SHA1: 6d541883b9180207b979d9dc4124f4abaf899844
 SHA256: e53229fe4a497de22954ef8a09e38e33593e0c7c452b1cd219e943d3a7b15a0f
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Tfa implementation for totp and u2f - Rust source code
+ This package contains the source for the Rust proxmox-tfa crate, packaged by
+ debcargo for use with cargo and dh-cargo.
+
+Package: librust-proxmox-tfa-dev
+Source: rust-proxmox-tfa
+Version: 1.2.0-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 55
+Depends: librust-anyhow-1+default-dev, librust-base32-0.4+default-dev, librust-base64-0.12+default-dev, librust-hex-0.4+default-dev, librust-openssl-0.10+default-dev, librust-percent-encoding-2+default-dev (>= 2.1-~~), librust-serde-1+default-dev, librust-serde-plain-1+default-dev
+Suggests: librust-proxmox-tfa+libc-dev (= 1.2.0-1), librust-proxmox-tfa+serde-json-dev (= 1.2.0-1), librust-proxmox-tfa+u2f-dev (= 1.2.0-1)
+Provides: librust-proxmox-tfa+default-dev (= 1.2.0-1), librust-proxmox-tfa-1+default-dev (= 1.2.0-1), librust-proxmox-tfa-1-dev (= 1.2.0-1), librust-proxmox-tfa-1.2+default-dev (= 1.2.0-1), librust-proxmox-tfa-1.2-dev (= 1.2.0-1), librust-proxmox-tfa-1.2.0+default-dev (= 1.2.0-1), librust-proxmox-tfa-1.2.0-dev (= 1.2.0-1)
+Filename: dev/main/binary-arm64/librust-proxmox-tfa-dev_1.2.0-1_arm64.deb
+Size: 13412
+MD5sum: b6a13da1239ddbdc71f12ab790cd05e4
+SHA1: d655f57a2ed6eb84a94f5e8838acd17f691c0f5f
+SHA256: 262015ea237073fa9ece4921761dfd043d800e68568a9ee91225539ec4cf7323
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -6115,13 +6299,13 @@ Source: rust-pve-lxc-syscalld
 Version: 1.0.0-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 682
+Installed-Size: 678
 Depends: libc6 (>= 2.18), libgcc-s1 (>= 4.2), libsystemd0
 Filename: dev/main/binary-arm64/pve-lxc-syscalld_1.0.0-1_arm64.deb
-Size: 224896
-MD5sum: 13cbbc01ceb813bcba186e387cd5aa22
-SHA1: 6a44fafb773b5e5c116d4c30b9c5b65525304637
-SHA256: f50e1721f3b647ac8ae4d2a404ccbeab0856314c614fb96ea52efdcd9771e997
+Size: 220512
+MD5sum: d897704f1de8eb2309bd025571eb6305
+SHA1: 8320aa0522be488f0b71b6982f2f5d29e7fd47df
+SHA256: 9f016f92d88152b42bf44b198c6ed8ed30492c6a1ebce0a1f98e25e79a561886
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
