@@ -3942,6 +3942,27 @@ Description: Proxmox library for APT - Rust source code
  This package contains the source for the Rust proxmox-apt crate, packaged by
  debcargo for use with cargo and dh-cargo.
 
+Package: librust-proxmox-apt-dev
+Source: rust-proxmox-apt
+Version: 0.8.0-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 382
+Depends: librust-anyhow-1+default-dev, librust-hex-0.4+default-dev (>= 0.4.3-~~), librust-once-cell-1+default-dev (>= 1.3.1-~~), librust-openssl-0.10+default-dev, librust-proxmox-schema-1+api-macro-dev, librust-proxmox-schema-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev
+Provides: librust-proxmox-apt+default-dev (= 0.8.0-1), librust-proxmox-apt-0+default-dev (= 0.8.0-1), librust-proxmox-apt-0-dev (= 0.8.0-1), librust-proxmox-apt-0.8+default-dev (= 0.8.0-1), librust-proxmox-apt-0.8-dev (= 0.8.0-1), librust-proxmox-apt-0.8.0+default-dev (= 0.8.0-1), librust-proxmox-apt-0.8.0-dev (= 0.8.0-1)
+Filename: dev/main/binary-arm64/librust-proxmox-apt-dev_0.8.0-1_arm64.deb
+Size: 71696
+MD5sum: e135a0bd6f1712997ca6066c11c4ce6d
+SHA1: 0f604b083a30be2d6a8d297a1f68fbde48fdbacf
+SHA256: 6b12b74a46b054186be26922750911bd03417b5d0b2d02322749a57bced67732
+Section: rust
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.proxmox.com
+Description: Proxmox library for APT - Rust source code
+ This package contains the source for the Rust proxmox-apt crate, packaged by
+ debcargo for use with cargo and dh-cargo.
+
 Package: librust-proxmox-borrow-dev
 Source: rust-proxmox-borrow
 Version: 1.0.1-1
@@ -4579,6 +4600,26 @@ Size: 6824
 MD5sum: a84342a2626c3c8a32953e0c108290b8
 SHA1: 09c5d54587a5588b25ee0ce46acd11b8b10533f2
 SHA256: 61fdcc76f4cdf065dfc8de2616568804e0e77ee8d449a62a0aa362afee6e0712
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Rust crate "proxmox-openid" - Rust source code
+ This package contains the source for the Rust proxmox-openid crate, packaged by
+ debcargo for use with cargo and dh-cargo.
+
+Package: librust-proxmox-openid-dev
+Source: rust-proxmox-openid
+Version: 0.8.1-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 29
+Depends: librust-anyhow-1+default-dev, librust-curl-0.4+default-dev (>= 0.4.33-~~), librust-http-0.2+default-dev, librust-nix-0.19+default-dev (>= 0.19.1-~~), librust-openidconnect-2+curl-dev, librust-proxmox-0.15+default-dev, librust-proxmox-time-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-url-2+default-dev (>= 2.1-~~)
+Provides: librust-proxmox-openid+default-dev (= 0.8.1-1), librust-proxmox-openid-0+default-dev (= 0.8.1-1), librust-proxmox-openid-0-dev (= 0.8.1-1), librust-proxmox-openid-0.8+default-dev (= 0.8.1-1), librust-proxmox-openid-0.8-dev (= 0.8.1-1), librust-proxmox-openid-0.8.1+default-dev (= 0.8.1-1), librust-proxmox-openid-0.8.1-dev (= 0.8.1-1)
+Filename: dev/main/binary-arm64/librust-proxmox-openid-dev_0.8.1-1_arm64.deb
+Size: 6820
+MD5sum: d724a629cb5305a9da05632760ff3217
+SHA1: ec37d3fbe0555cfbc14f1cc9d4afc5341a8da215
+SHA256: 90fa01b7dbac8e0fb0deb9e11658658e5ca205a7bd0d2a393fff7985627e01f0
 Section: rust
 Priority: optional
 Multi-Arch: same
