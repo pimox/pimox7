@@ -2515,6 +2515,28 @@ Description: Proxmox ACME integration perl library
  Used in perl-based Proxmox project as common interface for DNS and HTTP ACME
  challenges.
 
+Package: libproxmox-acme-perl
+Source: libproxmox-acme
+Version: 1.4.0
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 38
+Depends: libpve-common-perl (>= 6~), perl:any
+Recommends: libproxmox-acme-plugins
+Breaks: libpve-common-perl (<< 6.0-20)
+Replaces: libpve-common-perl (<< 6.0-20)
+Filename: dev/main/binary-all/libproxmox-acme-perl_1.4.0_all.deb
+Size: 10176
+MD5sum: 7317b2ecd939249d87b02f7b92be0b80
+SHA1: e6c46bd8238fe396c9d6b58d68cc4615854f3e4a
+SHA256: ffb570eaa10151b3e95aa71b1cc1d1e566c8b07d492fb93861128ae31282ded3
+Section: admin
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox ACME integration perl library
+ Used in perl-based Proxmox project as common interface for DNS and HTTP ACME
+ challenges.
+
 Package: libproxmox-acme-plugins
 Source: libproxmox-acme
 Version: 1.2.0
@@ -2552,6 +2574,28 @@ Size: 110284
 MD5sum: 92e79f992fc0555d9f535afe2e772318
 SHA1: 6f58e6e9045ed4e60c5ebb03726755850480f672
 SHA256: 5c8a81e38e1e664959c57726766715bf13d1f81451822a1e3f39e46af5916029
+Section: admin
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox acme.sh wrapper for DNS API plugins
+ Used in Proxmox project to provide DNS API plugins for issuing ACME DNS
+ challenges with a small wrapper executable.
+
+Package: libproxmox-acme-plugins
+Source: libproxmox-acme
+Version: 1.4.0
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 752
+Depends: coreutils (>= 8.30-1), curl (>= 7.64.0-1), sed (>= 4.7-1)
+Recommends: idn
+Breaks: libproxmox-acme-perl (<< 1.1.0)
+Replaces: libproxmox-acme-perl (<< 1.1.0)
+Filename: dev/main/binary-all/libproxmox-acme-plugins_1.4.0_all.deb
+Size: 110996
+MD5sum: 493f7ddf8477b9613efc5181e635ab37
+SHA1: 9b2a92b20d1d63877c5015da895888ebb8830de1
+SHA256: 7a6e460011e7243b83f0700365c2483690e8361ccd4d76274fd25a57f64c04c0
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -5468,10 +5512,10 @@ Architecture: all
 Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 373
 Filename: dev/main/binary-all/pbs-i18n_2.5-1_all.deb
-Size: 92204
-MD5sum: 6f4d0ecca8fc4f2a3c895a190c66faab
-SHA1: e7cc7c6e3e1b7c17d2f4f37e24bb45e9f776a77b
-SHA256: 81e24295f08607925a3a7cbe4ad9c51df03901c7a2725bf5b499bcf89e1a6ced
+Size: 92232
+MD5sum: dc2ed235c4d87ef272249ecc7a29fc60
+SHA1: 01f402e2d5e45bbc98a8714d1641b48d5a6dfa4c
+SHA256: 62336bcb8a38a5b4a02d1f902e2363ea59524bcb4474bb3578abd50e52e15f86
 Section: perl
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -5502,10 +5546,10 @@ Architecture: all
 Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 544
 Filename: dev/main/binary-all/pmg-i18n_2.5-1_all.deb
-Size: 134124
-MD5sum: de6046c86b4f41c9f8a5cf3be52355f5
-SHA1: b34768cd9363362b1a9a2475d18e8dd268259121
-SHA256: 843be9e202c568e2d8684d9b7625a5a7ef04289efb1f8b71a9224db5a87470a4
+Size: 134092
+MD5sum: 97c7486b93c95167b93e4e2ec6d584b1
+SHA1: f3f3cbbf9d5cc5e89858b9505f079aed47421e9b
+SHA256: 3a859c8c3f59354145665279f16803f34662afe313bdd8632bef755cd8b694fd
 Section: perl
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -6054,12 +6098,12 @@ Source: proxmox-i18n
 Version: 2.5-1
 Architecture: all
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 794
+Installed-Size: 795
 Filename: dev/main/binary-all/pve-i18n_2.5-1_all.deb
-Size: 198036
-MD5sum: ac2a7fea55c7c769d229ad13ec80ce3d
-SHA1: d41279649028ef8687798fde6da359e315976617
-SHA256: 722f0f05e1b8affa70a27f6722182aa0d7ba6099c8f0bb092d6c0b9c2f5f2e1e
+Size: 198224
+MD5sum: 726e374a61877ac1d3a528020a015859
+SHA1: 1e078c62967d5261cff49bd9756be1b54e780ed1
+SHA256: 0a5b3efa2a1db34ff04b8bf1a4bfd300802cd527ea324361cea9a7ded8dc4be4
 Section: perl
 Priority: optional
 Homepage: https://www.proxmox.com
