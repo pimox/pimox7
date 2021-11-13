@@ -182,7 +182,7 @@ printf "
       --->  $GREEN https://$RPI_IP_ONLY:8006/ $NORMAL <---
       
          run ---> $YELLOW apt upgrade -y $NORMAL <---
-           in a root shell to complet the installation.
+           in a root shell to complete the installation.
            
 \n" && sleep 10 && reboot
 
