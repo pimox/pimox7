@@ -181,7 +181,7 @@ printf "
     after rebbot the PVE web interface will be reachable here :
       --->  $GREEN https://$RPI_IP_ONLY:8006/ $NORMAL <---
       
-         run ---> $YELLOW apt get upgrade -y $NORMAL <---
+         run ---> $YELLOW apt upgrade -y $NORMAL <---
            in a root shell to complet the installation.
            
 \n" && sleep 10 && reboot
