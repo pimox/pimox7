@@ -26,8 +26,9 @@ RPiOS64 autoinstall
 0. Flash and startup the latest image from https://downloads.raspberrypi.org/raspios_arm64/ .
 1. sudo -s
 2. curl https://raw.githubusercontent.com/pimox/pimox7/master/RPiOS64-IA-Install.sh > RPiOS64-IA-Install.sh
-3. ./RPiOS64-IA-Install.sh
-4. Follow the pormpots
+3. chmod +x RPiOS64-IA-Install.sh
+4. ./RPiOS64-IA-Install.sh
+5. Follow the pormpots
 
 Notes
 ---
