@@ -168,6 +168,9 @@ printf "
 =========================================================================================
                    $GREEN     ! INSTALATION COMPLETED ! WAIT ! REBOOT ! $NORMAL
 =========================================================================================
+
+    after rebbot the PVE web interface will be reachable here :
+      --->  $GREEN https://$RPI_IP:8006/ $NORMAL <---
 \n" && sleep 7 && reboot
 
 #### EOF ####
