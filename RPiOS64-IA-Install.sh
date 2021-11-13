@@ -1,6 +1,6 @@
 # !/bin/bash
 #######################################################################
-# Name:     RPiOS64-IA-Install.sh           Version:      0.1.1       #
+# Name:     RPiOS64-IA-Install.sh           Version:      0.1.2       #
 # Created:  07.09.2021                      Modified: 13.11.2021      #
 # Author:   TuxfeatMac J.T.                                           #
 # Purpose:  interactive, automatic, Pimox7 installation RPi4B, RPi3B+ #
@@ -86,13 +86,17 @@ THE PIMOX REPO WILL BE ADDED IN : $YELLOW /etc/apt/sources.list.d/pimox.list $NO
 $GRAY# Pimox 7 Development Repo$NORMAL
 deb https://raw.githubusercontent.com/pimox/pimox7/master/ dev/
 =========================================================================================
-THE NETWORK CONFIGURATION IN : $YELLOW /etc/network/interfaces $NORMAL WILL BE $RED OVERWRITTEN $NORMAL !!! WITH :
+THE NETWORK CONFIGURATION IN : $YELLOW /etc/network/interfaces $NORMAL WILL BE $RED CHANGED $NORMAL !!! TO :
 auto lo
 iface lo inet loopback
-auto  eth0
-iface eth0 inet static
-address $GREEN$RPI_IP$NORMAL
-gateway $GREEN$GATEWAY$NORMAL
+iface eth0 inet manual
+auto vmbr0
+iface vmbr0 inet static
+        address $GREEN $RPI_IP $NORMAL
+        gateway $GREEN $GATEWAY $NORMAL
+        bridge-ports eth0
+        bridge-stp off
+        bridge-fd 0
 =========================================================================================
 THE HOSTNAMES IN : $YELLOW /etc/hosts $NORMAL WILL BE $RED OVERWRITTEN $NORMAL !!! WITH :
 127.0.0.1\tlocalhost
@@ -125,16 +129,6 @@ printf "
 
 #### SET NEW HOSTNAME ###################################################################################################################
 hostnamectl set-hostname $HOSTNAME
-printf "127.0.0.1\tlocalhost
-$RPI_IP_ONLY\t$HOSTNAME" > /etc/hosts
-
-#### RECONFIGURE NETWORK ################################################################################################################
-printf "auto lo
-iface lo inet loopback
-auto eth0
-iface eth0 inet static
-address $RPI_IP
-gateway $GATEWAY\n" > /etc/network/interfaces
 
 #### ADD SOURCE PIMOX7 + KEY & UPDATE & INSTALL RPI-KERNEL-HEADERS #######################################################################
 printf "# PiMox7 Development Repo
@@ -146,9 +140,6 @@ apt update && apt upgrade -y && apt install -y raspberrypi-kernel-headers
 apt purge -y dhcpcd5
 apt autoremove -y
 
-#### PREVENT DEFAULT NETCONFIGURATION ####################################################################################################
-rm -r /etc/network/interfaces.new
-
 #### FIX CONTAINER STATS NOT SHOWING UP IN WEB GUI #######################################################################################
 if [ "$(cat /boot/cmdline.txt | grep cgroup)" != "" ]
  then
@@ -159,6 +150,24 @@ fi
 
 #### INSTALL PIMOX7 AND REBOOT ###########################################################################################################
 DEBIAN_FRONTEND=noninteractive apt install -y -o Dpkg::Options::="--force-confdef" proxmox-ve
+
+#### RECONFIGURE NETWORK #### /etc/hosts REMOVE IPv6 #### /etc/network/interfaces.new CONFIGURE NETWORK TO CHANGE ON REBOOT ##############
+printf "127.0.0.1\tlocalhost
+$RPI_IP_ONLY\t$HOSTNAME\n" > /etc/hosts
+printf "auto lo
+iface lo inet loopback
+
+iface eth0 inet manual
+
+auto vmbr0
+iface vmbr0 inet static
+        address $RPI_IP
+        gateway $GATEWAY
+        bridge-ports eth0
+        bridge-stp off
+        bridge-fd 0 \n" > /etc/network/interfaces.new
+
+### FINAL MESSAGE ########################################################################################################################
 printf "
 =========================================================================================
                         ! ERRORS ARE NOMALAY FINE -> README.md  !
@@ -170,7 +179,7 @@ printf "
 =========================================================================================
 
     after rebbot the PVE web interface will be reachable here :
-      --->  $GREEN https://$RPI_IP:8006/ $NORMAL <---
+      --->  $GREEN https://$RPI_IP_ONLY:8006/ $NORMAL <---
 \n" && sleep 7 && reboot
 
 #### EOF ####
