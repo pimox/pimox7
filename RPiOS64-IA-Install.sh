@@ -152,6 +152,11 @@ fi
 DEBIAN_FRONTEND=noninteractive apt install -y -o Dpkg::Options::="--force-confdef" proxmox-ve
 
 #### RECONFIGURE NETWORK #### /etc/hosts REMOVE IPv6 #### /etc/network/interfaces.new CONFIGURE NETWORK TO CHANGE ON REBOOT ##############
+printf "
+=========================================================================================
+$GREEN ! FIXING NETWORK CONFIGURATION.... ERRORS ARE NOMALAY FINE AND RESOLVED AFTER REBOOT ! $NORMAL
+=========================================================================================
+\n"
 printf "127.0.0.1\tlocalhost
 $RPI_IP_ONLY\t$HOSTNAME\n" > /etc/hosts
 printf "auto lo
@@ -170,16 +175,15 @@ iface vmbr0 inet static
 ### FINAL MESSAGE ########################################################################################################################
 printf "
 =========================================================================================
-                        ! ERRORS ARE NOMALAY FINE -> README.md  !
-=========================================================================================
-\n" && sleep 3
-printf "
-=========================================================================================
                    $GREEN     ! INSTALATION COMPLETED ! WAIT ! REBOOT ! $NORMAL
 =========================================================================================
 
     after rebbot the PVE web interface will be reachable here :
       --->  $GREEN https://$RPI_IP_ONLY:8006/ $NORMAL <---
-\n" && sleep 7 && reboot
+      
+         run ---> $YELLOW apt get upgrade -y $NORMAL <---
+           in a root shell to complet the installation.
+           
+\n" && sleep 10 && reboot
 
 #### EOF ####
