@@ -21,7 +21,7 @@ Install
 2. sudo -s
 3. curl https://raw.githubusercontent.com/pimox/pimox7/master/pimox.sh | sh
 
-RPiOS64 autoinstall
+Install from scratch, RPiOS64bit Interactive Automatic Installer
 ---
 0. Flash and startup the latest image from https://downloads.raspberrypi.org/raspios_arm64/ .
 1. sudo -s
