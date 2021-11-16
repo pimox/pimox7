@@ -172,6 +172,13 @@ iface vmbr0 inet static
         bridge-stp off
         bridge-fd 0 \n" > /etc/network/interfaces.new
 
+#### CONFIGURE PIMOX7 BANNER #############################################################################################################
+cp /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js.auto.backup
+SEARCH="return Ext.String.format('"
+#### PLACE HOLDER BANNER BEGINN --> #### LINE 1 ####                                                     #### LINEBREAK #### -- #### LINE 2 #####
+REPLACE="return Ext.String.format(' This is a unofficial development build of PVE7 - PIMOX7 - https://github.com/pimox/pimox7  Build to run a PVE7 on the RPi4. ! ! ! NO GUARANTEE NOT OFFICCIAL SUPPORTED ! ! ! ');"
+sed -i "s|$SEARCH.*|$REPLACE|" /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
+
 ### FINAL MESSAGE ########################################################################################################################
 printf "
 =========================================================================================
