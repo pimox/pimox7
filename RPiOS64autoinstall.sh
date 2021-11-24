@@ -1,7 +1,7 @@
 # !/bin/bash
 #################################################################
 # Name:        RPiOS64fullautoinst.sh     Version:      0.0.2   #
-# Created:     07.09.2021                 Modified: 10.09.2021  #
+# Created:     07.09.2021                 Modified: 24.11.2021  #
 # Author:      TuxfeatMac J.T.                                  #
 # Purpose:     full automated Pimox7 installation RPi4B, RPi3B+ #
 #################################################################
@@ -25,14 +25,20 @@ CT_STATS='true'                 # fix cmdline.txt for GUI stats
 #### SCRIPT IS MENT TO BE TO RUN AS ROOT! NOT AS PI WITH SUDO ###
 if [ $USER != root ]
  then
-  printf "This script is ment to be to run as superuser!\n"
+  printf "PLEASE RUN THIS SCRIPT AS ROOT! DONT USE SUDO!\n"
   exit # correct it, if u know how to improve it.
 fi
-
+printf "
+====================================================================
+!    PLEASE DONT USE SUDO, USE SU TO LOGIN TO THE ROOT USER        !
+! PLEASE STOP THIS SCRIPT NOW WITH CONTROL+C IF YOU ARE USING SUDO !
+!               CONTINUING SETUP IN 3 SECONDS...                   !
+====================================================================
+\n" && sleep 3
 #### SET A ROOT PWD FOR WEB GUI LOGIN ##### #####################
 printf "
 ==========================
-! SET YOUR ROOT PASSWORD !
+! SETUP NEW ROOT PASSWORD !
 ==========================
 " && passwd
 if [ $? != 0 ]; then exit; fi
@@ -106,14 +112,14 @@ fi
 # INSTALL PIMOX7 AND REBOOT#########################################
 DEBIAN_FRONTEND=noninteractive apt install -y -o Dpkg::Options::="--force-confdef" proxmox-ve
 printf "
-=========================================
-! ERRORS ARE NOMALAY FINE -> README.md  !
-=========================================
+========================================================
+! ANY ERRORS THAT SHOW UP SHOULD BE FINE! -> README.md !
+========================================================
 \n" && sleep 3
 printf "
-=========================================
-! INSTALATION COMPLETED ! WAIT ! REBOOT !
-=========================================
+==================================================
+! INSTALLATION COMPLETED! REBOOTING IN 7 SECONDS !
+==================================================
 \n" && sleep 7 && reboot
 
 #### EOF ####
