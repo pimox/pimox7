@@ -7341,6 +7341,25 @@ Description: edk2 based UEFI firmware modules for virtual machines
  and 64-bit ARM virtual machines. It includes full support for UEFI, including
  Secure Boot, allowing use of UEFI in place of a traditional BIOS in your VM.
 
+Package: pve-edk2-firmware
+Version: 3.20210831-2
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 412212
+Filename: dev/main/binary-all/pve-edk2-firmware_3.20210831-2_all.deb
+Size: 10918808
+MD5sum: f1541d2614807b01eee1ef74cdb821a4
+SHA1: c7a330969056f460cddd96991e2476571d4213b9
+SHA256: b9e3a97d5d38479eda229102f258babdbe70f7d6ad468dbb430b23206337a3f7
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.tianocore.org
+Description: edk2 based UEFI firmware modules for virtual machines
+ Open Virtual Machine Firmware is a build of EDK II for 64-bit, 32-bit x86
+ and 64-bit ARM virtual machines. It includes full support for UEFI, including
+ Secure Boot, allowing use of UEFI in place of a traditional BIOS in your VM.
+
 Package: pve-eslint
 Version: 7.28.0-1
 Architecture: all
