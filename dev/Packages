@@ -3074,6 +3074,25 @@ Description: Components of Proxmox Virtual Environment which have been ported to
  Contains parts of Proxmox Virtual Environment which have been ported to, or
  newly implemented in the Rust programming language.
 
+Package: libpve-rs-perl
+Version: 0.4.4
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 3493
+Depends: perl, perlapi-5.32.1, libacl1 (>= 2.2.23), libc6 (>= 2.28), libcrypt1 (>= 1:4.1.0), libcurl3-gnutls (>= 7.16.2), libgcc-s1 (>= 4.2), libssl1.1 (>= 1.1.1), libuuid1 (>= 2.16), libzstd1 (>= 1.4.0)
+Breaks: libpve-access-control (<< 7.1-3)
+Filename: dev/main/binary-arm64/libpve-rs-perl_0.4.4_arm64.deb
+Size: 1033224
+MD5sum: 5c52379c320459dba18eac92ecbadb0a
+SHA1: 26eb3b5f8be503576653091df39b9b73274a8c4e
+SHA256: 4fd49f24927c0a39de730b204fe31b4c0a1d9073a7a3550e110a470f27341f51
+Section: perl
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: PVE parts which have been ported to Rust - Rust source code
+ This package contains the source for the Rust pve-rs crate, packaged by
+ debcargo for use with cargo and dh-cargo.
+
 Package: libpve-storage-perl
 Version: 7.0-10
 Architecture: all
