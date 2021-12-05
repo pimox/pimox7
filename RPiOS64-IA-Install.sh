@@ -175,8 +175,8 @@ iface vmbr0 inet static
 #### CONFIGURE PIMOX7 BANNER #############################################################################################################
 cp /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js.auto.backup
 SEARCH="return Ext.String.format('"
-#### PLACE HOLDER BANNER BEGINN --> #### LINE 1 ####                                                     #### LINEBREAK #### -- #### LINE 2 #####
-REPLACE="return Ext.String.format(' This is a unofficial development build of PVE7 - PIMOX7 - https://github.com/pimox/pimox7  Build to run a PVE7 on the RPi4. ! ! ! NO GUARANTEE NOT OFFICCIAL SUPPORTED ! ! ! ');"
+#### PLACE HOLDER BANNER BEGIN --> #### LINE 1 ####                                                     #### LINEBREAK #### -- #### LINE 2 #####
+REPLACE="return Ext.String.format(' This is a unofficial development build of PVE7 - PIMOX7 - https://github.com/pimox/pimox7  Build to run a PVE7 on the RPi4. ! ! ! NO GUARANTEE NOT OFFICIALLY SUPPORTED ! ! ! ');"
 sed -i "s|$SEARCH.*|$REPLACE|" /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
 
 ### FINAL MESSAGE ########################################################################################################################
@@ -185,7 +185,7 @@ printf "
                    $GREEN     ! INSTALATION COMPLETED ! WAIT ! REBOOT ! $NORMAL
 =========================================================================================
 
-    after rebbot the PVE web interface will be reachable here :
+    after reboot the PVE web interface will be reachable here :
       --->  $GREEN https://$RPI_IP_ONLY:8006/ $NORMAL <---
       
          run ---> $YELLOW apt upgrade -y $NORMAL <---
