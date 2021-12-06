@@ -15,12 +15,6 @@ Prechecks
 3. In /etc/hostname, make sure the Pi has a name.
 4. In /etc/hosts, make sure this hostname corresponds to the static IP you previous set.
 
-Install
----
-1. Do this at the console, not over a network. The network will be reconfigured as part of the install.
-2. sudo -s
-3. curl https://raw.githubusercontent.com/pimox/pimox7/master/pimox.sh | sh
-
 Install from scratch, RPiOS64bit Interactive Automatic Installer
 ---
 0. Flash and startup the latest image from https://downloads.raspberrypi.org/raspios_arm64/ .
@@ -28,7 +22,7 @@ Install from scratch, RPiOS64bit Interactive Automatic Installer
 2. curl https://raw.githubusercontent.com/pimox/pimox7/master/RPiOS64-IA-Install.sh > RPiOS64-IA-Install.sh
 3. chmod +x RPiOS64-IA-Install.sh
 4. ./RPiOS64-IA-Install.sh
-5. Follow the pormpots
+5. Follow the prompts
 
 Notes
 ---
