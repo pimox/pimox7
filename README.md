@@ -28,7 +28,7 @@ Install from scratch, RPiOS64bit Interactive Automatic Installer
 2. curl https://raw.githubusercontent.com/pimox/pimox7/master/RPiOS64-IA-Install.sh > RPiOS64-IA-Install.sh
 3. chmod +x RPiOS64-IA-Install.sh
 4. ./RPiOS64-IA-Install.sh
-5. Follow the pormpots
+5. Follow the prompts
 
 Notes
 ---
