@@ -6902,9 +6902,9 @@ Installed-Size: 24
 Depends: libc6 (>= 2.17), libsystemd0
 Filename: dev/main/binary-arm64/proxmox-mini-journalreader_1.3-1rpve1_arm64.deb
 Size: 7280
-MD5sum: c00474802169a68452db18e20c5574d2
-SHA1: 9e5078c60de23c892a966eeeb874152357fbfdf5
-SHA256: 02bcf31e4b7792cee1da8bfe4b6556ce4e7a4356bfbbfa14cb6018ff40d3225c
+MD5sum: 95e6399d61e7abfe111e3ebcb09a7661
+SHA1: 0e2a7fc4a1da86658a8ff8de7d7f07369e6d7ca5
+SHA256: 0c2a1122a3f90e511bcc1f5b0829cd94d338bf2913baf118859a3495f832aa90
 Section: admin
 Priority: optional
 Description: Minimal systemd Journal Reader
