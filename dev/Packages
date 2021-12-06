@@ -6894,6 +6894,23 @@ Description: Minimal systemd Journal Reader
  A minimal application to read the last X lines of the systemd journal or the
  last X lines before a cursor.
 
+Package: proxmox-mini-journalreader
+Version: 1.3-1rpve1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 24
+Depends: libc6 (>= 2.17), libsystemd0
+Filename: dev/main/binary-arm64/proxmox-mini-journalreader_1.3-1rpve1_arm64.deb
+Size: 7280
+MD5sum: 95e6399d61e7abfe111e3ebcb09a7661
+SHA1: 0e2a7fc4a1da86658a8ff8de7d7f07369e6d7ca5
+SHA256: 0c2a1122a3f90e511bcc1f5b0829cd94d338bf2913baf118859a3495f832aa90
+Section: admin
+Priority: optional
+Description: Minimal systemd Journal Reader
+ A minimal application to read the last X lines of the systemd journal or the
+ last X lines before a cursor.
+
 Package: proxmox-ve
 Version: 7.0-2
 Architecture: all
