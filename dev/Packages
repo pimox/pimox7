@@ -6535,6 +6535,63 @@ Description: cluster engine Votequorum library
  .
  This package contains the Votequorum library.
 
+Package: linux-headers-5.10.83-v8-rpve
+Source: linux-5.10.83-v8-rpve
+Version: 5.10.83-1
+Architecture: arm64
+Maintainer: root <root@hal.home>
+Installed-Size: 45695
+Filename: dev/main/binary-arm64/linux-headers-5.10.83-v8-rpve_5.10.83-1_arm64.deb
+Size: 7526944
+MD5sum: 0b669ae359de27f808bfbabf3b8126c1
+SHA1: a715d8437e6bbfee5c9653e494aac09a8e63b726
+SHA256: e7087e8ca70d5d4a5eeb8c28a1cb5dffc8eeebcd0d29040c7f4a24f4e911420f
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 5.10.83-v8-rpve on arm64
+ This package provides kernel header files for 5.10.83-v8-rpve on arm64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-5.10.83-v8-rpve
+Source: linux-5.10.83-v8-rpve
+Version: 5.10.83-1
+Architecture: arm64
+Maintainer: root <root@hal.home>
+Installed-Size: 98122
+Filename: dev/main/binary-arm64/linux-image-5.10.83-v8-rpve_5.10.83-1_arm64.deb
+Size: 23452228
+MD5sum: 9efba22559eb12ef2d62574161ada108
+SHA1: c3e0e88c3d42edfa92041538e55ff638b5eb97c0
+SHA256: 900d2e130941fe8ab4db6b4cd57d9d238a0b20603205eaf75924a2d9c29e0830
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 5.10.83-v8-rpve
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 5.10.83-v8-rpve.
+
+Package: linux-libc-dev
+Source: linux-5.10.83-v8-rpve
+Version: 5.10.83-1
+Architecture: arm64
+Maintainer: root <root@hal.home>
+Installed-Size: 5801
+Provides: linux-kernel-headers
+Filename: dev/main/binary-arm64/linux-libc-dev_5.10.83-1_arm64.deb
+Size: 1118884
+MD5sum: dfefd35be15956c8801fe92697639b69
+SHA1: 684e19cdb7c5e4f1dbfa2d0879471942d6ffe5a2
+SHA256: 5c386bfd8d2bfd594f01fec09cc2ac84454111860ab48a679da01497798a9ab2
+Section: devel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
 Package: lxc-pve
 Version: 4.0.9-4
 Architecture: arm64
