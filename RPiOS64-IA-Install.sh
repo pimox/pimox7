@@ -1,12 +1,12 @@
 # !/bin/bash
 #######################################################################
 # Name:     RPiOS64-IA-Install.sh           Version:      0.1.2       #
-# Created:  07.09.2021                      Modified: 13.11.2021      #
+# Created:  07.09.2021                      Modified: 06.12.2021      #
 # Author:   TuxfeatMac J.T.                                           #
 # Purpose:  interactive, automatic, Pimox7 installation RPi4B, RPi3B+ #
 #########################################################################################################################################
-# Tested with image from:														#
-# https://downloads.raspberrypi.org/raspios_lite_arm64/images/raspios_lite_arm64-2021-11-08/2021-10-30-raspios-bullseye-arm64-lite.zip	#
+# Tested with image from:														                                                                                                 #
+# https://downloads.raspberrypi.org/raspios_lite_arm64/images/raspios_lite_arm64-2021-11-08/2021-10-30-raspios-bullseye-arm64-lite.zip	 #
 #########################################################################################################################################
 
 #### SET SOME COLOURS ###################################################################################################################
@@ -19,9 +19,16 @@ GREY=$(tput setaf 8)
 #### SCRIPT IS MENT TO BE TO RUN AS ROOT! NOT AS PI WITH SUDO ###########################################################################
 if [ $USER != root ]
  then
-  printf "This script is ment to be to run as superuser!\n"
+  printf "${RED}PLEASE RUN THIS SCRIPT AS ROOT! DONT USE SUDO! $NORMAL \n"
   exit
 fi
+printf " $YELLOW
+====================================================================
+!    PLEASE DONT USE SUDO, USE SU TO LOGIN TO THE ROOT USER        !
+! PLEASE STOP THIS SCRIPT NOW WITH CONTROL+C IF YOU ARE USING SUDO !
+!               CONTINUING SETUP IN 3 SECONDS...                   !
+====================================================================
+$NORMAL\n" && sleep 3
 
 #### GET THE RPI MODEL #### EXTRA STEPS FOR RPI3B+ ##################### UNTESTED #######################################################
 RPIMOD=$(cat /sys/firmware/devicetree/base/model | cut -d ' ' -f 3)
@@ -115,7 +122,7 @@ if [ "$CONFIRM" != "y" ]; then exit; fi
 #### SET A ROOT PWD FOR WEB GUI LOGIN ###################################################################################################
 printf "
 =========================================================================================
-                          $RED ! SET YOUR ROOT PASSWORD ! $NORMAL
+                          $RED ! SETUP NEW ROOT PASSWORD ! $NORMAL
 =========================================================================================\n
 " && passwd
 if [ $? != 0 ]; then exit; fi
