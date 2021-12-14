@@ -7582,10 +7582,10 @@ Installed-Size: 61240
 Depends: coreutils | fileutils (>= 4.0)
 Provides: linux-headers
 Filename: dev/main/binary-arm64/pve-headers-5.10.83-1-pve_5.10.83-1_arm64.deb
-Size: 9711256
-MD5sum: bfd1c042b5001b19d4e2dd4c9263cd3e
-SHA1: 16c16fa2deb9137e8a72a921f36401dd86d47c1e
-SHA256: 40464f5b548e3144f1b8709a5f8dee25a34ac095a3cdcc4b2029cf76178b69bd
+Size: 9711236
+MD5sum: 25aa3f98bad0029ecaf7ea0bf239bd95
+SHA1: 764270bb081927edc5b31876a4cacd1c323fde1a
+SHA256: bba6bee49095f6a0eb6f09c24b86143dc1ea0c1028e35ff5d5fcf48befe96c05
 Section: devel
 Priority: optional
 Description: The Proxmox PVE Kernel Headers
@@ -7647,16 +7647,16 @@ Source: pve-kernel
 Version: 5.10.83-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 104509
+Installed-Size: 104508
 Depends: busybox, initramfs-tools
 Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub-efi-arm64
 Suggests: pve-firmware
 Provides: linux-image
 Filename: dev/main/binary-arm64/pve-kernel-5.10.83-1-pve_5.10.83-1_arm64.deb
-Size: 24735880
-MD5sum: f60e7905a32e8430fdb01f70cb598836
-SHA1: af4c1ac016383a0ef579248a4537b87a63ab69bb
-SHA256: 29a065c244228dc7591e35b932ad5c7334ec77af1972a38a27774ae19007dbae
+Size: 24739608
+MD5sum: a3d7cce01d104b9d655747f89c05d428
+SHA1: 8a1986bf50a1eafa638fa224b903a29b8e9b90c6
+SHA256: d8f54fe953e953d2dacfa0f62ff63d3e78860913886d119c0f747a956f3e262f
 Section: admin
 Priority: optional
 Description: The Proxmox PVE Kernel Image
@@ -7673,9 +7673,9 @@ Replaces: linux-libc-dev
 Provides: linux-libc-dev (= 5.10.83-1)
 Filename: dev/main/binary-arm64/pve-kernel-libc-dev_5.10.83-1_arm64.deb
 Size: 1028300
-MD5sum: fe6b006469b36bcfa378bf572ee5c1e6
-SHA1: 75dd020c526ed35cb204a7025950fde0ca87bbad
-SHA256: f4d67017bf07cdb09122f7ddd7fc4213c1dffbc7d852ed5d6667a7a03fc305ce
+MD5sum: a1e15c914dd030897fd1d5f73c8c6adb
+SHA1: e3754085def1801ee23c6c0ad5141cf9979110a9
+SHA256: 58824b9ff9ccd5e005e9509a272d2d10d7ca8d4297eaa3831bf237b6b5f14371
 Section: devel
 Priority: optional
 Description: Linux support headers for userspace development
