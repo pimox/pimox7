@@ -7711,6 +7711,24 @@ Description: Linux kernel version specific tools for version 5.10
  This package provides the architecture dependent parts for kernel
  version locked tools (such as perf and x86_energy_perf_policy)
 
+Package: linux-tools-5.10
+Source: pve-kernel
+Version: 5.10.95-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 3375
+Depends: linux-base, libbabeltrace1 (>= 1.5.4), libc6 (>= 2.28), libcap2 (>= 1:2.10), libdw1 (>= 0.158), libelf1 (>= 0.144), liblzma5 (>= 5.1.1alpha+20120614), libnuma1 (>= 2.0.11), libslang2 (>= 2.2.4), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.2.3.3)
+Filename: dev/main/binary-arm64/linux-tools-5.10_5.10.95-1_arm64.deb
+Size: 1142424
+MD5sum: 5f901d34a359a52e0b37ddafd955aae2
+SHA1: 98fbd41b9a37f3c0e4e59e784059c1b258fa37e7
+SHA256: 59537beecbc6d69c6cdf2edb0da7dff70b79ee644583b346c193a509f65c3ab6
+Section: devel
+Priority: optional
+Description: Linux kernel version specific tools for version 5.10
+ This package provides the architecture dependent parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy)
+
 Package: lxc-pve
 Version: 4.0.9-4
 Architecture: arm64
@@ -8874,6 +8892,24 @@ Priority: optional
 Description: The Proxmox PVE Kernel Headers
  This package contains the linux kernel headers
 
+Package: pve-headers-5.10.95-1-pve
+Source: pve-kernel
+Version: 5.10.95-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 61257
+Depends: coreutils | fileutils (>= 4.0)
+Provides: linux-headers
+Filename: dev/main/binary-arm64/pve-headers-5.10.95-1-pve_5.10.95-1_arm64.deb
+Size: 9715004
+MD5sum: 6be1860c609f197d71fad68265ca7b10
+SHA1: ed011ee183b203545bb8b60c66112d3ef307e7f7
+SHA256: bc3f80d4330d91029239c7946e747ca0424df344c1867dbecd3cb45858d1faf4
+Section: devel
+Priority: optional
+Description: The Proxmox PVE Kernel Headers
+ This package contains the linux kernel headers
+
 Package: pve-i18n
 Source: proxmox-i18n
 Version: 2.4-1
@@ -9027,6 +9063,28 @@ Priority: optional
 Description: The Proxmox PVE Kernel Image
  This package contains the linux kernel and initial ramdisk used for booting
 
+Package: pve-kernel-5.10.95-1-pve
+Source: pve-kernel
+Version: 5.10.95-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 104865
+Depends: busybox, initramfs-tools
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub-efi-arm64
+Suggests: pve-firmware
+Conflicts: ceph-dkms, linux-image, zfs-dkms
+Replaces: ceph-dkms, linux-image, zfs-dkms
+Provides: linux-image
+Filename: dev/main/binary-arm64/pve-kernel-5.10.95-1-pve_5.10.95-1_arm64.deb
+Size: 24795176
+MD5sum: 7e3cfcf7710d53fce47e299b0a2915c5
+SHA1: 78d9e64640ea023cabac409e828516ce9d674734
+SHA256: 8a300010c15dafba82d56d278a22e542c86f5c1eb0e07a7d9f8430bdb5df74e3
+Section: admin
+Priority: optional
+Description: The Proxmox PVE Kernel Image
+ This package contains the linux kernel and initial ramdisk used for booting
+
 Package: pve-kernel-libc-dev
 Source: pve-kernel
 Version: 5.10.83-1
@@ -9121,6 +9179,26 @@ Size: 1028372
 MD5sum: 5645669260718ae150aa585743f15b3d
 SHA1: 7d613a1792d008064203d13e8c70a2b48dc2f097
 SHA256: f1e99536ddd8db1cfd10eccda4445e1c1c59ae3894fcb059fc890eded82eb846
+Section: devel
+Priority: optional
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU libc and other system libraries.
+
+Package: pve-kernel-libc-dev
+Source: pve-kernel
+Version: 5.10.95-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 5213
+Conflicts: linux-libc-dev
+Replaces: linux-libc-dev
+Provides: linux-libc-dev (= 5.10.95-1)
+Filename: dev/main/binary-arm64/pve-kernel-libc-dev_5.10.95-1_arm64.deb
+Size: 1028472
+MD5sum: 2222aab21262a2d5dcf9b14d3598935a
+SHA1: 3e55008d1d2abbebd2a395730f0e2453e1e9a033
+SHA256: 3addac45b744c33f784ed984457311a7f03e9fc5b496de943f5dfd4b1944083b
 Section: devel
 Priority: optional
 Description: Linux support headers for userspace development
