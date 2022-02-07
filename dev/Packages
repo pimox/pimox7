@@ -8901,10 +8901,10 @@ Installed-Size: 61257
 Depends: coreutils | fileutils (>= 4.0)
 Provides: linux-headers
 Filename: dev/main/binary-arm64/pve-headers-5.10.95-1-pve_5.10.95-1_arm64.deb
-Size: 9715004
-MD5sum: 6be1860c609f197d71fad68265ca7b10
-SHA1: ed011ee183b203545bb8b60c66112d3ef307e7f7
-SHA256: bc3f80d4330d91029239c7946e747ca0424df344c1867dbecd3cb45858d1faf4
+Size: 9715008
+MD5sum: 9bf3e88f9314ca0a209a71652defc244
+SHA1: 4a825dfc98f6e793d692f62191230e062744a3e9
+SHA256: a9bd27c2aec5e57fe8f3d44fc9de2697aca5801ff49cd2375e687aa550a80fba
 Section: devel
 Priority: optional
 Description: The Proxmox PVE Kernel Headers
@@ -9072,14 +9072,14 @@ Installed-Size: 104865
 Depends: busybox, initramfs-tools
 Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub-efi-arm64
 Suggests: pve-firmware
-Conflicts: ceph-dkms, linux-image, zfs-dkms
-Replaces: ceph-dkms, linux-image, zfs-dkms
+Conflicts: linux-image, zfs-dkms
+Replaces: linux-image, zfs-dkms
 Provides: linux-image
 Filename: dev/main/binary-arm64/pve-kernel-5.10.95-1-pve_5.10.95-1_arm64.deb
-Size: 24795176
-MD5sum: 7e3cfcf7710d53fce47e299b0a2915c5
-SHA1: 78d9e64640ea023cabac409e828516ce9d674734
-SHA256: 8a300010c15dafba82d56d278a22e542c86f5c1eb0e07a7d9f8430bdb5df74e3
+Size: 24794040
+MD5sum: d32ff7c854793f2749ecf34c6e632620
+SHA1: d0b3242105f4fec71d2e1b5468a07f591dc01355
+SHA256: 0164eaec7eedc5f5dca78b0b5098269b749a13e572fb9ae220b1dc874f3537f5
 Section: admin
 Priority: optional
 Description: The Proxmox PVE Kernel Image
