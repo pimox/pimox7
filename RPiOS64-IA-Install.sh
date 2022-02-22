@@ -1,7 +1,7 @@
 # !/bin/bash
 #######################################################################
 # Name:     RPiOS64-IA-Install.sh           Version:      0.1.2       #
-# Created:  07.09.2021                      Modified: 06.12.2021      #
+# Created:  07.09.2021                      Modified: 22.02.2022      #
 # Author:   TuxfeatMac J.T.                                           #
 # Purpose:  interactive, automatic, Pimox7 installation RPi4B, RPi3B+ #
 #########################################################################################################################################
