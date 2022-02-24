@@ -9865,10 +9865,10 @@ Breaks: libpve-network-perl (<< 0.5-1)
 Replaces: vlan, vzdump
 Provides: vlan, vzdump
 Filename: dev/main/binary-arm64/pve-manager_7.1-10_arm64.deb
-Size: 2065420
-MD5sum: 6bdafc8c8f5bc0901c66e4e77cdd9067
-SHA1: 6f639613dfbd1827e0225a3ca7096351c5b2fb1c
-SHA256: 471cce3bb8d15966fcbeccf050251acc65300b28228fcd6908bd582aa91cf2fc
+Size: 2065888
+MD5sum: b7aa3d2cf36ad5b512525de6cee778ea
+SHA1: 24c9c3bfc8dd2ceeb20e8397838004025600d8be
+SHA256: 3beb93a0177bdea24f58948c61ba7267b20e67922b08a899f875f7f8ee951d4e
 Section: admin
 Priority: optional
 Description: Proxmox Virtual Environment Management Tools
@@ -10596,10 +10596,10 @@ Installed-Size: 777
 Depends: dbus, genisoimage, libio-multiplex-perl, libjson-perl, libjson-xs-perl, libnet-ssleay-perl, libpve-access-control (>= 5.0-7), libpve-cluster-perl, libpve-common-perl (>= 7.1-3), libpve-guest-common-perl (>= 4.1-1), libpve-storage-perl (>= 6.3-8), libterm-readline-gnu-perl, libuuid-perl, libxml-libxml-perl, perl (>= 5.10.0-19), pve-cluster, pve-edk2-firmware (>= 3.20210831-1), pve-firewall, pve-ha-manager (>= 3.0-9), pve-qemu-kvm (>= 3.0.1-62), socat, perl:any, libc6 (>= 2.17), libglib2.0-0 (>= 2.28.0), libjson-c5 (>= 0.15)
 Breaks: pve-ha-manager (<= 3.0-4), pve-manager (<= 6.0-13)
 Filename: dev/main/binary-arm64/qemu-server_7.1-4rpve2_arm64.deb
-Size: 183680
-MD5sum: 830c9a761a091a78e03a1a539acfb70e
-SHA1: ddb4435c9b99275d4dc78324d00b5bf71faede66
-SHA256: 4af9e1bac223a5c538367741bc1fdac7bf6ff04d6efd3e40bc73cf17e7916143
+Size: 183660
+MD5sum: 626973daf00c4c346345d0608a1263f2
+SHA1: 070d9c1fed829496ead12fea41ee3ea6937fa792
+SHA256: fe791e396891c194ace8447dc9ac6a77876ae553a302310fb80518edd21d390d
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
