@@ -3124,6 +3124,24 @@ Homepage: https://davidshimjs.github.io/qrcodejs/
 Description: Cross-Browser JavaScript library for making QRCodes
  Cross-Browser QRCode generator supporting HTML5 Canvas and table tags.
 
+Package: libpmg-rs-perl
+Version: 0.4.0
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 3089
+Depends: perl, perlapi-5.32.1, libc6 (>= 2.28), libgcc-s1 (>= 4.2), libssl1.1 (>= 1.1.1), libuuid1 (>= 2.16)
+Filename: dev/main/binary-arm64/libpmg-rs-perl_0.4.0_arm64.deb
+Size: 836468
+MD5sum: c2a035ff6f46aa50699be4a89ce8ef3e
+SHA1: 6716215211cdac0e901934f63b18775e1039bc49
+SHA256: db8e22388cee07014c44d856adaeb130269081366f5eaaf428541cb00778007e
+Section: perl
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Components of Proxmox Mail Gateway which have been ported to Rust.
+ Contains parts of Proxmox Mail Gateway which have been ported to, or newly
+ implemented in the Rust programming language.
+
 Package: libproxmox-acme-perl
 Source: libproxmox-acme
 Version: 1.2.0
@@ -3181,6 +3199,28 @@ Size: 10176
 MD5sum: 7317b2ecd939249d87b02f7b92be0b80
 SHA1: e6c46bd8238fe396c9d6b58d68cc4615854f3e4a
 SHA256: ffb570eaa10151b3e95aa71b1cc1d1e566c8b07d492fb93861128ae31282ded3
+Section: admin
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox ACME integration perl library
+ Used in perl-based Proxmox project as common interface for DNS and HTTP ACME
+ challenges.
+
+Package: libproxmox-acme-perl
+Source: libproxmox-acme
+Version: 1.4.1
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 39
+Depends: libpve-common-perl (>= 6~), perl:any
+Recommends: libproxmox-acme-plugins
+Breaks: libpve-common-perl (<< 6.0-20)
+Replaces: libpve-common-perl (<< 6.0-20)
+Filename: dev/main/binary-all/libproxmox-acme-perl_1.4.1_all.deb
+Size: 10296
+MD5sum: 17e7f97e1e003969ca5a1c62793ed22a
+SHA1: a58fe7ca17afd5879642c9a453f537a077100bb4
+SHA256: fb6da935b4af0080dc72b5e42c5be2c6d65cedd6e84122ce2c917ea7fefc7375
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -3247,6 +3287,28 @@ Size: 111036
 MD5sum: 474df1d7ea4a5eaf01c0fd4aaad57ecb
 SHA1: 42e856e34a3721a38a6b87d5f924527ae533f58f
 SHA256: 71b9cb0e6243841b08c0d4e7b926b30b7fcd115551a633cc8933d19c3e3edc53
+Section: admin
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox acme.sh wrapper for DNS API plugins
+ Used in Proxmox project to provide DNS API plugins for issuing ACME DNS
+ challenges with a small wrapper executable.
+
+Package: libproxmox-acme-plugins
+Source: libproxmox-acme
+Version: 1.4.1
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 753
+Depends: coreutils (>= 8.30-1), curl (>= 7.64.0-1), sed (>= 4.7-1)
+Recommends: idn
+Breaks: libproxmox-acme-perl (<< 1.1.0)
+Replaces: libproxmox-acme-perl (<< 1.1.0)
+Filename: dev/main/binary-all/libproxmox-acme-plugins_1.4.1_all.deb
+Size: 111132
+MD5sum: cdb8939e5272a632421062a072f51dce
+SHA1: 9f085ebe6b26ca5b4d7eb63050845ffd32c0e658
+SHA256: 583819ab5ec9dd05cadee6ca02662bcca8b2d1b3e5725e556aaa23d1ecc0a910
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -3421,6 +3483,25 @@ Size: 63728
 MD5sum: 1f0ce362e4db70e4e87ea440fb015ccf
 SHA1: e1a2501d93f6074e86516d827b7f0e7f64eb0db4
 SHA256: 86bd17b62a145a57380016b0a9a5128ab3773f17be251b3daf271644917a4cc4
+Section: perl
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox VE access control library
+ This package contains the role based user management and access
+ control function used by Proxmox VE.
+
+Package: libpve-access-control
+Version: 7.1-6
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 253
+Depends: libauthen-pam-perl, libcrypt-openssl-random-perl, libcrypt-openssl-rsa-perl, libjson-perl, libjson-xs-perl, libmime-base32-perl, libnet-ldap-perl, libnet-ssleay-perl, libpve-common-perl (>= 6.0-18), libpve-cluster-perl, libpve-rs-perl (>= 0.4.3), libpve-u2f-server-perl (>= 1.0-2), liburi-perl, libuuid-perl, pve-cluster (>= 6.1-4), perl:any
+Breaks: pve-manager (<< 7.0-15)
+Filename: dev/main/binary-all/libpve-access-control_7.1-6_all.deb
+Size: 63932
+MD5sum: 407a052e04c153cfe12aa98d01d4d24f
+SHA1: 6f792e5a2157c1e161a39576283b6eacf6385816
+SHA256: fac4fa93a89e36ada3e2290399dd1411c5e535e47a7a26debafe28946cfde2d9
 Section: perl
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -3648,6 +3729,23 @@ Priority: optional
 Description: Proxmox VE base library
  This package contains the base library used by other Proxmox VE components.
 
+Package: libpve-common-perl
+Version: 7.1-3
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 423
+Depends: libclone-perl, libcrypt-openssl-random-perl, libcrypt-openssl-rsa-perl, libdevel-cycle-perl, libfilesys-df-perl, libhttp-daemon-perl, libhttp-message-perl, libio-stringy-perl, libjson-perl, liblinux-inotify2-perl, libmime-base32-perl, libnet-dbus-perl, libnet-ip-perl, libnetaddr-ip-perl, libproxmox-acme-perl, libstring-shellquote-perl, libtimedate-perl, liburi-perl, libwww-perl, libyaml-libyaml-perl, perl:any
+Breaks: ifupdown2 (<< 2.0.1-1+pve5), pmg-api (<< 6.1-7), pve-container (<< 3.0-9), pve-manager (<< 5.2-5), qemu-server (<< 7.0-19)
+Filename: dev/main/binary-all/libpve-common-perl_7.1-3_all.deb
+Size: 112364
+MD5sum: 726ef2869872ea04c165820644f9d3e4
+SHA1: 13ac71c62064610238a1d0c884bc9b3d1d95d729
+SHA256: 29324a3b47c123dd99d7b9007d15834e304e64a84160c6b8942e2b9dbc4c029b
+Section: perl
+Priority: optional
+Description: Proxmox VE base library
+ This package contains the base library used by other Proxmox VE components.
+
 Package: libpve-guest-common-perl
 Version: 4.0-2
 Architecture: all
@@ -3681,6 +3779,26 @@ Size: 25852
 MD5sum: 5c5a53922b6f02d935e319777f0a5702
 SHA1: 6934a1e0b821c5b45ad094bce89ed5f57c9b87a6
 SHA256: 1c519f8f07a83a662e5e803dcfb9ab00f599e846ecc8440822bbd10117d54f64
+Section: perl
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox VE common guest-related modules
+ This package contains a common code base for Proxmox VE guests. It is mainly
+ used by pve-container and qemu-server.
+
+Package: libpve-guest-common-perl
+Version: 4.1-1
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 125
+Depends: libpve-cluster-perl, libpve-common-perl (>= 4.0-89), libpve-storage-perl (>= 7.0-14), pve-cluster, proxmox-websocket-tunnel, perl:any
+Breaks: libpve-common-perl (<< 4.0-89), pve-container (<< 3.1-4), pve-manager (<< 6.0-10), qemu-server (<< 6.1-19)
+Replaces: libpve-common-perl (<< 4.0-89), pve-manager (<< 4.4-10)
+Filename: dev/main/binary-all/libpve-guest-common-perl_4.1-1_all.deb
+Size: 30452
+MD5sum: 2fa5fe1f38e872493a1b5ce5d2294fcf
+SHA1: 64587ef3679bcee8983d83dec652d9209ae97be8
+SHA256: 47becc57070249be5801677654e27f9ef2b9e1bc33ce6b742f881e0099b299c0
 Section: perl
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -3745,6 +3863,25 @@ Description: Proxmox Asynchrounous HTTP Server Implementation
  This package is used as base to implement the REST API in all perl based
  Proxmox projects.
 
+Package: libpve-http-server-perl
+Version: 4.1-1
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 96
+Depends: libanyevent-http-perl, libanyevent-perl (>= 7.140-3), libcrypt-ssleay-perl, libhtml-parser-perl, libhttp-date-perl, libhttp-message-perl, libio-socket-ssl-perl, libjs-bootstrap, libjs-jquery, libjson-perl, libnet-ip-perl, libpve-common-perl (>= 6.0-13), liburi-perl, perl:any
+Breaks: libpve-storage-perl (<< 7.0-11), pmg-api (<< 6.1-5), pve-manager (<< 6.1-6)
+Filename: dev/main/binary-all/libpve-http-server-perl_4.1-1_all.deb
+Size: 24840
+MD5sum: d5e571e5ab0da270a1c1a7caa5399829
+SHA1: b9fab50c8a773f0a37d26db162a51037fac2c469
+SHA256: 6a27cd0a9593e47a990a061db20be6444a00e0287ced58a7c93d996edf3b6049
+Section: perl
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox Asynchrounous HTTP Server Implementation
+ This package is used as base to implement the REST API in all perl based
+ Proxmox projects.
+
 Package: libpve-rs-perl
 Version: 0.2.3
 Architecture: arm64
@@ -3775,6 +3912,25 @@ Size: 1033224
 MD5sum: 5c52379c320459dba18eac92ecbadb0a
 SHA1: 26eb3b5f8be503576653091df39b9b73274a8c4e
 SHA256: 4fd49f24927c0a39de730b204fe31b4c0a1d9073a7a3550e110a470f27341f51
+Section: perl
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: PVE parts which have been ported to Rust - Rust source code
+ This package contains the source for the Rust pve-rs crate, packaged by
+ debcargo for use with cargo and dh-cargo.
+
+Package: libpve-rs-perl
+Version: 0.5.1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 3898
+Depends: perl, perlapi-5.32.1, libacl1 (>= 2.2.23), libc6 (>= 2.28), libcrypt1 (>= 1:4.1.0), libgcc-s1 (>= 4.2), libssl1.1 (>= 1.1.1), libuuid1 (>= 2.16), libzstd1 (>= 1.4.0)
+Breaks: libpve-access-control (<< 7.1-3)
+Filename: dev/main/binary-arm64/libpve-rs-perl_0.5.1_arm64.deb
+Size: 1160636
+MD5sum: a58d1d01e457a26d7970fa30c8386f97
+SHA1: 4b9eeaf9b7621ce907d5f03c8339d8b277bdaf2d
+SHA256: 28be89166416e042f92513a6d2b1b875732d8a75b55adb1306913bef755c4d73
 Section: perl
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -3833,6 +3989,25 @@ Size: 128196
 MD5sum: b2bae88cfbe9195111d4ec5e690498f1
 SHA1: 879454cecdeef493d52b46243d08d81c31c5a9b1
 SHA256: db699e22d6fdf1a6ec1f64c616fa5b22b481bf614d788a512bf25e72dbb27fce
+Section: perl
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox VE storage management library
+ This package contains the storage management library used by Proxmox VE.
+
+Package: libpve-storage-perl
+Version: 7.1-1
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 566
+Depends: ceph-common (>= 12.2~), ceph-fuse, cifs-utils, cstream, glusterfs-client (>= 3.4.0-2), libfile-chdir-perl, libposix-strptime-perl, libpve-apiclient-perl (>= 3.1-1), libpve-cluster-perl, libpve-common-perl (>= 6.4-1), librados2-perl, lvm2, nfs-common, proxmox-backup-client (>= 1.0~), proxmox-backup-file-restore, pve-cluster (>= 5.0-32), smartmontools, smbclient, thin-provisioning-tools, udev, perl:any
+Recommends: zfs-zed
+Breaks: libpve-guest-common-perl (<< 4.0-3), libpve-http-server-perl (<< 4.0-3), pve-container (<< 3.1-2), pve-manager (<< 5.2-12), qemu-server (<< 6.1-14)
+Filename: dev/main/binary-all/libpve-storage-perl_7.1-1_all.deb
+Size: 129140
+MD5sum: 1b7ace3cd5a996fe7e2024dc6e584a5c
+SHA1: 477b2e6f2f0797915d6c41d7211969afa347669f
+SHA256: 90a64e96959e043d4e8e5bfdaaf2ba94f3be831d27c9928bcae164f203ed5666
 Section: perl
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -4228,10 +4403,10 @@ Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 38
 Depends: libpve-access-control, librados2 (>= 0.67.5), perl (>= 5.20.1-5), perlapi-5.32.1, libc6 (>= 2.17)
 Filename: dev/main/binary-arm64/librados2-perl_1.2-1_arm64.deb
-Size: 8732
-MD5sum: f5814e32bc5e52ca3be3e49deab0a4c8
-SHA1: 2682c687237abf44526aafa42a650fb4cef579ba
-SHA256: 6d21810e041e6207e497c512b80950e41ace0400ea2ee30c9c9362ad47167273
+Size: 8724
+MD5sum: 0c6bf3ef796919024998a94c1bb03a43
+SHA1: af1ad809ddc6b3eede3bbe77fae370ce90ac1c7c
+SHA256: 17b36d467ab65fc7ea4573768d76dc43e5a0ef4301c64c620e53597bd2b0185d
 Section: perl
 Priority: optional
 Homepage: https://www.proxmox.com/
@@ -4943,10 +5118,10 @@ Installed-Size: 184
 Depends: librust-anyhow-1+default-dev, librust-proc-macro2-1+default-dev, librust-quote-1+default-dev, librust-syn-1+default-dev, librust-syn-1+extra-traits-dev, librust-syn-1+full-dev, librust-syn-1+visit-mut-dev
 Provides: librust-proxmox-api-macro+default-dev (= 1.0.1-1), librust-proxmox-api-macro-1+default-dev (= 1.0.1-1), librust-proxmox-api-macro-1-dev (= 1.0.1-1), librust-proxmox-api-macro-1.0+default-dev (= 1.0.1-1), librust-proxmox-api-macro-1.0-dev (= 1.0.1-1), librust-proxmox-api-macro-1.0.1+default-dev (= 1.0.1-1), librust-proxmox-api-macro-1.0.1-dev (= 1.0.1-1)
 Filename: dev/main/binary-arm64/librust-proxmox-api-macro-dev_1.0.1-1_arm64.deb
-Size: 34964
-MD5sum: 3001232777b8cb7fb9fc96aae6b103f8
-SHA1: 077f48b96128bfd39b71e98b7c56161940b383c7
-SHA256: e7fc0c0693bfc288a08f31951e2b3b543d9fb0b6232904e4c2307102a5aeea1a
+Size: 34932
+MD5sum: be667879b8ca2f34f72965783e639ce9
+SHA1: b16bd5f5c47ee4db2cc2d7ed80df67ea3bd6dff2
+SHA256: e9c842bf28b6d2613e39938800714b4b75547dce440b0096351fe0ed3fa1691a
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -4980,14 +5155,14 @@ Source: rust-proxmox-apt
 Version: 0.8.0-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 382
+Installed-Size: 387
 Depends: librust-anyhow-1+default-dev, librust-hex-0.4+default-dev (>= 0.4.3-~~), librust-once-cell-1+default-dev (>= 1.3.1-~~), librust-openssl-0.10+default-dev, librust-proxmox-schema-1+api-macro-dev, librust-proxmox-schema-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev
 Provides: librust-proxmox-apt+default-dev (= 0.8.0-1), librust-proxmox-apt-0+default-dev (= 0.8.0-1), librust-proxmox-apt-0-dev (= 0.8.0-1), librust-proxmox-apt-0.8+default-dev (= 0.8.0-1), librust-proxmox-apt-0.8-dev (= 0.8.0-1), librust-proxmox-apt-0.8.0+default-dev (= 0.8.0-1), librust-proxmox-apt-0.8.0-dev (= 0.8.0-1)
 Filename: dev/main/binary-arm64/librust-proxmox-apt-dev_0.8.0-1_arm64.deb
-Size: 71696
-MD5sum: e135a0bd6f1712997ca6066c11c4ce6d
-SHA1: 0f604b083a30be2d6a8d297a1f68fbde48fdbacf
-SHA256: 6b12b74a46b054186be26922750911bd03417b5d0b2d02322749a57bced67732
+Size: 72020
+MD5sum: 69594e6501243d5de5275ac5c07abe28
+SHA1: 8c06faa1d9397975b671c5fa4061f4692373af0a
+SHA256: e59aedd6e4a6677dc5e3cc07f782c6f75c27f543de74031b0c0499f6ca21de9d
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -5016,6 +5191,26 @@ Description: Proxmox async/tokio helpers - Rust source code
  This package contains the source for the Rust proxmox-async crate, packaged by
  debcargo for use with cargo and dh-cargo.
 
+Package: librust-proxmox-async-dev
+Source: rust-proxmox-async
+Version: 0.4.0
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 47
+Depends: librust-anyhow-1+default-dev, librust-futures-0.3+default-dev, librust-lazy-static-1+default-dev (>= 1.4-~~), librust-pin-utils-0.1+default-dev, librust-proxmox-io-1+default-dev, librust-proxmox-io-1+tokio-dev, librust-proxmox-lang-1+default-dev (>= 1.1-~~), librust-tokio-1+default-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+sync-dev, libssl-dev, uuid-dev
+Provides: librust-proxmox-async+default-dev (= 0.4.0), librust-proxmox-async-0+default-dev (= 0.4.0), librust-proxmox-async-0-dev (= 0.4.0), librust-proxmox-async-0.4+default-dev (= 0.4.0), librust-proxmox-async-0.4-dev (= 0.4.0), librust-proxmox-async-0.4.0+default-dev (= 0.4.0), librust-proxmox-async-0.4.0-dev (= 0.4.0)
+Filename: dev/main/binary-arm64/librust-proxmox-async-dev_0.4.0_arm64.deb
+Size: 9272
+MD5sum: 71d9ad301e71c70346d08560e4862af0
+SHA1: 9fc089c60610716e672382f01b9bcd2f0460dc9b
+SHA256: d98b03c185996b6ad391e50d95ee5c09e86692c5ea8f36061b3cedbeccfddced
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Proxmox async/tokio helpers - Rust source code
+ This package contains the source for the Rust proxmox-async crate, packaged by
+ debcargo for use with cargo and dh-cargo.
+
 Package: librust-proxmox-borrow-dev
 Source: rust-proxmox-borrow
 Version: 1.0.1-1
@@ -5024,16 +5219,36 @@ Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 18
 Provides: librust-proxmox-borrow+default-dev (= 1.0.1-1), librust-proxmox-borrow-1+default-dev (= 1.0.1-1), librust-proxmox-borrow-1-dev (= 1.0.1-1), librust-proxmox-borrow-1.0+default-dev (= 1.0.1-1), librust-proxmox-borrow-1.0-dev (= 1.0.1-1), librust-proxmox-borrow-1.0.1+default-dev (= 1.0.1-1), librust-proxmox-borrow-1.0.1-dev (= 1.0.1-1)
 Filename: dev/main/binary-arm64/librust-proxmox-borrow-dev_1.0.1-1_arm64.deb
-Size: 3704
-MD5sum: a9b8fbdbcb47ad532871c6dcaab528e3
-SHA1: 32d7a3437ce9f844647f79ba7e55ea79ddc8736b
-SHA256: b210a1e59f3cdef05663a4a90e4a75bf7637da66c12002b8baddd3930f363f6a
+Size: 3668
+MD5sum: c378351485c6efaf2bd21be6d4ab1f08
+SHA1: 45f6f9092717f102a73a716f2134d42f105aa402
+SHA256: e85e284dc3d9200d9ac0a01cc17e90b714f764f2f8020dea0d8a69880e1b229d
 Section: rust
 Priority: optional
 Multi-Arch: same
 Description: Contains the Tied type to tie a value with a lifetime to the value it borrows from - Rust source code
  This package contains the source for the Rust proxmox-borrow crate, packaged by
  debcargo for use with cargo and dh-cargo.
+
+Package: librust-proxmox-compression-dev
+Source: rust-proxmox-compression
+Version: 0.1.0-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 41
+Depends: librust-anyhow-1+default-dev, librust-bytes-1+default-dev, librust-crc32fast-1+default-dev, librust-endian-trait-0.6+default-dev, librust-flate2-1+default-dev, librust-futures-0.3+default-dev, librust-proxmox-io-1+default-dev, librust-proxmox-io-1+tokio-dev, librust-proxmox-lang-1+default-dev (>= 1.1-~~), librust-proxmox-time-1+default-dev, librust-tokio-1+default-dev (>= 1.6-~~), librust-tokio-1+fs-dev (>= 1.6-~~), librust-tokio-1+io-util-dev (>= 1.6-~~), librust-walkdir-2+default-dev
+Provides: librust-proxmox-compression+default-dev (= 0.1.0-1), librust-proxmox-compression-0+default-dev (= 0.1.0-1), librust-proxmox-compression-0-dev (= 0.1.0-1), librust-proxmox-compression-0.1+default-dev (= 0.1.0-1), librust-proxmox-compression-0.1-dev (= 0.1.0-1), librust-proxmox-compression-0.1.0+default-dev (= 0.1.0-1), librust-proxmox-compression-0.1.0-dev (= 0.1.0-1)
+Filename: dev/main/binary-arm64/librust-proxmox-compression-dev_0.1.0-1_arm64.deb
+Size: 8672
+MD5sum: 32f3398c996a63a2b8d8a9f89e6b5330
+SHA1: a160945fec29b8725ef8552633078bcc71099937
+SHA256: ae822146bfb7cbe9e2590f4083e79a148a8df0bd72840ee5d0a383a0f1775fd4
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Contains compression utilitites (such as an Zip Encoder for async rust) - Rust source code
+ This package contains the source for the Rust proxmox-compression crate,
+ packaged by debcargo for use with cargo and dh-cargo.
 
 Package: librust-proxmox-dev
 Source: rust-proxmox
@@ -5184,13 +5399,13 @@ Version: 0.6.0-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 9
-Depends: librust-proxmox-http-dev (= 0.6.0-1), librust-proxmox-http+http-helpers-dev (= 0.6.0-1), librust-futures-0.3+default-dev, librust-openssl-0.10+default-dev
+Depends: librust-proxmox-http-dev (= 0.6.0-1), librust-proxmox-http+futures-dev (= 0.6.0-1), librust-proxmox-http+http-helpers-dev (= 0.6.0-1), librust-proxmox-http+openssl-dev (= 0.6.0-1)
 Provides: librust-proxmox-http-0+client-dev (= 0.6.0-1), librust-proxmox-http-0.6+client-dev (= 0.6.0-1), librust-proxmox-http-0.6.0+client-dev (= 0.6.0-1)
 Filename: dev/main/binary-arm64/librust-proxmox-http+client-dev_0.6.0-1_arm64.deb
-Size: 1184
-MD5sum: 0afb1db019245ddc4f16a254491bdd55
-SHA1: c4c9c1b9a45b07e7c1f3e5a1d2b4251745e9009e
-SHA256: 0b81f4baef247b30871f89037236d487200266b23ec551b41882ee845c872cbb
+Size: 1176
+MD5sum: b895a5cf078ba2eb2da3a5bf2890b380
+SHA1: 5f4cf5ab0b5ee184760fc759332db0bf4adb411c
+SHA256: 7c71eccd8518e1872748b2fc87bda21857de05982cbe607cbc660d9437462e02
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -5364,13 +5579,13 @@ Version: 0.6.0-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 9
-Depends: librust-proxmox-http-dev (= 0.6.0-1), librust-base64-0.13+default-dev, librust-http-0.2+default-dev, librust-hyper-0.14+default-dev, librust-hyper-0.14+full-dev, librust-proxmox-sys-0.2+default-dev, librust-tokio-1+io-util-dev, librust-tokio-openssl-0.6+default-dev (>= 0.6.1-~~)
+Depends: librust-proxmox-http-dev (= 0.6.0-1), librust-proxmox-http+base64-dev (= 0.6.0-1), librust-proxmox-http+http-dev (= 0.6.0-1), librust-proxmox-http+hyper-dev (= 0.6.0-1), librust-proxmox-http+tokio-openssl-dev (= 0.6.0-1), librust-proxmox-http+proxmox-sys-dev (= 0.6.0-1), librust-tokio-1+io-util-dev
 Provides: librust-proxmox-http-0+http-helpers-dev (= 0.6.0-1), librust-proxmox-http-0.6+http-helpers-dev (= 0.6.0-1), librust-proxmox-http-0.6.0+http-helpers-dev (= 0.6.0-1)
 Filename: dev/main/binary-arm64/librust-proxmox-http+http-helpers-dev_0.6.0-1_arm64.deb
-Size: 1236
-MD5sum: f150ee47ee572c79d5f7dc1734a294c8
-SHA1: 30f5f700c63670b24a07f83970e3cacf9299f8c1
-SHA256: 12ee20d4f10ad7a997c9011bf475e684b3b95c7f1e90365e92bc7f414d4cfd68
+Size: 1204
+MD5sum: 0ec9ea0887cba7fe84bed872986b6318
+SHA1: 59588676929e1a6c6b71d066ab879014bd49bae2
+SHA256: 335c9dc965bbd9aa84b0b47c33bd2010b979a15b402b91c77f269b883b88b9aa
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -5578,6 +5793,26 @@ Description: Proxmox HTTP library - feature "proxmox-io"
  This metapackage enables feature "proxmox-io" for the Rust proxmox-http crate,
  by pulling in any additional dependencies needed by that feature.
 
+Package: librust-proxmox-http+proxmox-lang-dev
+Source: rust-proxmox-http
+Version: 0.6.0-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 9
+Depends: librust-proxmox-http-dev (= 0.6.0-1), librust-proxmox-lang-1+default-dev (>= 1.1-~~)
+Provides: librust-proxmox-http-0+proxmox-lang-dev (= 0.6.0-1), librust-proxmox-http-0.6+proxmox-lang-dev (= 0.6.0-1), librust-proxmox-http-0.6.0+proxmox-lang-dev (= 0.6.0-1)
+Filename: dev/main/binary-arm64/librust-proxmox-http+proxmox-lang-dev_0.6.0-1_arm64.deb
+Size: 1172
+MD5sum: 15092b39efbc748731e9d595da6f2941
+SHA1: 699190163bdd99c02bdda4cdd384e1b6c10c95e0
+SHA256: 96a58f4607e323dfbf479fe8d02fba912c20492698d479869ec91413d47a2e24
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Proxmox HTTP library - feature "proxmox-lang"
+ This metapackage enables feature "proxmox-lang" for the Rust proxmox-http
+ crate, by pulling in any additional dependencies needed by that feature.
+
 Package: librust-proxmox-http+proxmox-sys-dev
 Source: rust-proxmox-http
 Version: 0.6.0-1
@@ -5764,13 +5999,13 @@ Version: 0.6.0-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 9
-Depends: librust-proxmox-http-dev (= 0.6.0-1), librust-base64-0.13+default-dev, librust-futures-0.3+default-dev, librust-hyper-0.14+default-dev, librust-hyper-0.14+full-dev, librust-openssl-0.10+default-dev, librust-proxmox-io-1+tokio-dev, librust-proxmox-sys-0.2+default-dev, librust-tokio-1+io-util-dev, librust-tokio-1+sync-dev
+Depends: librust-proxmox-http-dev (= 0.6.0-1), librust-proxmox-http+base64-dev (= 0.6.0-1), librust-proxmox-http+futures-dev (= 0.6.0-1), librust-proxmox-http+hyper-dev (= 0.6.0-1), librust-proxmox-http+openssl-dev (= 0.6.0-1), librust-proxmox-http+proxmox-sys-dev (= 0.6.0-1), librust-proxmox-http+proxmox-lang-dev (= 0.6.0-1), librust-proxmox-io-1+tokio-dev, librust-tokio-1+io-util-dev, librust-tokio-1+sync-dev
 Provides: librust-proxmox-http-0+websocket-dev (= 0.6.0-1), librust-proxmox-http-0.6+websocket-dev (= 0.6.0-1), librust-proxmox-http-0.6.0+websocket-dev (= 0.6.0-1)
 Filename: dev/main/binary-arm64/librust-proxmox-http+websocket-dev_0.6.0-1_arm64.deb
-Size: 1240
-MD5sum: 46942cc405b01ff145a419fcffedc645
-SHA1: 4f2f86d045093ae8c2670accba5cfbd669aee1d4
-SHA256: ad6e8dfb464c04afa33effa93af4aee75c23fca8b6761cd97348b13940c24dfe
+Size: 1216
+MD5sum: 787b658afcb0e09ad02393f4b7be2df7
+SHA1: 9b81ea0f137383d71f07fbd62b3f6f661de5ee45
+SHA256: 9956b5cb6352de8a0f8c34cea55ea5f78acd582691f8b8e7b73adf35422e70de
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -5827,13 +6062,13 @@ Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 80
 Depends: librust-anyhow-1+default-dev
-Suggests: librust-proxmox-http+base64-dev (= 0.6.0-1), librust-proxmox-http+client-dev (= 0.6.0-1), librust-proxmox-http+futures-dev (= 0.6.0-1), librust-proxmox-http+http-dev (= 0.6.0-1), librust-proxmox-http+http-helpers-dev (= 0.6.0-1), librust-proxmox-http+hyper-dev (= 0.6.0-1), librust-proxmox-http+openssl-dev (= 0.6.0-1), librust-proxmox-http+proxmox-io-dev (= 0.6.0-1), librust-proxmox-http+proxmox-sys-dev (= 0.6.0-1), librust-proxmox-http+tokio-dev (= 0.6.0-1), librust-proxmox-http+tokio-openssl-dev (= 0.6.0-1), librust-proxmox-http+websocket-dev (= 0.6.0-1)
+Suggests: librust-proxmox-http+base64-dev (= 0.6.0-1), librust-proxmox-http+client-dev (= 0.6.0-1), librust-proxmox-http+futures-dev (= 0.6.0-1), librust-proxmox-http+http-dev (= 0.6.0-1), librust-proxmox-http+http-helpers-dev (= 0.6.0-1), librust-proxmox-http+hyper-dev (= 0.6.0-1), librust-proxmox-http+openssl-dev (= 0.6.0-1), librust-proxmox-http+proxmox-io-dev (= 0.6.0-1), librust-proxmox-http+proxmox-lang-dev (= 0.6.0-1), librust-proxmox-http+proxmox-sys-dev (= 0.6.0-1), librust-proxmox-http+tokio-dev (= 0.6.0-1), librust-proxmox-http+tokio-openssl-dev (= 0.6.0-1), librust-proxmox-http+websocket-dev (= 0.6.0-1)
 Provides: librust-proxmox-http+default-dev (= 0.6.0-1), librust-proxmox-http-0+default-dev (= 0.6.0-1), librust-proxmox-http-0-dev (= 0.6.0-1), librust-proxmox-http-0.6+default-dev (= 0.6.0-1), librust-proxmox-http-0.6-dev (= 0.6.0-1), librust-proxmox-http-0.6.0+default-dev (= 0.6.0-1), librust-proxmox-http-0.6.0-dev (= 0.6.0-1)
 Filename: dev/main/binary-arm64/librust-proxmox-http-dev_0.6.0-1_arm64.deb
-Size: 16464
-MD5sum: 2275cdd4246f5bcfde674027ef9de04c
-SHA1: 6bc08ae9d17671c7a8f967ce6417a1f2404d73e0
-SHA256: 91ca9b30bdd244a26a9ec2721a937440789560b008fe48b316a4a6fdceadcdd1
+Size: 16500
+MD5sum: 2a91ff93ee7653ae304ecdfc80f6f59b
+SHA1: 592602df2af826c8104fa77d411dec8d018ca0ec
+SHA256: ff096a3091a8b4de909cf72d00f67b9c80bdeb36d7383d0baa671b204a66d0eb
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -5912,10 +6147,10 @@ Depends: librust-endian-trait-0.6+arrays-dev, librust-endian-trait-0.6+default-d
 Suggests: librust-proxmox-io+tokio-dev (= 1.0.1-1)
 Provides: librust-proxmox-io+default-dev (= 1.0.1-1), librust-proxmox-io-1+default-dev (= 1.0.1-1), librust-proxmox-io-1-dev (= 1.0.1-1), librust-proxmox-io-1.0+default-dev (= 1.0.1-1), librust-proxmox-io-1.0-dev (= 1.0.1-1), librust-proxmox-io-1.0.1+default-dev (= 1.0.1-1), librust-proxmox-io-1.0.1-dev (= 1.0.1-1)
 Filename: dev/main/binary-arm64/librust-proxmox-io-dev_1.0.1-1_arm64.deb
-Size: 11060
-MD5sum: ba6ee6921091fcaea563105af832212f
-SHA1: d29950f556d2810b76fb5a9e9b79acbee4d69577
-SHA256: fc4ea3b7214240daccb58636a9d43fda7968841b7490873bc700c27fb1c33c6b
+Size: 11020
+MD5sum: 1d4aa84883591b8523be1afa0c2e8905
+SHA1: 9ab0b48b802c8069e0338407ffd46fb24b5fe16d
+SHA256: 88a77c956c7a9feedd9a1c18dc406b1411c236d1caeec6fc4b10ff1b25143c18
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -5935,6 +6170,25 @@ Size: 4732
 MD5sum: aa13a825f0d74d7ffe41dd5ccb6c417d
 SHA1: 778bbc2214dbefacc51191fba3cf578b0c01795c
 SHA256: a5f8eb091165c0c818ffa6362ca419eaaea96d9dbf5472f96a31520934fff12e
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Simple rust language utilities such as try_block, which have no dependencies - Rust source code
+ This package contains the source for the Rust proxmox-lang crate, packaged by
+ debcargo for use with cargo and dh-cargo.
+
+Package: librust-proxmox-lang-dev
+Source: rust-proxmox-lang
+Version: 1.1.0-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 24
+Provides: librust-proxmox-lang+default-dev (= 1.1.0-1), librust-proxmox-lang-1+default-dev (= 1.1.0-1), librust-proxmox-lang-1-dev (= 1.1.0-1), librust-proxmox-lang-1.1+default-dev (= 1.1.0-1), librust-proxmox-lang-1.1-dev (= 1.1.0-1), librust-proxmox-lang-1.1.0+default-dev (= 1.1.0-1), librust-proxmox-lang-1.1.0-dev (= 1.1.0-1)
+Filename: dev/main/binary-arm64/librust-proxmox-lang-dev_1.1.0-1_arm64.deb
+Size: 5188
+MD5sum: 203fcee98581400f1929239048b0c04c
+SHA1: 434619fc1d0444c6f97344543d49093504b9695f
+SHA256: 686ec6a838f330d349f0cf15e36beb464f279a346d86c1071e7190a58a580d52
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -5987,14 +6241,34 @@ Source: rust-proxmox-openid
 Version: 0.9.2-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 33
+Installed-Size: 45
 Depends: librust-anyhow-1+default-dev, librust-curl-0.4+default-dev (>= 0.4.33-~~), librust-http-0.2+default-dev, librust-nix-0.19+default-dev (>= 0.19.1-~~), librust-openidconnect-2+curl-dev (>= 2.1-~~), librust-proxmox-sys-0.2+default-dev, librust-proxmox-time-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-url-2+default-dev (>= 2.1-~~)
 Provides: librust-proxmox-openid+default-dev (= 0.9.2-1), librust-proxmox-openid-0+default-dev (= 0.9.2-1), librust-proxmox-openid-0-dev (= 0.9.2-1), librust-proxmox-openid-0.9+default-dev (= 0.9.2-1), librust-proxmox-openid-0.9-dev (= 0.9.2-1), librust-proxmox-openid-0.9.2+default-dev (= 0.9.2-1), librust-proxmox-openid-0.9.2-dev (= 0.9.2-1)
 Filename: dev/main/binary-arm64/librust-proxmox-openid-dev_0.9.2-1_arm64.deb
-Size: 7672
-MD5sum: 510a1c783a91e4643239cc881d7cf926
-SHA1: 9d8124391a426cea82b87aab91a12f822dd3c498
-SHA256: 4477c754e7ee3cd2884f0bf5e6138e9fad71d64d1813b642e3ab5cd6c450666e
+Size: 8052
+MD5sum: 8fe058b890f078392745cecdb74191ed
+SHA1: 1d316eea517519b85af259dbe5d6cc6d6d92beaf
+SHA256: 47cc3bccc2bf3c6885ccd1d5be6b8ed085e19e87cf2d65a12dce92d89ccd4caf
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Rust crate "proxmox-openid" - Rust source code
+ This package contains the source for the Rust proxmox-openid crate, packaged by
+ debcargo for use with cargo and dh-cargo.
+
+Package: librust-proxmox-openid-dev
+Source: rust-proxmox-openid
+Version: 0.9.3-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 33
+Depends: librust-anyhow-1+default-dev, librust-http-0.2+default-dev, librust-native-tls-0.2+default-dev, librust-nix-0.19+default-dev (>= 0.19.1-~~), librust-openidconnect-2+accept-rfc3339-timestamps-dev (>= 2.2-~~), librust-proxmox-sys-0.2+default-dev, librust-proxmox-time-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-thiserror-1+default-dev, librust-ureq-2+gzip-dev (>= 2.4-~~), librust-ureq-2+native-tls-dev (>= 2.4-~~), librust-url-2+default-dev (>= 2.1-~~)
+Provides: librust-proxmox-openid+default-dev (= 0.9.3-1), librust-proxmox-openid-0+default-dev (= 0.9.3-1), librust-proxmox-openid-0-dev (= 0.9.3-1), librust-proxmox-openid-0.9+default-dev (= 0.9.3-1), librust-proxmox-openid-0.9-dev (= 0.9.3-1), librust-proxmox-openid-0.9.3+default-dev (= 0.9.3-1), librust-proxmox-openid-0.9.3-dev (= 0.9.3-1)
+Filename: dev/main/binary-arm64/librust-proxmox-openid-dev_0.9.3-1_arm64.deb
+Size: 7872
+MD5sum: 75ba9f7bc99ec663851cc6ea9d793a90
+SHA1: aa580771b8d887023f2283a6ec6ed30d47ab3435
+SHA256: 78b4b5e567af86160420c8b6630f2559e960a32b7eb7a7385e371da1210bf80f
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -6030,13 +6304,13 @@ Version: 1.1.1-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 9
-Depends: librust-proxmox-router-dev (= 1.1.1-1), librust-libc-0.2+default-dev, librust-rustyline-7+default-dev, librust-tokio-1+default-dev
+Depends: librust-proxmox-router-dev (= 1.1.1-1), librust-proxmox-router+libc-dev (= 1.1.1-1), librust-proxmox-router+rustyline-dev (= 1.1.1-1), librust-proxmox-router+tokio-dev (= 1.1.1-1)
 Provides: librust-proxmox-router+default-dev (= 1.1.1-1), librust-proxmox-router-1+cli-dev (= 1.1.1-1), librust-proxmox-router-1+default-dev (= 1.1.1-1), librust-proxmox-router-1.1+cli-dev (= 1.1.1-1), librust-proxmox-router-1.1+default-dev (= 1.1.1-1), librust-proxmox-router-1.1.1+cli-dev (= 1.1.1-1), librust-proxmox-router-1.1.1+default-dev (= 1.1.1-1)
 Filename: dev/main/binary-arm64/librust-proxmox-router+cli-dev_1.1.1-1_arm64.deb
-Size: 1236
-MD5sum: 452e15afd044fc1e64a9399c86fcedf3
-SHA1: 55d958a3c35c66ff44336d95fc6fd5a1075521fa
-SHA256: af0480a6bb4b30810d94483e1f4ab930ed7ca8bad5d6e62fa24bbc667325f9a3
+Size: 1232
+MD5sum: d8e199509282b82e8ca43cf45eaecb4a
+SHA1: 13e7bfc324404a65ba050918c620d5ee4c15c286
+SHA256: 912a86bc938fcdf2ca1f32e78dd1b4784c5633f9415685feca1329582240a100
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -6234,15 +6508,15 @@ Version: 1.1.1-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 140
-Depends: librust-anyhow-1+default-dev, librust-http-0.2+default-dev, librust-hyper-0.14+default-dev, librust-hyper-0.14+full-dev, librust-nix-0.19+default-dev (>= 0.19.1-~~), librust-percent-encoding-2+default-dev (>= 2.1-~~), librust-proxmox-lang-1+default-dev, librust-proxmox-schema-1+default-dev (>= 1.1-~~), librust-serde-json-1+default-dev, librust-unicode-width-0.1+default-dev (>= 0.1.8-~~)
+Depends: librust-anyhow-1+default-dev, librust-http-0.2+default-dev, librust-hyper-0.14+default-dev, librust-hyper-0.14+full-dev, librust-nix-0.19+default-dev (>= 0.19.1-~~), librust-percent-encoding-2+default-dev (>= 2.1-~~), librust-proxmox-lang-1+default-dev (>= 1.1-~~), librust-proxmox-schema-1+default-dev (>= 1.1-~~), librust-serde-json-1+default-dev, librust-unicode-width-0.1+default-dev (>= 0.1.8-~~)
 Recommends: librust-proxmox-router+cli-dev (= 1.1.1-1)
 Suggests: librust-proxmox-router+libc-dev (= 1.1.1-1), librust-proxmox-router+rustyline-dev (= 1.1.1-1), librust-proxmox-router+test-harness-dev (= 1.1.1-1), librust-proxmox-router+tokio-dev (= 1.1.1-1)
 Provides: librust-proxmox-router-1-dev (= 1.1.1-1), librust-proxmox-router-1.1-dev (= 1.1.1-1), librust-proxmox-router-1.1.1-dev (= 1.1.1-1)
 Filename: dev/main/binary-arm64/librust-proxmox-router-dev_1.1.1-1_arm64.deb
-Size: 26760
-MD5sum: 2832e6e62537f66ba50b426f57960a65
-SHA1: 24a3c5ae509f4693ff0e57e7a5f72be6e47f9649
-SHA256: 0e3c446d19f00149012d952934c45d2f43adc1cd0515f41a59a21d49c293e210
+Size: 26704
+MD5sum: 34cd2978ab7ff4f964403e98c3f8381e
+SHA1: 278c480c95b1f5fefe761bc9e10e4e95c4139539
+SHA256: b78212ffabf28c1bcec7dc437bf543c2ae9bf1ae313ecd5c94a0545b2ab27c55
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -6376,6 +6650,26 @@ Description: Proxmox api schema and validation - feature "libc"
  This metapackage enables feature "libc" for the Rust proxmox-schema crate, by
  pulling in any additional dependencies needed by that feature.
 
+Package: librust-proxmox-schema+libc-dev
+Source: rust-proxmox-schema
+Version: 1.2.1-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 9
+Depends: librust-proxmox-schema-dev (= 1.2.1-1), librust-libc-0.2+default-dev
+Provides: librust-proxmox-schema-1+libc-dev (= 1.2.1-1), librust-proxmox-schema-1.2+libc-dev (= 1.2.1-1), librust-proxmox-schema-1.2.1+libc-dev (= 1.2.1-1)
+Filename: dev/main/binary-arm64/librust-proxmox-schema+libc-dev_1.2.1-1_arm64.deb
+Size: 1168
+MD5sum: ae625967ef94ae8df4eeffcb397257f6
+SHA1: 73fd9cf4834f03a16ace1c9b10d81630867e6f94
+SHA256: 15bb3d8922121d235cffbf72f57f6ae4603c4cc968f7c2ce8ba4bdecb5d5562b
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Proxmox api schema and validation - feature "libc"
+ This metapackage enables feature "libc" for the Rust proxmox-schema crate, by
+ pulling in any additional dependencies needed by that feature.
+
 Package: librust-proxmox-schema+nix-dev
 Source: rust-proxmox-schema
 Version: 1.0.0-1
@@ -6436,6 +6730,49 @@ Description: Proxmox api schema and validation - feature "nix"
  This metapackage enables feature "nix" for the Rust proxmox-schema crate, by
  pulling in any additional dependencies needed by that feature.
 
+Package: librust-proxmox-schema+nix-dev
+Source: rust-proxmox-schema
+Version: 1.2.1-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 9
+Depends: librust-proxmox-schema-dev (= 1.2.1-1), librust-nix-0.19+default-dev
+Provides: librust-proxmox-schema-1+nix-dev (= 1.2.1-1), librust-proxmox-schema-1.2+nix-dev (= 1.2.1-1), librust-proxmox-schema-1.2.1+nix-dev (= 1.2.1-1)
+Filename: dev/main/binary-arm64/librust-proxmox-schema+nix-dev_1.2.1-1_arm64.deb
+Size: 1168
+MD5sum: 103272f47bd6257b3e765f1409b3ccfd
+SHA1: 5ad5ac202c5a3539a1838876024fa0727453cf1b
+SHA256: 8696808dd4ce45ba2d7fa52b240484e293649223744195135c537f0134c55847
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Proxmox api schema and validation - feature "nix"
+ This metapackage enables feature "nix" for the Rust proxmox-schema crate, by
+ pulling in any additional dependencies needed by that feature.
+
+Package: librust-proxmox-schema+proxmox-api-macro-dev
+Source: rust-proxmox-schema
+Version: 1.2.1-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 9
+Depends: librust-proxmox-schema-dev (= 1.2.1-1), librust-proxmox-api-macro-1+default-dev
+Provides: librust-proxmox-schema+api-macro-dev (= 1.2.1-1), librust-proxmox-schema-1+api-macro-dev (= 1.2.1-1), librust-proxmox-schema-1+proxmox-api-macro-dev (= 1.2.1-1), librust-proxmox-schema-1.2+api-macro-dev (= 1.2.1-1), librust-proxmox-schema-1.2+proxmox-api-macro-dev (= 1.2.1-1), librust-proxmox-schema-1.2.1+api-macro-dev (= 1.2.1-1), librust-proxmox-schema-1.2.1+proxmox-api-macro-dev (= 1.2.1-1)
+Filename: dev/main/binary-arm64/librust-proxmox-schema+proxmox-api-macro-dev_1.2.1-1_arm64.deb
+Size: 1236
+MD5sum: 0c7aa59d8e55b04316d34ba2c0a3589d
+SHA1: 913e780d4ac08d2b76dcf07a160c57286a608faa
+SHA256: a056005a7a38e70f4ce10036f69435e51fa09b3be0d50f2be5c8bd5a7330329d
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Proxmox api schema and validation - feature "proxmox-api-macro" and 1 more
+ This metapackage enables feature "proxmox-api-macro" for the Rust proxmox-
+ schema crate, by pulling in any additional dependencies needed by that
+ feature.
+ .
+ Additionally, this package also provides the "api-macro" feature.
+
 Package: librust-proxmox-schema+upid-api-impl-dev
 Source: rust-proxmox-schema
 Version: 1.0.0-1
@@ -6489,6 +6826,26 @@ Size: 1196
 MD5sum: e14f78530b7d9c168a732753772bf722
 SHA1: 8f008482952946e3e01df14bdcb4b9b400b9a64d
 SHA256: d1536432ca592d1b98b3857f08f96b6cf33da19fd0616cbe4213ba4373fbe5e2
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Proxmox api schema and validation - feature "upid-api-impl"
+ This metapackage enables feature "upid-api-impl" for the Rust proxmox-schema
+ crate, by pulling in any additional dependencies needed by that feature.
+
+Package: librust-proxmox-schema+upid-api-impl-dev
+Source: rust-proxmox-schema
+Version: 1.2.1-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 9
+Depends: librust-proxmox-schema-dev (= 1.2.1-1), librust-proxmox-schema+libc-dev (= 1.2.1-1), librust-proxmox-schema+nix-dev (= 1.2.1-1)
+Provides: librust-proxmox-schema-1+upid-api-impl-dev (= 1.2.1-1), librust-proxmox-schema-1.2+upid-api-impl-dev (= 1.2.1-1), librust-proxmox-schema-1.2.1+upid-api-impl-dev (= 1.2.1-1)
+Filename: dev/main/binary-arm64/librust-proxmox-schema+upid-api-impl-dev_1.2.1-1_arm64.deb
+Size: 1184
+MD5sum: bdd84c85f2a486f844154a726e803514
+SHA1: 5928a3c3c7cc9d449f312ab7d3d99617244961b0
+SHA256: 694faf478ce41b70067d91455792f97d0f14938006ec7a35aba2ba7316c1856f
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -6559,19 +6916,40 @@ Description: Proxmox api schema and validation - Rust source code
  This package contains the source for the Rust proxmox-schema crate, packaged by
  debcargo for use with cargo and dh-cargo.
 
+Package: librust-proxmox-schema-dev
+Source: rust-proxmox-schema
+Version: 1.2.1-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 123
+Depends: librust-anyhow-1+default-dev, librust-lazy-static-1+default-dev (>= 1.4-~~), librust-regex-1+default-dev (>= 1.5-~~), librust-serde-1+default-dev, librust-serde-json-1+default-dev, librust-textwrap-0.11+default-dev
+Suggests: librust-proxmox-schema+libc-dev (= 1.2.1-1), librust-proxmox-schema+nix-dev (= 1.2.1-1), librust-proxmox-schema+proxmox-api-macro-dev (= 1.2.1-1), librust-proxmox-schema+upid-api-impl-dev (= 1.2.1-1)
+Provides: librust-proxmox-schema+default-dev (= 1.2.1-1), librust-proxmox-schema+test-harness-dev (= 1.2.1-1), librust-proxmox-schema-1+default-dev (= 1.2.1-1), librust-proxmox-schema-1+test-harness-dev (= 1.2.1-1), librust-proxmox-schema-1-dev (= 1.2.1-1), librust-proxmox-schema-1.2+default-dev (= 1.2.1-1), librust-proxmox-schema-1.2+test-harness-dev (= 1.2.1-1), librust-proxmox-schema-1.2-dev (= 1.2.1-1), librust-proxmox-schema-1.2.1+default-dev (= 1.2.1-1), librust-proxmox-schema-1.2.1+test-harness-dev (= 1.2.1-1), librust-proxmox-schema-1.2.1-dev (= 1.2.1-1)
+Filename: dev/main/binary-arm64/librust-proxmox-schema-dev_1.2.1-1_arm64.deb
+Size: 22776
+MD5sum: 62e86205fb207426f9445bd355e06cfa
+SHA1: 60d39d8d673ade149ae80ed0ffcfacc894aa8b4f
+SHA256: 3cac2e396993f0d2ec15c205db1b9cccc6c16a3b557a1094518655af44ea1f94
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Proxmox api schema and validation - Rust source code
+ This package contains the source for the Rust proxmox-schema crate, packaged by
+ debcargo for use with cargo and dh-cargo.
+
 Package: librust-proxmox-section-config-dev
 Source: rust-proxmox-section-config
 Version: 1.0.0-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 43
-Depends: librust-anyhow-1+default-dev, librust-hex-0.4+default-dev, librust-proxmox-lang-1+default-dev, librust-proxmox-schema-1+default-dev (>= 1.1-~~), librust-serde-1+default-dev, librust-serde-json-1+default-dev
+Depends: librust-anyhow-1+default-dev, librust-hex-0.4+default-dev, librust-proxmox-lang-1+default-dev (>= 1.1-~~), librust-proxmox-schema-1+default-dev (>= 1.1-~~), librust-serde-1+default-dev, librust-serde-json-1+default-dev
 Provides: librust-proxmox-section-config+default-dev (= 1.0.0-1), librust-proxmox-section-config-1+default-dev (= 1.0.0-1), librust-proxmox-section-config-1-dev (= 1.0.0-1), librust-proxmox-section-config-1.0+default-dev (= 1.0.0-1), librust-proxmox-section-config-1.0-dev (= 1.0.0-1), librust-proxmox-section-config-1.0.0+default-dev (= 1.0.0-1), librust-proxmox-section-config-1.0.0-dev (= 1.0.0-1)
 Filename: dev/main/binary-arm64/librust-proxmox-section-config-dev_1.0.0-1_arm64.deb
-Size: 7956
-MD5sum: aad67a4adda410bd89b607e26f591992
-SHA1: 2404175fda5aee7cd70793c82ed0e0c28d96530f
-SHA256: 24578be1314c60b14e21e738d5c04c873d3f124ae9aecbf7ef687232c220488d
+Size: 7936
+MD5sum: d7e2495acc51c78423400a7c7ae65744
+SHA1: b99077fbc3296c0ad42dbffe4541474180a98587
+SHA256: 8c2117e422a1e2cfe0752c88873734f47cc52a1ddbe69ba339ff460a07110284
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -6588,10 +6966,10 @@ Installed-Size: 25
 Depends: librust-anyhow-1+default-dev, librust-base64-0.13+default-dev, librust-proxmox-time-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, uuid-dev
 Provides: librust-proxmox-serde+default-dev (= 0.1.0), librust-proxmox-serde-0+default-dev (= 0.1.0), librust-proxmox-serde-0-dev (= 0.1.0), librust-proxmox-serde-0.1+default-dev (= 0.1.0), librust-proxmox-serde-0.1-dev (= 0.1.0), librust-proxmox-serde-0.1.0+default-dev (= 0.1.0), librust-proxmox-serde-0.1.0-dev (= 0.1.0)
 Filename: dev/main/binary-arm64/librust-proxmox-serde-dev_0.1.0_arm64.deb
-Size: 4588
-MD5sum: 9ea2e917226c2972f1fb7ac17af0d480
-SHA1: 8d42079a8695f9b138c27e629bbf0dd35e425024
-SHA256: 82ab8929763228ef4f9142febd54463c2b3411f175951d7b9615a306e2443701
+Size: 4560
+MD5sum: 2fcee4ce5d9accba922bf5d2f2cf3801
+SHA1: 4ef8e7e2aeaeff172494bf1b0bbf9f8f32d32dbb
+SHA256: 5c2739f72b1dc06ba2e5c0e9385d4254a1a69ef472b8009141549dddf44c1b3f
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -6608,10 +6986,10 @@ Installed-Size: 33
 Depends: librust-anyhow-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.107-~~), librust-nix-0.19+default-dev (>= 0.19.1-~~), librust-proxmox-sys-0.2+default-dev
 Provides: librust-proxmox-shared-memory+default-dev (= 0.2.0-1), librust-proxmox-shared-memory-0+default-dev (= 0.2.0-1), librust-proxmox-shared-memory-0-dev (= 0.2.0-1), librust-proxmox-shared-memory-0.2+default-dev (= 0.2.0-1), librust-proxmox-shared-memory-0.2-dev (= 0.2.0-1), librust-proxmox-shared-memory-0.2.0+default-dev (= 0.2.0-1), librust-proxmox-shared-memory-0.2.0-dev (= 0.2.0-1)
 Filename: dev/main/binary-arm64/librust-proxmox-shared-memory-dev_0.2.0-1_arm64.deb
-Size: 7028
-MD5sum: bdeaaf6c4dbfeae105fd1a66cf96a9e3
-SHA1: 973ea87115a1fabcfde0a51d5b6b12edc20c3b27
-SHA256: 0312f1d2f5cba4e5f5a779ac96047efda956d4700f2f22a475a22dd5188e0cb5
+Size: 7000
+MD5sum: 76ea4ce20543bc2d9408a3f38e576ae0
+SHA1: dc4c64e24b8a1406471abfbeb913dffd423fbcdb
+SHA256: 873c4589b08557761494bbc8ece13dac64837e73306778d641e865232afb8191
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -6648,10 +7026,10 @@ Installed-Size: 20
 Depends: librust-proc-macro2-1+default-dev, librust-quote-1+default-dev, librust-syn-1+default-dev, librust-syn-1+full-dev, librust-syn-1+visit-mut-dev
 Provides: librust-proxmox-sortable-macro+default-dev (= 0.1.2-1), librust-proxmox-sortable-macro-0+default-dev (= 0.1.2-1), librust-proxmox-sortable-macro-0-dev (= 0.1.2-1), librust-proxmox-sortable-macro-0.1+default-dev (= 0.1.2-1), librust-proxmox-sortable-macro-0.1-dev (= 0.1.2-1), librust-proxmox-sortable-macro-0.1.2+default-dev (= 0.1.2-1), librust-proxmox-sortable-macro-0.1.2-dev (= 0.1.2-1)
 Filename: dev/main/binary-arm64/librust-proxmox-sortable-macro-dev_0.1.2-1_arm64.deb
-Size: 4144
-MD5sum: bd4cd398d946d7f1cd163fb60bc4c236
-SHA1: 8bb5dfb494518ed1e1891b3675f4d4480923b3ce
-SHA256: 04cfb5b7d82429024a44ff6c5cfa1b5eb2638be67e182e99280bb7c08c81a917
+Size: 4116
+MD5sum: 76819c54a8ec02daa2fae074762080c8
+SHA1: 556358a7a2bc8e71bd7a1a21fb3998fd2b5c1186
+SHA256: 5452e68bd306757381aa9b3941be84e6c94128bfa77871acc154501ddabea26e
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -6688,14 +7066,14 @@ Version: 0.2.2
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 190
-Depends: librust-anyhow-1+default-dev, librust-base64-0.13+default-dev, librust-lazy-static-1+default-dev (>= 1.4-~~), librust-libc-0.2+default-dev (>= 0.2.107-~~), librust-log-0.4+default-dev, librust-nix-0.19+default-dev (>= 0.19.1-~~), librust-proxmox-borrow-1+default-dev, librust-proxmox-io-1+default-dev, librust-proxmox-lang-1+default-dev, librust-proxmox-time-1+default-dev, librust-regex-1+default-dev (>= 1.2-~~), librust-serde-json-1+default-dev, librust-zstd-0.6+bindgen-dev, librust-zstd-0.6+default-dev, libacl1-dev, uuid-dev
+Depends: librust-anyhow-1+default-dev, librust-base64-0.13+default-dev, librust-lazy-static-1+default-dev (>= 1.4-~~), librust-libc-0.2+default-dev (>= 0.2.107-~~), librust-log-0.4+default-dev, librust-nix-0.19+default-dev (>= 0.19.1-~~), librust-proxmox-borrow-1+default-dev, librust-proxmox-io-1+default-dev, librust-proxmox-lang-1+default-dev (>= 1.1-~~), librust-proxmox-time-1+default-dev, librust-regex-1+default-dev (>= 1.2-~~), librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-zstd-0.6+bindgen-dev, librust-zstd-0.6+default-dev, libacl1-dev, uuid-dev
 Suggests: librust-proxmox-sys+proxmox-sortable-macro-dev (= 0.2.2)
 Provides: librust-proxmox-sys+default-dev (= 0.2.2), librust-proxmox-sys-0+default-dev (= 0.2.2), librust-proxmox-sys-0-dev (= 0.2.2), librust-proxmox-sys-0.2+default-dev (= 0.2.2), librust-proxmox-sys-0.2-dev (= 0.2.2), librust-proxmox-sys-0.2.2+default-dev (= 0.2.2), librust-proxmox-sys-0.2.2-dev (= 0.2.2)
 Filename: dev/main/binary-arm64/librust-proxmox-sys-dev_0.2.2_arm64.deb
-Size: 41120
-MD5sum: a6eb19f598b2263d924f00421645591b
-SHA1: 14f2724eda64828195f68a97cd50cf1bec0971ef
-SHA256: 3fd69a035f6fea60fe5b948f6364fc4b1b4e123a7b578600db63309cca57ea0c
+Size: 41068
+MD5sum: bdaf99b3334dd702b0f47f1c5cc5779b
+SHA1: 0a0a52a3ab1d7d294cab82c4b3b4ab3ffb8b92c1
+SHA256: fe7246f735fa5d6a036e22a7df96f580aa016e428071e0041451583ddbe74701
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -6709,13 +7087,13 @@ Version: 2.0.0-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 9
-Depends: librust-proxmox-tfa-dev (= 2.0.0-1), librust-proxmox-tfa+u2f-dev (= 2.0.0-1), librust-proxmox-time-1+default-dev, librust-proxmox-uuid-1+default-dev, librust-webauthn-rs-0.3+default-dev
+Depends: librust-proxmox-tfa-dev (= 2.0.0-1), librust-proxmox-tfa+u2f-dev (= 2.0.0-1), librust-proxmox-tfa+webauthn-rs-dev (= 2.0.0-1), librust-proxmox-tfa+proxmox-uuid-dev (= 2.0.0-1), librust-proxmox-tfa+proxmox-time-dev (= 2.0.0-1)
 Provides: librust-proxmox-tfa-2+api-dev (= 2.0.0-1), librust-proxmox-tfa-2.0+api-dev (= 2.0.0-1), librust-proxmox-tfa-2.0.0+api-dev (= 2.0.0-1)
 Filename: dev/main/binary-arm64/librust-proxmox-tfa+api-dev_2.0.0-1_arm64.deb
-Size: 1192
-MD5sum: 16d54bdce77579a0848ec6829c16fd0d
-SHA1: 1c6c758da3f745a08efb2259f37b692eb6dc0477
-SHA256: 646d3bfd1e062a7df9251bb16bbfdec382ff8a43e1714e89fd6e9d278c5504ae
+Size: 1180
+MD5sum: 806eb3d2a6123e4dde22d35b955e9914
+SHA1: 7fbf3f766bf64f4777ae8f58a422f092d0c297c0
+SHA256: 16c192502996d904e3be6aed657792a49be4bb2b4163694ea5a021057857c76c
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -6804,6 +7182,28 @@ Multi-Arch: same
 Description: Tfa implementation for totp and u2f - feature "libc"
  This metapackage enables feature "libc" for the Rust proxmox-tfa crate, by
  pulling in any additional dependencies needed by that feature.
+
+Package: librust-proxmox-tfa+proxmox-schema-dev
+Source: rust-proxmox-tfa
+Version: 2.0.0-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 9
+Depends: librust-proxmox-tfa-dev (= 2.0.0-1), librust-proxmox-schema-1+api-macro-dev, librust-proxmox-schema-1+default-dev
+Provides: librust-proxmox-tfa+api-types-dev (= 2.0.0-1), librust-proxmox-tfa-2+api-types-dev (= 2.0.0-1), librust-proxmox-tfa-2+proxmox-schema-dev (= 2.0.0-1), librust-proxmox-tfa-2.0+api-types-dev (= 2.0.0-1), librust-proxmox-tfa-2.0+proxmox-schema-dev (= 2.0.0-1), librust-proxmox-tfa-2.0.0+api-types-dev (= 2.0.0-1), librust-proxmox-tfa-2.0.0+proxmox-schema-dev (= 2.0.0-1)
+Filename: dev/main/binary-arm64/librust-proxmox-tfa+proxmox-schema-dev_2.0.0-1_arm64.deb
+Size: 1240
+MD5sum: 3a20de0c66a9a263510149ee02edf545
+SHA1: 5f924c47180f6dd064327c19a7b37975ac72f692
+SHA256: 0d6cdfc83b6cd497bd4276b970a52f3cfc6013da4472f86deab83ad3b5e9d7a3
+Section: rust
+Priority: optional
+Multi-Arch: same
+Description: Tfa implementation for totp and u2f - feature "proxmox-schema" and 1 more
+ This metapackage enables feature "proxmox-schema" for the Rust proxmox-tfa
+ crate, by pulling in any additional dependencies needed by that feature.
+ .
+ Additionally, this package also provides the "api-types" feature.
 
 Package: librust-proxmox-tfa+proxmox-time-dev
 Source: rust-proxmox-tfa
@@ -6951,13 +7351,13 @@ Version: 2.0.0-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 9
-Depends: librust-proxmox-tfa-dev (= 2.0.0-1), librust-libc-0.2+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev
+Depends: librust-proxmox-tfa-dev (= 2.0.0-1), librust-proxmox-tfa+libc-dev (= 2.0.0-1), librust-proxmox-tfa+serde-json-dev (= 2.0.0-1), librust-serde-1+derive-dev
 Provides: librust-proxmox-tfa-2+u2f-dev (= 2.0.0-1), librust-proxmox-tfa-2.0+u2f-dev (= 2.0.0-1), librust-proxmox-tfa-2.0.0+u2f-dev (= 2.0.0-1)
 Filename: dev/main/binary-arm64/librust-proxmox-tfa+u2f-dev_2.0.0-1_arm64.deb
-Size: 1184
-MD5sum: a597c4f8742e70f1ef12d86bb380a4b7
-SHA1: 70d68d628e3b44ebf2d4189c004200a6f9be6eda
-SHA256: ecdf675b0c2df90194b38b22bb490461089be6d7efa7b2f5e8ed55e5703d1825
+Size: 1176
+MD5sum: 3ac15cf62562ca15e29f8178ff3f5b0b
+SHA1: e1459d24a7c4e988d4654e2ee5ddf6a6bd8fac33
+SHA256: 0f5ddc8b10227a10a03c577ea316eeab1abf15a54404974bc9eb7d37a7f05534
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -7034,13 +7434,13 @@ Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 123
 Depends: librust-anyhow-1+default-dev, librust-base32-0.4+default-dev, librust-base64-0.13+default-dev, librust-hex-0.4+default-dev, librust-openssl-0.10+default-dev, librust-percent-encoding-2+default-dev (>= 2.1-~~), librust-serde-1+default-dev, librust-serde-plain-1+default-dev, librust-url-2+default-dev (>= 2.2-~~)
-Suggests: librust-proxmox-tfa+api-dev (= 2.0.0-1), librust-proxmox-tfa+api-types-dev (= 2.0.0-1), librust-proxmox-tfa+libc-dev (= 2.0.0-1), librust-proxmox-tfa+proxmox-time-dev (= 2.0.0-1), librust-proxmox-tfa+proxmox-uuid-dev (= 2.0.0-1), librust-proxmox-tfa+serde-json-dev (= 2.0.0-1), librust-proxmox-tfa+u2f-dev (= 2.0.0-1), librust-proxmox-tfa+webauthn-rs-dev (= 2.0.0-1)
+Suggests: librust-proxmox-tfa+api-dev (= 2.0.0-1), librust-proxmox-tfa+libc-dev (= 2.0.0-1), librust-proxmox-tfa+proxmox-schema-dev (= 2.0.0-1), librust-proxmox-tfa+proxmox-time-dev (= 2.0.0-1), librust-proxmox-tfa+proxmox-uuid-dev (= 2.0.0-1), librust-proxmox-tfa+serde-json-dev (= 2.0.0-1), librust-proxmox-tfa+u2f-dev (= 2.0.0-1), librust-proxmox-tfa+webauthn-rs-dev (= 2.0.0-1)
 Provides: librust-proxmox-tfa+default-dev (= 2.0.0-1), librust-proxmox-tfa-2+default-dev (= 2.0.0-1), librust-proxmox-tfa-2-dev (= 2.0.0-1), librust-proxmox-tfa-2.0+default-dev (= 2.0.0-1), librust-proxmox-tfa-2.0-dev (= 2.0.0-1), librust-proxmox-tfa-2.0.0+default-dev (= 2.0.0-1), librust-proxmox-tfa-2.0.0-dev (= 2.0.0-1)
 Filename: dev/main/binary-arm64/librust-proxmox-tfa-dev_2.0.0-1_arm64.deb
-Size: 25792
-MD5sum: 19d3e24ff709e06e84983e6251274a4e
-SHA1: a0c3bfe3c2c0a6a019b65393b899f0269a2e37e2
-SHA256: 6cc2ef51b66448389aea51461cc386eae7db5c3527c4354f4a0a669527462798
+Size: 25748
+MD5sum: bc96713af7e790a4290ced5922aa7706
+SHA1: 92c9d10b1972c04a322beb8b1466349f676bab19
+SHA256: 2e097cb35b5f695208cbe719ccc4040cbc3351e1ed5c38f506b20043444f73e1
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -7073,14 +7473,14 @@ Source: rust-proxmox-time
 Version: 1.1.2-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 82
+Installed-Size: 81
 Depends: librust-anyhow-1+default-dev, librust-bitflags-1+default-dev (>= 1.2.1-~~), librust-js-sys-0.3+default-dev (>= 0.3.55-~~), librust-lazy-static-1+default-dev (>= 1.4-~~), librust-libc-0.2+default-dev, librust-libc-0.2+extra-traits-dev, librust-nom-5+default-dev (>= 5.1-~~)
 Provides: librust-proxmox-time+default-dev (= 1.1.2-1), librust-proxmox-time-1+default-dev (= 1.1.2-1), librust-proxmox-time-1-dev (= 1.1.2-1), librust-proxmox-time-1.1+default-dev (= 1.1.2-1), librust-proxmox-time-1.1-dev (= 1.1.2-1), librust-proxmox-time-1.1.2+default-dev (= 1.1.2-1), librust-proxmox-time-1.1.2-dev (= 1.1.2-1)
 Filename: dev/main/binary-arm64/librust-proxmox-time-dev_1.1.2-1_arm64.deb
-Size: 15560
-MD5sum: c42499d2fde43778934e594750cb7bfa
-SHA1: 2f0efa282df9bd84950bc1f7bf3aa22beae18414
-SHA256: bf55790781ebfc8e286c40ffa73f69784556f219c3b4881a1e2a769f7bf974d0
+Size: 15540
+MD5sum: db11abf2f3c127081fff60bcba1dba04
+SHA1: 45fb5e63c0c717f20f460c1c2c118fd5cb5c0f06
+SHA256: ba884ff87350ac09b461d433f440fc41ae2ccc6f0699a9e09ff82c5d5a71006b
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -7154,15 +7554,15 @@ Source: rust-proxmox-uuid
 Version: 1.0.1-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 27
+Installed-Size: 26
 Depends: librust-js-sys-0.3+default-dev (>= 0.3.55-~~), librust-libc-0.2+default-dev, uuid-dev
 Suggests: librust-proxmox-uuid+serde-dev (= 1.0.1-1)
 Provides: librust-proxmox-uuid+default-dev (= 1.0.1-1), librust-proxmox-uuid-1+default-dev (= 1.0.1-1), librust-proxmox-uuid-1-dev (= 1.0.1-1), librust-proxmox-uuid-1.0+default-dev (= 1.0.1-1), librust-proxmox-uuid-1.0-dev (= 1.0.1-1), librust-proxmox-uuid-1.0.1+default-dev (= 1.0.1-1), librust-proxmox-uuid-1.0.1-dev (= 1.0.1-1)
 Filename: dev/main/binary-arm64/librust-proxmox-uuid-dev_1.0.1-1_arm64.deb
-Size: 5720
-MD5sum: 1d906e2791be9dc644452b3b563e793a
-SHA1: 3e66d46928fbfcfb5de8ebdada344eb98f7feadf
-SHA256: 664217877e128de0b21b9bafb34be44cea99c15098a681b1264fae2011636962
+Size: 5688
+MD5sum: 66e5095258a41df593bc06e74b7fa53b
+SHA1: e7700f5060e3e9e73786cf33623f439a948217d4
+SHA256: a33458f4935118a49aafed6b5fa354de62cae2727560b486c2721796b0cae62e
 Section: rust
 Priority: optional
 Multi-Arch: same
@@ -7853,12 +8253,12 @@ Source: proxmox-i18n
 Version: 2.6-2
 Architecture: all
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 381
+Installed-Size: 389
 Filename: dev/main/binary-all/pbs-i18n_2.6-2_all.deb
-Size: 95072
-MD5sum: f11b505c67adf7caebfb58a814bfeee1
-SHA1: 361a6a02b8d0fe3a6c86b81d0a96b4ec09a634a0
-SHA256: b10b6630ff4c109bb8de80ba8d9911211a3502ff8d43489cd14bb51a20785977
+Size: 97108
+MD5sum: 00c15f4bb9618e4547b2f5428f261041
+SHA1: 50a30d4f146126717a2ad56e12c439da0a93257a
+SHA256: e6a619cffb7938f16cad1cb354825bc6ad43635fc01bfa6eec8a7452d599b1dc
 Section: perl
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -7904,12 +8304,12 @@ Source: proxmox-i18n
 Version: 2.6-2
 Architecture: all
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 552
+Installed-Size: 560
 Filename: dev/main/binary-all/pmg-i18n_2.6-2_all.deb
-Size: 136904
-MD5sum: 52411e6ef7005506adde47d0ae6a7211
-SHA1: a42a8407edab4f8bc5e2045d4e8a4d36229c4d05
-SHA256: c0c83cc2acc753e6a3b94ebb2fbe83f3c62347860cc260d0f07cc47b5048aab0
+Size: 139064
+MD5sum: 7a3c9d7afe6681661e10257de90f8a7a
+SHA1: 52e68be17f1dc9113602aa270b5b0405ee4b8305
+SHA256: 7633e332f9c7470cb4eba45089030fd1095f9ffa415aceed638c5c27a9e95c50
 Section: perl
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -7970,6 +8370,25 @@ Description: Proxmox Backup Client tools
  This package contains the Proxmox Backup client, which provides a
  simple command line tool to create and restore backups.
 
+Package: proxmox-backup-client
+Source: rust-proxmox-backup
+Version: 2.1.5-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 9745
+Depends: qrencode, libacl1 (>= 2.2.23), libc6 (>= 2.29), libfuse3-3 (>= 3.2.3), libgcc-s1 (>= 4.2), libssl1.1 (>= 1.1.0), libzstd1 (>= 1.4.0)
+Filename: dev/main/binary-arm64/proxmox-backup-client_2.1.5-1_arm64.deb
+Size: 2205780
+MD5sum: 9a3a9736fc214dbcf5251ba2da220a16
+SHA1: 20e14358a37efb0e468a222f74693dc34fdd6efd
+SHA256: f7e91f1d9e7d7495083ee5cd337a7561049f8cc73812297bbe2b6ef8f6c43d0b
+Section: admin
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox Backup Client tools
+ This package contains the Proxmox Backup client, which provides a
+ simple command line tool to create and restore backups.
+
 Package: proxmox-backup-file-restore
 Source: rust-proxmox-backup
 Version: 2.0.9-1
@@ -8014,6 +8433,28 @@ Description: Proxmox Backup single file restore tools for pxar and block device 
  restoring individual files and folders from both host/container and VM/block
  device backups. It includes a block device restore driver using QEMU.
 
+Package: proxmox-backup-file-restore
+Source: rust-proxmox-backup
+Version: 2.1.5-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 11191
+Depends: libacl1 (>= 2.2.23), libc6 (>= 2.29), libgcc-s1 (>= 4.2), libssl1.1 (>= 1.1.0), libuuid1 (>= 2.16), libzstd1 (>= 1.4.0)
+Recommends: pve-qemu-kvm (>= 5.0.0-9), proxmox-backup-restore-image
+Breaks: proxmox-backup-restore-image (<< 0.3.1)
+Filename: dev/main/binary-arm64/proxmox-backup-file-restore_2.1.5-1_arm64.deb
+Size: 2275508
+MD5sum: ac70a1c740841e3824573b64beeb40be
+SHA1: d6d0a0a305ed013c95a969efc311cb3de93e04c7
+SHA256: 7ec2901ef4542243df3b5a9becca19348cd6ff571a6bf4c587917245eb519b1c
+Section: admin
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox Backup single file restore tools for pxar and block device backups
+ This package contains the Proxmox Backup single file restore client for
+ restoring individual files and folders from both host/container and VM/block
+ device backups. It includes a block device restore driver using QEMU.
+
 Package: proxmox-backup-server
 Source: rust-proxmox-backup
 Version: 2.0.9-1
@@ -8047,6 +8488,26 @@ Size: 19151008
 MD5sum: 15f432e170dc4945ba01a38590cd8c2c
 SHA1: 2794921f754995bbd1762f02e80e2f4812d27fd8
 SHA256: ab45ffbfcf9b55be168c57630fe7da6c6e346fa918d90a2559bbf104e3d2ba41
+Section: admin
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox Backup Server daemon with tools and GUI
+ This package contains the Proxmox Backup Server daemons and related
+ tools. This includes a web-based graphical user interface.
+
+Package: proxmox-backup-server
+Source: rust-proxmox-backup
+Version: 2.1.5-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 83786
+Depends: fonts-font-awesome, libjs-extjs (>= 7~), libjs-qrcodejs (>= 1.20201119), libproxmox-acme-plugins, libsgutils2-2 (>= 1.43), libzstd1 (>= 1.4.0), lvm2, openssh-server, pbs-i18n, postfix | mail-transport-agent, proxmox-backup-docs, proxmox-mini-journalreader, proxmox-widget-toolkit (>= 3.4-3), pve-xtermjs (>= 4.7.0-1), sg3-utils, smartmontools, libapt-pkg6.0 (>= 1.9~), libc6 (>= 2.29), libcrypt1 (>= 1:4.1.0), libgcc-s1 (>= 4.2), libpam0g (>= 0.99.7.1), libssl1.1 (>= 1.1.1), libstdc++6 (>= 5.2), libsystemd0 (>= 246), libudev1 (>= 183), libuuid1 (>= 2.16)
+Recommends: zfsutils-linux, ifupdown2
+Filename: dev/main/binary-arm64/proxmox-backup-server_2.1.5-1_arm64.deb
+Size: 19428944
+MD5sum: 2c05196577d6934130421e5661a0daf9
+SHA1: f2beb001dff124756586225173c4fb84728e53b2
+SHA256: 7f3f6509d833c6943566ef0e4226243be61d54d153ad016ebdd1aed7751b9934
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -8151,6 +8612,27 @@ Description: Proxmox Virtual Environment
  Machines. This is a meta package which will install everything
  needed.
 
+Package: proxmox-websocket-tunnel
+Source: rust-proxmox-websocket-tunnel
+Version: 0.1.0-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 2654
+Depends: libacl1 (>= 2.2.23), libc6 (>= 2.28), libcrypt1 (>= 1:4.1.0), libgcc-s1 (>= 4.2), libssl1.1 (>= 1.1.0), libzstd1 (>= 1.4.0)
+Filename: dev/main/binary-arm64/proxmox-websocket-tunnel_0.1.0-1_arm64.deb
+Size: 731468
+MD5sum: 3b8385fcac928ac822cc2189ca5bfcb6
+SHA1: 89ff281c834372c9365660a3c0f86c6d4c95d39b
+SHA256: c901a7e49ecfb2e4d8b2c7f0954c590278453604a189ee38d89f53f2157d42ac
+Section: admin
+Priority: optional
+Multi-Arch: allowed
+Description: Proxmox websocket tunneling helper
+ Proxmox websocket tunnel helper
+ .
+ This package contains a helper binary for tunnelling UNIX sockets over a
+ websocket connection
+
 Package: proxmox-widget-toolkit
 Version: 3.3-6
 Architecture: all
@@ -8177,6 +8659,22 @@ Size: 116572
 MD5sum: a1817c38e42b6d9e53ab6df5f441a23f
 SHA1: bcad425b831ea7bc3b6c6ec9aa31d3c74d77f428
 SHA256: 64c258e9c6daabd40764ad531a566a47dda6fc452aa528b91ffce3aac6cf1991
+Section: web
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: ExtJS Helper Classes for Proxmox
+ ExtJS Helper Classes to easy access to Proxmox APIs.
+
+Package: proxmox-widget-toolkit
+Version: 3.4-7
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 484
+Filename: dev/main/binary-all/proxmox-widget-toolkit_3.4-7_all.deb
+Size: 117024
+MD5sum: 8935b72d03d0287b1b41e91cad67015c
+SHA1: 406ce1986000571e7787db46a8803ae4e0524d7f
+SHA256: 23d4b1b5e37093a1c8f1b34afbc2d1aab654d09d667d32536cd701f76d1863ed
 Section: web
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -8212,6 +8710,24 @@ Size: 21996
 MD5sum: 0ec2de1fb452842b0b850057451fe4b1
 SHA1: 06fa5bea146bdf3ae48922e82b78623e2376375a
 SHA256: 80169066fef4e1d493ad51be43305d14a60c79aeeaafd32ed71049fa25e19b1a
+Section: web
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Development dependencies for Proxmox Projects
+ Contains some common javascript code that are dev-dependencies,
+ for various Proxmox projects.
+
+Package: proxmox-widget-toolkit-dev
+Source: proxmox-widget-toolkit
+Version: 3.4-7
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 59
+Filename: dev/main/binary-all/proxmox-widget-toolkit-dev_3.4-7_all.deb
+Size: 22464
+MD5sum: 8bf0c1a8bf68c92eb5c9f22f2f5c4493
+SHA1: 442835e277c54b623bf17aa3825d114d9d4447be
+SHA256: 56a1936ad1624a0f4cea0c253d8142f7559a8793e1f4ac1fb62b1d8948a54cb6
 Section: web
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -8388,6 +8904,22 @@ Priority: optional
 Description: Proxmox VE Container management tool
  Tool to manage Linux Containers on Proxmox VE.
 
+Package: pve-container
+Version: 4.1-4
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 496
+Depends: file, libpve-cluster-perl, libpve-common-perl (>= 7.1-3), libpve-guest-common-perl (>= 4.1-1), libpve-storage-perl (>= 6.3-8), lxc-pve, pve-cluster (>= 4.0-8), pve-ha-manager (>= 3.0-9), pve-lxc-syscalld, xz-utils, perl:any
+Filename: dev/main/binary-all/pve-container_4.1-4_all.deb
+Size: 128696
+MD5sum: 7bbd018b8d89ccaa1a2af270a1deb9b4
+SHA1: 90d8e2bab8ffd39905edd50e0d1bc96f0c358c6c
+SHA256: f4026661433360fd7765e5a4dfe0f8882b07ab91cf3b5b02a9c134bbccf517eb
+Section: perl
+Priority: optional
+Description: Proxmox VE Container management tool
+ Tool to manage Linux Containers on Proxmox VE.
+
 Package: pve-doc-generator
 Source: pve-docs
 Version: 7.0-5
@@ -8431,13 +8963,13 @@ Source: pve-docs
 Version: 7.1-2
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 784
+Installed-Size: 788
 Depends: asciidoc-base, libpve-common-perl, source-highlight, xmlto, perl:any
 Filename: dev/main/binary-arm64/pve-doc-generator_7.1-2_arm64.deb
-Size: 154588
-MD5sum: b5df82c17cfbf2f0934bfb4fda783c94
-SHA1: a80f06d985bfe3d4c4739dad577711b49b556484
-SHA256: 307a71f0beff9ae9566fca98bfd97e1be8260d91d2e24ca3cbdff877947f9c23
+Size: 155460
+MD5sum: fe6299bb9dfcca7aa36cfb75c986b965
+SHA1: 38d603483d4486a12fd1f5dd91d0e1ee3ebb6fa3
+SHA256: 8236e2a44c76998d44f1f27815fea3690abc94b15c3c3f87fbda9e59576f485c
 Section: perl
 Priority: optional
 Description: Proxmox VE Documentation helpers
@@ -8481,13 +9013,13 @@ Package: pve-docs
 Version: 7.1-2
 Architecture: all
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 26623
+Installed-Size: 26708
 Depends: libjs-extjs, perl:any
 Filename: dev/main/binary-all/pve-docs_7.1-2_all.deb
-Size: 12941632
-MD5sum: 41a7a04f11c688438b901e7686cbcf6f
-SHA1: 437ee26f48312810bd70a5e63e170252bfc25fac
-SHA256: 1afdd2a30fa7d785eae373c6972f57a2fa7c51122b9c8e48bbaf99e5db18b258
+Size: 12953380
+MD5sum: 7bd017287f406fba507ce525ec59fada
+SHA1: eb651a6760367ead61fc46ce86ae98f964929a44
+SHA256: 537ee319625f7856c26d78007a01f0ab0dee6e621b911a1e7b889bc26e3e1fc4
 Section: doc
 Priority: optional
 Description: Proxmox VE Documentation
@@ -8538,10 +9070,10 @@ Installed-Size: 270
 Depends: libhtml-parser-perl, libmediawiki-api-perl, pve-docs, perl:any
 Suggests: apache2
 Filename: dev/main/binary-all/pve-docs-mediawiki_7.1-2_all.deb
-Size: 29972
-MD5sum: 34fcf5289adc46c856b3a3d8f105ba0f
-SHA1: 8f5bcc16821f07076ce72d07dacbb30041090fc8
-SHA256: 6c463a0290cc430d4fcf1e7202d9c8596d750dd24e38673eec6be4f69ca7b217
+Size: 29980
+MD5sum: ed022cf861cb066988e437a076f82b07
+SHA1: 8e6e21a39d0507c1dbe6817c56ab7a7e1842a643
+SHA256: 49f76bb740943a48e620f00979ad78e00f7024a7e3cb6bcb09f188bbb0d439c2
 Section: doc
 Priority: optional
 Description: Proxmox VE Documentation - mediawiki plugin
@@ -8747,6 +9279,23 @@ Priority: optional
 Description: Proxmox VE HA Manager
  HA Manager Proxmox VE.
 
+Package: pve-ha-manager
+Version: 3.3-3
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 241
+Depends: libjson-perl, libpve-cluster-perl, libpve-common-perl, pve-cluster (>= 3.0-17), pve-container, qemu-server (>= 6.0-15), systemd, perl:any, libc6 (>= 2.17)
+Conflicts: watchdog
+Filename: dev/main/binary-arm64/pve-ha-manager_3.3-3_arm64.deb
+Size: 57596
+MD5sum: bb86dd9780fbcb7f120444bec906af5a
+SHA1: bcfdcfd6808591d4b64c88474aac865cfc157bf4
+SHA256: 47f259e1e2497e5ce51f0c00bb879b4d070520b1adb5bbbdbdd29b70f41e0fdb
+Section: perl
+Priority: optional
+Description: Proxmox VE HA Manager
+ HA Manager Proxmox VE.
+
 Package: pve-ha-simulator
 Source: pve-ha-manager
 Version: 3.3-1
@@ -8759,6 +9308,23 @@ Size: 71968
 MD5sum: 0182823adbfaacf6d437eace834daf30
 SHA1: 8c67b26ba824c04d4e8c3e579172fac67a178034
 SHA256: c127781a575a598f4ec5c732b9d519ed1ed872eeb94a1aea0bb9d86f8e12a214
+Section: perl
+Priority: optional
+Description: Proxmox VE HA Simulator
+ This is a simple GUI to simulate the behavior of a Proxmox VE HA cluster.
+
+Package: pve-ha-simulator
+Source: pve-ha-manager
+Version: 3.3-3
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 326
+Depends: libclone-perl, libdevel-cycle-perl, libencode-locale-perl, libfilesys-df-perl, libglib-perl, libgtk3-perl, libhttp-message-perl, libjson-perl, libnet-ip-perl, libstring-shellquote-perl, liburi-perl, perl:any
+Filename: dev/main/binary-all/pve-ha-simulator_3.3-3_all.deb
+Size: 73900
+MD5sum: f665b4a8dbfe2840217cc334c782c7cf
+SHA1: ed588cb476fa120713008ff0af2eef3577cfe2ee
+SHA256: 8ef4769c8457c5b64140408914f32327f5cef9a332091baedd3a5c914077c236
 Section: perl
 Priority: optional
 Description: Proxmox VE HA Simulator
@@ -8949,12 +9515,12 @@ Source: proxmox-i18n
 Version: 2.6-2
 Architecture: all
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 805
+Installed-Size: 818
 Filename: dev/main/binary-all/pve-i18n_2.6-2_all.deb
-Size: 199828
-MD5sum: 6a0fa16d817c4b3d919c12135815768f
-SHA1: a27328bca8ff3ce6ae936615376de8ce4720e8cb
-SHA256: 164158788434c7066d1fe0a2305e42ba46dcd6b75462218c3f00250add6f9ed8
+Size: 203056
+MD5sum: 593e663825001db18f7ef23ec7de7941
+SHA1: 62b955fc23e7ab8317b4402628598ac694ce862e
+SHA256: b01799ecab28d4815d9daae8d3d11be8e1dd118aa93d5c37a408b85a79cdd728
 Section: perl
 Priority: optional
 Homepage: https://www.proxmox.com
@@ -9282,6 +9848,27 @@ Size: 2059424
 MD5sum: 7b9d16acd747a52326846dcd78d2264e
 SHA1: b9a05969a087b53cc7672f311aeea95a7a2e2d81
 SHA256: 471ac9a5824a91a6df9a2e6d7ba7ffb5f8adce299331bcda07cec5832467483e
+Section: admin
+Priority: optional
+Description: Proxmox Virtual Environment Management Tools
+ This package contains the Proxmox Virtual Environment management tools.
+
+Package: pve-manager
+Version: 7.1-10
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 9959
+Depends: apt-transport-https | apt (>= 1.5~), ca-certificates, cstream, dtach, fonts-font-awesome, gdisk, hdparm, ifupdown2 (>= 2.0.1-1+pve8) | ifenslave (>= 2.6), libapt-pkg-perl, libc6 (>= 2.17), libcrypt-ssleay-perl, libfile-readbackwards-perl, libfilesys-df-perl, libjs-extjs (>= 7.0.0), libjs-qrcodejs (>= 1.20201119), libjson-perl, liblwp-protocol-https-perl, libnet-dns-perl, libproxmox-acme-perl, libproxmox-acme-plugins, libpve-access-control (>= 7.0-7), libpve-cluster-api-perl (>= 7.0-5), libpve-cluster-perl (>= 6.1-6), libpve-common-perl (>= 7.1-1), libpve-guest-common-perl (>= 4.0-2), libpve-http-server-perl (>= 4.1-1), libpve-rs-perl (>= 0.5.0), libpve-storage-perl (>= 7.0-15), librados2-perl, libtemplate-perl, libterm-readline-gnu-perl, liburi-perl, libuuid-perl, libwww-perl (>= 6.04-1), logrotate, lsb-base, lzop, zstd, novnc-pve (>= 1.2.0-2~), pciutils, perl (>= 5.10.0-19), postfix | mail-transport-agent, proxmox-mini-journalreader (>= 1.3-1), proxmox-widget-toolkit (>= 3.4-1), pve-cluster (>= 7.0-4), pve-container (>= 4.0-9), pve-docs, pve-firewall, pve-ha-manager, pve-i18n (>= 1.0-3), pve-xtermjs (>= 4.7.0-1), qemu-server (>= 6.2-17), rsync, spiceterm, systemd, vncterm, wget, perl:any
+Suggests: libpve-network-perl (>= 0.5-1)
+Conflicts: vlan, vzdump
+Breaks: libpve-network-perl (<< 0.5-1)
+Replaces: vlan, vzdump
+Provides: vlan, vzdump
+Filename: dev/main/binary-arm64/pve-manager_7.1-10_arm64.deb
+Size: 2065420
+MD5sum: 6bdafc8c8f5bc0901c66e4e77cdd9067
+SHA1: 6f639613dfbd1827e0225a3ca7096351c5b2fb1c
+SHA256: 471cce3bb8d15966fcbeccf050251acc65300b28228fcd6908bd582aa91cf2fc
 Section: admin
 Priority: optional
 Description: Proxmox Virtual Environment Management Tools
@@ -9965,14 +10552,14 @@ Package: qemu-server
 Version: 7.1-4rpve1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
-Installed-Size: 779
-Depends: dbus, genisoimage, libio-multiplex-perl, libjson-perl, libjson-xs-perl, libnet-ssleay-perl, libpve-access-control (>= 5.0-7), libpve-cluster-perl, libpve-common-perl (>= 7.0-14), libpve-guest-common-perl (>= 3.1-3), libpve-storage-perl (>= 6.3-8), libterm-readline-gnu-perl, libuuid-perl, libxml-libxml-perl, perl (>= 5.10.0-19), pve-cluster, pve-edk2-firmware (>= 3.20210831-1), pve-firewall, pve-ha-manager (>= 3.0-9), pve-qemu-kvm (>= 3.0.1-62), socat, perl:any, libc6 (>= 2.17), libglib2.0-0 (>= 2.28.0), libjson-c5 (>= 0.15)
+Installed-Size: 777
+Depends: dbus, genisoimage, libio-multiplex-perl, libjson-perl, libjson-xs-perl, libnet-ssleay-perl, libpve-access-control (>= 5.0-7), libpve-cluster-perl, libpve-common-perl (>= 7.1-3), libpve-guest-common-perl (>= 4.1-1), libpve-storage-perl (>= 6.3-8), libterm-readline-gnu-perl, libuuid-perl, libxml-libxml-perl, perl (>= 5.10.0-19), pve-cluster, pve-edk2-firmware (>= 3.20210831-1), pve-firewall, pve-ha-manager (>= 3.0-9), pve-qemu-kvm (>= 3.0.1-62), socat, perl:any, libc6 (>= 2.17), libglib2.0-0 (>= 2.28.0), libjson-c5 (>= 0.15)
 Breaks: pve-ha-manager (<= 3.0-4), pve-manager (<= 6.0-13)
 Filename: dev/main/binary-arm64/qemu-server_7.1-4rpve1_arm64.deb
-Size: 183904
-MD5sum: 6eb19243b01c07c0892fa915a97463fe
-SHA1: 64c208930ac7f246ae43439324e18e8d65b77c7d
-SHA256: 3d8e7494b31de174c48289d68083577ae9a77b93ea08abff977bf82c44b1899d
+Size: 183568
+MD5sum: a11ff3234935f8f40bf2af9f11f3d09f
+SHA1: 0e27ed612256b944a61219882d25af251f8bf227
+SHA256: 53ef0570eb8196e418e53ec934d318b77d2559dae1777747939e9e63538708e8
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
