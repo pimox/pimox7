@@ -9969,10 +9969,10 @@ Conflicts: kvm, pve-kvm, pve-qemu-kvm-2.6.18, qemu, qemu-kvm, qemu-system-arm, q
 Replaces: pve-kvm, pve-qemu-kvm-2.6.18, qemu-system-arm, qemu-system-x86, qemu-utils
 Provides: qemu-system-arm, qemu-system-x86, qemu-utils
 Filename: dev/main/binary-arm64/pve-qemu-kvm_6.2.0-1_arm64.deb
-Size: 26097864
-MD5sum: 71c1d5624753f1768290fbb40bc7fc8d
-SHA1: f49048bf8797c91ef1e8390253cfe2ab72096798
-SHA256: ff6fe7836ae27cb4619daa84ac02c20c9931616dd43694d6e6941c4e9dd221fe
+Size: 26098152
+MD5sum: 1fbde2a00394e5733572e3cc69708448
+SHA1: 793a79d69876c81a2d55e90879dfe2a64ff0f9e4
+SHA256: 34bfc7550464b079d9257898827e6e0142dc31d6cea718e4c99e8e66747575d4
 Section: admin
 Priority: optional
 Description: Full virtualization on x86 hardware
@@ -10582,6 +10582,24 @@ Size: 183568
 MD5sum: a11ff3234935f8f40bf2af9f11f3d09f
 SHA1: 0e27ed612256b944a61219882d25af251f8bf227
 SHA256: 53ef0570eb8196e418e53ec934d318b77d2559dae1777747939e9e63538708e8
+Section: admin
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Qemu Server Tools
+ This package contains the Qemu Server tools used by Proxmox VE
+
+Package: qemu-server
+Version: 7.1-4rpve2
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 777
+Depends: dbus, genisoimage, libio-multiplex-perl, libjson-perl, libjson-xs-perl, libnet-ssleay-perl, libpve-access-control (>= 5.0-7), libpve-cluster-perl, libpve-common-perl (>= 7.1-3), libpve-guest-common-perl (>= 4.1-1), libpve-storage-perl (>= 6.3-8), libterm-readline-gnu-perl, libuuid-perl, libxml-libxml-perl, perl (>= 5.10.0-19), pve-cluster, pve-edk2-firmware (>= 3.20210831-1), pve-firewall, pve-ha-manager (>= 3.0-9), pve-qemu-kvm (>= 3.0.1-62), socat, perl:any, libc6 (>= 2.17), libglib2.0-0 (>= 2.28.0), libjson-c5 (>= 0.15)
+Breaks: pve-ha-manager (<= 3.0-4), pve-manager (<= 6.0-13)
+Filename: dev/main/binary-arm64/qemu-server_7.1-4rpve2_arm64.deb
+Size: 183680
+MD5sum: 830c9a761a091a78e03a1a539acfb70e
+SHA1: ddb4435c9b99275d4dc78324d00b5bf71faede66
+SHA256: 4af9e1bac223a5c538367741bc1fdac7bf6ff04d6efd3e40bc73cf17e7916143
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
