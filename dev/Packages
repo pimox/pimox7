@@ -9958,6 +9958,28 @@ Description: Full virtualization on x86 hardware
  Windows images. Each virtual machine has private virtualized hardware: a
  network card, disk, graphics adapter, etc.
 
+Package: pve-qemu-kvm
+Version: 6.2.0-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 281540
+Depends: ceph-common (>= 0.48), iproute2, libgfapi0 | glusterfs-common (>= 5.6), libgfchangelog0 | glusterfs-common (>= 5.6), libgfdb0 | glusterfs-common (>= 5.6), libgfrpc0 | glusterfs-common (>= 5.6), libgfxdr0 | glusterfs-common (>= 5.6), libglusterfs-dev | glusterfs-common (>= 5.6), libglusterfs0 | glusterfs-common (>= 5.6), libiscsi7 (>= 1.18.0), libjemalloc2, libjpeg62-turbo (>= 1.3.1), libspice-server1 (>= 0.14.2), libusb-1.0-0 (>= 2:1.0.23~), libusbredirparser1 (>= 0.6-2), libuuid1 (>= 2.16), libaio1 (>= 0.3.93), libasound2 (>= 1.0.16), libc6 (>= 2.29), libcap-ng0 (>= 0.7.9), libcurl3-gnutls (>= 7.16.3), libepoxy0 (>= 1.0), libfdt1 (>= 1.6.0), libfuse3-3 (>= 3.2.3), libgcc-s1 (>= 3.0), libglib2.0-0 (>= 2.57.2), libgnutls30 (>= 3.7.0), libncursesw6 (>= 6), libnuma1 (>= 2.0.11), libpam0g (>= 0.99.7.1), libpixman-1-0 (>= 0.30.0), libpng16-16 (>= 1.6.2-1), libproxmox-backup-qemu0 (>= 1.0.3), libpulse0 (>= 0.99.1), librados2, librbd1, libseccomp2 (>= 2.1.0), libselinux1 (>= 3.1~), libsnappy1v5 (>= 1.1.8), libstdc++6 (>= 4.6), libsystemd0, libtinfo6 (>= 6), libudev1 (>= 183), liburing1 (>= 0.7), libvirglrenderer1 (>= 0.8.0), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.2.0)
+Recommends: numactl
+Conflicts: kvm, pve-kvm, pve-qemu-kvm-2.6.18, qemu, qemu-kvm, qemu-system-arm, qemu-system-common, qemu-system-x86, qemu-utils
+Replaces: pve-kvm, pve-qemu-kvm-2.6.18, qemu-system-arm, qemu-system-x86, qemu-utils
+Provides: qemu-system-arm, qemu-system-x86, qemu-utils
+Filename: dev/main/binary-arm64/pve-qemu-kvm_6.2.0-1_arm64.deb
+Size: 26097864
+MD5sum: 71c1d5624753f1768290fbb40bc7fc8d
+SHA1: f49048bf8797c91ef1e8390253cfe2ab72096798
+SHA256: ff6fe7836ae27cb4619daa84ac02c20c9931616dd43694d6e6941c4e9dd221fe
+Section: admin
+Priority: optional
+Description: Full virtualization on x86 hardware
+ Using KVM, one can run multiple virtual PCs, each running unmodified Linux or
+ Windows images. Each virtual machine has private virtualized hardware: a
+ network card, disk, graphics adapter, etc.
+
 Package: pve-xtermjs
 Source: rust-termproxy
 Version: 4.12.0-1
