@@ -9865,10 +9865,10 @@ Breaks: libpve-network-perl (<< 0.5-1)
 Replaces: vlan, vzdump
 Provides: vlan, vzdump
 Filename: dev/main/binary-arm64/pve-manager_7.1-10_arm64.deb
-Size: 2065888
-MD5sum: b7aa3d2cf36ad5b512525de6cee778ea
-SHA1: 24c9c3bfc8dd2ceeb20e8397838004025600d8be
-SHA256: 3beb93a0177bdea24f58948c61ba7267b20e67922b08a899f875f7f8ee951d4e
+Size: 2065420
+MD5sum: 6bdafc8c8f5bc0901c66e4e77cdd9067
+SHA1: 6f639613dfbd1827e0225a3ca7096351c5b2fb1c
+SHA256: 471cce3bb8d15966fcbeccf050251acc65300b28228fcd6908bd582aa91cf2fc
 Section: admin
 Priority: optional
 Description: Proxmox Virtual Environment Management Tools
