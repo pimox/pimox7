@@ -1,7 +1,7 @@
 # !/bin/bash
 #######################################################################
 # Name:     RPiOS64-IA-Install.sh           Version:      0.1.2       #
-# Created:  07.09.2021                      Modified: 06.12.2021      #
+# Created:  07.09.2021                      Modified: 22.02.2022      #
 # Author:   TuxfeatMac J.T.                                           #
 # Purpose:  interactive, automatic, Pimox7 installation RPi4B, RPi3B+ #
 #########################################################################################################################################
@@ -34,6 +34,7 @@ $NORMAL\n" && sleep 3
 RPIMOD=$(cat /sys/firmware/devicetree/base/model | cut -d ' ' -f 3)
 if [ $RPIMOD == 3 ]
  then
+  printf "Officially, the only supported model is Raspberry Pi 4. Unfortunately, you have a model 3.\n"
   printf "Edit installer.sh manually.. I hope you know what you are doing..."
   exit
   ## WORKS BUT DOSEN'T SHOW RPI 3 WARNINGS YET ...
