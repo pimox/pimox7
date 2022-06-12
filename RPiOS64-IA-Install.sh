@@ -142,7 +142,7 @@ hostnamectl set-hostname $HOSTNAME
 printf "# PiMox7 Development Repo
 deb https://raw.githubusercontent.com/pimox/pimox7/master/ dev/ \n" > /etc/apt/sources.list.d/pimox.list
 curl https://raw.githubusercontent.com/pimox/pimox7/master/KEY.gpg |  apt-key add -
-apt update && apt upgrade -y && apt install -y raspberrypi-kernel-headers
+apt update && apt upgrade -y
 
 #### REMOVE DHCP, CLEAN UP ###############################################################################################################
 apt purge -y dhcpcd5
