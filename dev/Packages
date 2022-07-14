@@ -4287,6 +4287,25 @@ Homepage: https://www.proxmox.com
 Description: Proxmox VE storage management library
  This package contains the storage management library used by Proxmox VE.
 
+Package: libpve-storage-perl
+Version: 7.2-5
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 580
+Depends: ceph-common (>= 12.2~), ceph-fuse, cifs-utils, cstream, glusterfs-client (>= 3.4.0-2), libfile-chdir-perl, libposix-strptime-perl, libpve-apiclient-perl (>= 3.1-1), libpve-cluster-perl, libpve-common-perl (>= 7.2-1), librados2-perl, lvm2, nfs-common, proxmox-backup-client (>= 2.1.10~), proxmox-backup-file-restore, pve-cluster (>= 5.0-32), smartmontools, smbclient, thin-provisioning-tools, udev, perl:any
+Recommends: zfs-zed
+Breaks: libpve-guest-common-perl (<< 4.0-3), libpve-http-server-perl (<< 4.0-3), pve-container (<< 3.1-2), pve-manager (<< 5.2-12), qemu-server (<< 6.1-14)
+Filename: dev/main/binary-all/libpve-storage-perl_7.2-5_all.deb
+Size: 131572
+MD5sum: e91baa932281047fb93465baab42c800
+SHA1: 4d4009e6e4a867e6a5552af51376e82bd4fbac3a
+SHA256: 3bc02a5dc66e2ae559debce431da00ca9a9d9a89aefb3a3fe264dbb17a19f2d8
+Section: perl
+Priority: optional
+Homepage: https://www.proxmox.com
+Description: Proxmox VE storage management library
+ This package contains the storage management library used by Proxmox VE.
+
 Package: libpve-u2f-server-perl
 Version: 1.1-1
 Architecture: arm64
