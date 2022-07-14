@@ -9150,6 +9150,24 @@ Description: cluster engine Votequorum library
 
 Package: linux-tools-5.10
 Source: pve-kernel
+Version: 5.10.110-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 3380
+Depends: linux-base, libbabeltrace1 (>= 1.5.4), libc6 (>= 2.28), libcap2 (>= 1:2.10), libdw1 (>= 0.158), libelf1 (>= 0.144), liblzma5 (>= 5.1.1alpha+20120614), libnuma1 (>= 2.0.11), libslang2 (>= 2.2.4), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.2.3.3)
+Filename: dev/main/binary-arm64/linux-tools-5.10_5.10.110-1_arm64.deb
+Size: 1142780
+MD5sum: 84d075c7ff61a98956791a7585faad34
+SHA1: 928f6db317cc0ae6b5f5b205232a96036d33add9
+SHA256: 17d0072f3c461104bc7b2ee6ea7bef93be8f179aa3e3dceb62a7328457db57fe
+Section: devel
+Priority: optional
+Description: Linux kernel version specific tools for version 5.10
+ This package provides the architecture dependent parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy)
+
+Package: linux-tools-5.10
+Source: pve-kernel
 Version: 5.10.83-1
 Architecture: arm64
 Maintainer: Proxmox Support Team <support@proxmox.com>
@@ -10951,6 +10969,24 @@ Description: Default Proxmox VE Kernel Headers
  This is a metapackage which will install the kernel headers for the
  current default kernel.
 
+Package: pve-headers-5.10.110-1-pve
+Source: pve-kernel
+Version: 5.10.110-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 61286
+Depends: coreutils | fileutils (>= 4.0)
+Provides: linux-headers-5.10.110-1-pve-amd64
+Filename: dev/main/binary-arm64/pve-headers-5.10.110-1-pve_5.10.110-1_arm64.deb
+Size: 9719992
+MD5sum: 4b7fe44d60e5afad01fd100ec3d6147c
+SHA1: d475500347823ce62e8f4d1be1c94348b6b6b1c7
+SHA256: c683b573ef061f43d5b51cd85af26ab345d56ab86ddafb55e60c64d2ee9ead58
+Section: devel
+Priority: optional
+Description: Proxmox Kernel Headers
+ This package contains the linux kernel headers
+
 Package: pve-headers-5.10.83-1-pve
 Source: pve-kernel
 Version: 5.10.83-1
@@ -11127,6 +11163,28 @@ Homepage: https://www.proxmox.com
 Description: Internationalization support for Proxmox VE
  This package provides the translations into all available languages.
 
+Package: pve-kernel-5.10.110-1-pve
+Source: pve-kernel
+Version: 5.10.110-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 104959
+Depends: busybox, initramfs-tools
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub-efi-arm64
+Suggests: pve-firmware
+Conflicts: linux-image
+Replaces: linux-image
+Provides: linux-image
+Filename: dev/main/binary-arm64/pve-kernel-5.10.110-1-pve_5.10.110-1_arm64.deb
+Size: 24822044
+MD5sum: 0b5113b6d12b58d5d0cce6dcbfa06302
+SHA1: 6c5cbfb102d288c6dd660f5dd485fdcc774e7199
+SHA256: d0f940523be4a574c802fbd5f854cc3b50476c59a4a7b713552a8d5f650f10f4
+Section: admin
+Priority: optional
+Description: Proxmox Kernel Image
+ This package contains the linux kernel and initial ramdisk used for booting
+
 Package: pve-kernel-5.10.83-1-pve
 Source: pve-kernel
 Version: 5.10.83-1
@@ -11250,6 +11308,26 @@ Section: admin
 Priority: optional
 Description: The Proxmox PVE Kernel Image
  This package contains the linux kernel and initial ramdisk used for booting
+
+Package: pve-kernel-libc-dev
+Source: pve-kernel
+Version: 5.10.110-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 5215
+Conflicts: linux-libc-dev
+Replaces: linux-libc-dev
+Provides: linux-libc-dev (= 5.10.110-1)
+Filename: dev/main/binary-arm64/pve-kernel-libc-dev_5.10.110-1_arm64.deb
+Size: 1029396
+MD5sum: 6495407cfab9af6146b014e121eed7a8
+SHA1: 0bd033bc305e6d9bd02e1c6c0ec1451e47db54a3
+SHA256: a5bcc4c3aec690cee9cc62c06fc293d56c9e3c5aa3396b46bf416add8d3a79fa
+Section: devel
+Priority: optional
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU libc and other system libraries.
 
 Package: pve-kernel-libc-dev
 Source: pve-kernel
