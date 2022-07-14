@@ -11497,6 +11497,27 @@ Priority: optional
 Description: Proxmox Virtual Environment Management Tools
  This package contains the Proxmox Virtual Environment management tools.
 
+Package: pve-manager
+Version: 7.2-7
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 10000
+Depends: apt-transport-https | apt (>= 1.5~), ca-certificates, cstream, dtach, fonts-font-awesome, gdisk, hdparm, ifupdown2 (>= 2.0.1-1+pve8) | ifenslave (>= 2.6), libapt-pkg-perl, libc6 (>= 2.17), libcrypt-ssleay-perl, libfile-readbackwards-perl, libfilesys-df-perl, libjs-extjs (>= 7.0.0), libjs-qrcodejs (>= 1.20201119), libjson-perl, liblwp-protocol-https-perl, libnet-dns-perl, libproxmox-acme-perl, libproxmox-acme-plugins, libproxmox-rs-perl, libpve-access-control (>= 7.0-7), libpve-cluster-api-perl (>= 7.0-5), libpve-cluster-perl (>= 6.1-6), libpve-common-perl (>= 7.1-4), libpve-guest-common-perl (>= 4.0-2), libpve-http-server-perl (>= 4.1-1), libpve-rs-perl (>= 0.5.0), libpve-storage-perl (>= 7.2-3), librados2-perl, libtemplate-perl, libterm-readline-gnu-perl, liburi-perl, libuuid-perl, libwww-perl (>= 6.04-1), logrotate, lsb-base, lzop, zstd, novnc-pve (>= 1.2.0-2~), pciutils, perl (>= 5.10.0-19), postfix | mail-transport-agent, proxmox-mini-journalreader (>= 1.3-1), proxmox-widget-toolkit (>= 3.4-9), pve-cluster (>= 7.0-4), pve-container (>= 4.0-9), pve-docs, pve-firewall, pve-ha-manager, pve-i18n (>= 1.0-3), pve-xtermjs (>= 4.7.0-1), qemu-server (>= 6.2-17), rsync, spiceterm, systemd, vncterm, wget, perl:any
+Suggests: libpve-network-perl (>= 0.5-1)
+Conflicts: vlan, vzdump
+Breaks: libpve-network-perl (<< 0.5-1)
+Replaces: vlan, vzdump
+Provides: vlan, vzdump
+Filename: dev/main/binary-arm64/pve-manager_7.2-7_arm64.deb
+Size: 2075904
+MD5sum: 6090850d04911eaa2b67086166b00ad4
+SHA1: cc4ce3fe785f28f869e692966b420dccc66a9c7f
+SHA256: 98b35d143a6c7c39fb3cc513643ae79962e016844379dbee336b346389a7cc21
+Section: admin
+Priority: optional
+Description: Proxmox Virtual Environment Management Tools
+ This package contains the Proxmox Virtual Environment management tools.
+
 Package: pve-qemu-kvm
 Version: 6.0.0-3
 Architecture: arm64
@@ -11596,6 +11617,26 @@ Size: 562260
 MD5sum: b172ce15524204e098ef04a40c151c4d
 SHA1: f3a1f343d24d037f1d9f87555f68a5d153c1bf08
 SHA256: 80622079b6830c3ab3e4938846410c5e48d83f1e71bc96711d591c1efafebf7a
+Section: admin
+Priority: optional
+Multi-Arch: allowed
+Homepage: https://www.proxmox.com
+Description: HTML/JS Shell client for Proxmox projects
+ This package provides an xterm.js client/proxy for Proxmoxprojects'  Hosts,
+ Proxmox VE containers or Proxmox VE VM's serial-terminals.
+
+Package: pve-xtermjs
+Source: rust-termproxy
+Version: 4.16.0-1
+Architecture: arm64
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 3001
+Depends: libacl1 (>= 2.2.23), libc6 (>= 2.29), libcrypt1 (>= 1:4.1.0), libgcc-s1 (>= 4.2)
+Filename: dev/main/binary-arm64/pve-xtermjs_4.16.0-1_arm64.deb
+Size: 744016
+MD5sum: db8d61c5ed51adf48c3ee03f0ecf13c9
+SHA1: 58f5a2cf93edb12addc252ffb808b507abf0f6fe
+SHA256: 13e7acf81a8bd4e9ca08f2af66816166914e97c19545731112fa9f84b4e1c087
 Section: admin
 Priority: optional
 Multi-Arch: allowed
