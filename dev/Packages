@@ -10002,15 +10002,15 @@ Version: 7.2-1
 Architecture: all
 Maintainer: Proxmox Support Team <support@proxmox.com>
 Installed-Size: 28
-Depends: apt, openssh-client, openssh-server, proxmox-archive-keyring, pve-kernel-5.15, pve-kernel-helper, pve-manager, pve-qemu-kvm, qemu-server, spiceterm, vncterm, zfsutils-linux, chrony, ksmtuned, ceph-dkms
+Depends: apt, openssh-client, openssh-server, proxmox-archive-keyring, pve-manager, pve-qemu-kvm, qemu-server, spiceterm, vncterm, zfsutils-linux, chrony, ksmtuned, ceph-dkms
 Conflicts: proxmox-ve-3.10.0, proxmox-virtual-environment, pve-kernel
 Replaces: proxmox-ve-3.10.0, proxmox-virtual-environment, pve-kernel
 Provides: proxmox-virtual-environment
 Filename: dev/main/binary-all/proxmox-ve_7.2-1_all.deb
-Size: 6284
-MD5sum: b0a6fe8691165239961c03512bd17d68
-SHA1: f46e9e657772ecd8143f2a2244a9b51a57f95f33
-SHA256: 35b03ae776cf68d2f75aef5a3a0e4dc5b7102a892839a8dc136ceff57dc7be3f
+Size: 6276
+MD5sum: ec0eb0191a37af59e268b7912735652c
+SHA1: ab6bba910ca8703ea2c9aeef92c9d72d89ab8c4f
+SHA256: a8ccc0cad70ea3b0ef19a6a6880819a1cf86abd2879899cb1dd10908fe8dcbee
 Section: admin
 Priority: optional
 Homepage: https://www.proxmox.com
