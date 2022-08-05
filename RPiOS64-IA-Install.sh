@@ -157,6 +157,11 @@ if [ "$(cat /boot/cmdline.txt | grep cgroup)" != "" ]
 fi
 
 #### INSTALL PIMOX7 AND REBOOT ###########################################################################################################
+
+#### Install pve-manager separately, and without recommended packages, to avoid packaging issue later.
+DEBIAN_FRONTEND=noninteractive apt install -y --no-install-recommends -o Dpkg::Options::="--force-confdef" pve-manager
+
+#### Continue with remaining packages
 DEBIAN_FRONTEND=noninteractive apt install -y -o Dpkg::Options::="--force-confdef" proxmox-ve
 
 #### RECONFIGURE NETWORK #### /etc/hosts REMOVE IPv6 #### /etc/network/interfaces.new CONFIGURE NETWORK TO CHANGE ON REBOOT ##############
