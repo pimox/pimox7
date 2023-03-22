@@ -16,7 +16,7 @@ GREEN=$(tput setaf 2)
 YELLOW=$(tput setaf 3)
 GREY=$(tput setaf 8)
 
-#### SCRIPT IS MENT TO BE TO RUN AS ROOT! NOT AS PI WITH SUDO ###########################################################################
+#### SCRIPT IS MEANT TO BE TO RUN AS ROOT! NOT AS PI WITH SUDO ###########################################################################
 if [ $USER != root ]
  then
   printf "${RED}PLEASE RUN THIS SCRIPT AS ROOT! DONT USE SUDO! $NORMAL \n"
@@ -24,7 +24,7 @@ if [ $USER != root ]
 fi
 printf " $YELLOW
 ====================================================================
-!    PLEASE DONT USE SUDO, USE SU TO LOGIN TO THE ROOT USER        !
+!    PLEASE DONT USE SUDO USE SU TO LOGIN TO THE ROOT USER        !
 ! PLEASE STOP THIS SCRIPT NOW WITH CONTROL+C IF YOU ARE USING SUDO !
 !               CONTINUING SETUP IN 3 SECONDS...                   !
 ====================================================================
@@ -56,7 +56,7 @@ fi
 read -p "Enter new hostname e.g. RPi4-01-PVE : " HOSTNAME
 while [[ ! "$HOSTNAME" =~ ^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])$  ]]
  do
-  printf " --->$RED $HOSTNAME $NORMAL<--- Is NOT an valid HOSTNAME, try again...\n"
+  printf " --->$RED $HOSTNAME $NORMAL<--- is NOT a valid HOSTNAME, try again...\n"
   read -p "Enter new hostname e.g.: RPi4-01-PVE  : " HOSTNAME
 done
 
@@ -64,7 +64,7 @@ done
 read -p "Enter new static IP and NETMASK e.g. 192.168.0.100/24 : " RPI_IP
 while [[ ! "$RPI_IP" =~ ^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}+\/[0-9]+$ ]]
  do
-  printf " --->$RED $RPI_IP $NORMAL<--- Is NOT an valid IPv4 ADDRESS with NETMASK, try again...\n"
+  printf " --->$RED $RPI_IP $NORMAL<--- is NOT a valid IPv4 ADDRESS with NETMASK, try again...\n"
   read -p "IPADDRESS & NETMASK ! E.G.: 192.168.0.100/24 : " RPI_IP
 done
 RPI_IP_ONLY=$(echo "$RPI_IP" | cut -d '/' -f 1)
@@ -77,7 +77,7 @@ if [ "$CORRECT" != "y" ]
   read -p "Enter the gateway  e.g. 192.168.0.1 : " GATEWAY
   while [[ ! "$GATEWAY" =~ ^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$  ]]
    do
-    printf " --->$RED $GATEWAY $NORMAL<--- Is NOT an valid IPv4 GATEWAY, try again...\n"
+    printf " --->$RED $GATEWAY $NORMAL<--- is NOT a valid IPv4 GATEWAY, try again...\n"
     read -p "THE GATEWAY IP ! E.G. 192.168.0.1 : " GATEWAY
   done
 fi
