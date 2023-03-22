@@ -82,6 +82,9 @@ if [ "$CORRECT" != "y" ]
   done
 fi
 
+#### MAC ################################################################################################################################
+MAC=$(cat /sys/class/net/eth0/address)
+
 #### AGREE TO CHANGES ###################################################################################################################
 printf "
 $YELLOW#########################################################################################
@@ -105,6 +108,7 @@ iface vmbr0 inet static
         bridge-ports eth0
         bridge-stp off
         bridge-fd 0
+        post-up ip link set vmbr0 address $MAC
 =========================================================================================
 THE HOSTNAMES IN : $YELLOW /etc/hosts $NORMAL WILL BE $RED OVERWRITTEN $NORMAL !!! WITH :
 127.0.0.1\tlocalhost
@@ -183,7 +187,8 @@ iface vmbr0 inet static
         gateway $GATEWAY
         bridge-ports eth0
         bridge-stp off
-        bridge-fd 0 \n" > /etc/network/interfaces.new
+        bridge-fd 0
+        post-up ip link set vmbr0 address $MAC \n" > /etc/network/interfaces.new
 
 #### CONFIGURE PIMOX7 BANNER #############################################################################################################
 cp /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js.auto.backup
