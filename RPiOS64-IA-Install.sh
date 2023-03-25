@@ -109,7 +109,7 @@ iface vmbr0 inet static
 THE HOSTNAMES IN : $YELLOW /etc/hosts $NORMAL WILL BE $RED OVERWRITTEN $NORMAL !!! WITH :
 127.0.0.1\tlocalhost
 $RPI_IP_ONLY\t$HOSTNAME"
-uname -a | cut -d " " -f 3 | grep -E '6\.[0-9]+\.[0-9]+'
+uname -a | cut -d " " -f 3 | grep -q -E '6\.[0-9]+\.[0-9]+'
 if [ $? != 0 ]
 then
 printf "=========================================================================================
@@ -162,7 +162,7 @@ apt autoremove -y
 #### FIX CONTAINER STATS NOT SHOWING UP IN WEB GUI #######################################################################################
 
 # Check if kernel version is over 6.X.X if true add systemd.unified_cgroup_hierarchy=0 else systemd.unified_cgroup_hierarchy=0 in /boot/cmdline.txt
-name -a | cut -d " " -f 3 | grep -E '6\.[0-9]+\.[0-9]+'
+name -a | cut -d " " -f 3 | grep -q -E '6\.[0-9]+\.[0-9]+'
 if [ $? != 0 ]
 then
   if [ "$(cat /boot/cmdline.txt | grep cgroup)" != "" ]
