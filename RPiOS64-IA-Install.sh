@@ -108,13 +108,24 @@ iface vmbr0 inet static
 =========================================================================================
 THE HOSTNAMES IN : $YELLOW /etc/hosts $NORMAL WILL BE $RED OVERWRITTEN $NORMAL !!! WITH :
 127.0.0.1\tlocalhost
-$RPI_IP_ONLY\t$HOSTNAME
-=========================================================================================
+$RPI_IP_ONLY\t$HOSTNAME"
+uname -a | cut -d " " -f 3 | grep -E '6\.[0-9]+\.[0-9]+'
+if [ $? != 0 ]
+then
+printf "=========================================================================================
 THESE STATEMENTS WILL BE $RED ADDED $NORMAL TO THE $YELLOW /boot/cmdline.txt $NORMAL IF NONE EXISTENT :
 cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1
 $YELLOW=========================================================================================
 #########################################################################################\n $NORMAL
 "
+else
+printf "=========================================================================================
+THESE STATEMENTS WILL BE $RED ADDED $NORMAL TO THE $YELLOW /boot/cmdline.txt $NORMAL IF NONE EXISTENT :
+systemd.unified_cgroup_hierarchy=0
+$YELLOW=========================================================================================
+#########################################################################################\n $NORMAL
+"
+fi
 
 #### PROMPT FOR CONFORMATION ############################################################################################################
 read -p "YOU ARE OKAY WITH THESE CHANGES ? YOUR DECLARATIONS ARE CORRECT ? CONTINUE ? y / n : " CONFIRM
@@ -149,11 +160,24 @@ apt purge -y dhcpcd5
 apt autoremove -y
 
 #### FIX CONTAINER STATS NOT SHOWING UP IN WEB GUI #######################################################################################
-if [ "$(cat /boot/cmdline.txt | grep cgroup)" != "" ]
- then
-  printf "Seems to be already fixed!"
- else
-  sed -i "1 s|$| cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1|" /boot/cmdline.txt
+
+# Check if kernel version is over 6.X.X if true add systemd.unified_cgroup_hierarchy=0 else systemd.unified_cgroup_hierarchy=0 in /boot/cmdline.txt
+name -a | cut -d " " -f 3 | grep -E '6\.[0-9]+\.[0-9]+'
+if [ $? != 0 ]
+then
+  if [ "$(cat /boot/cmdline.txt | grep cgroup)" != "" ]
+  then
+    printf "Seems to be already fixed!"
+  else
+    sed -i "1 s|$| cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1|" /boot/cmdline.txt
+  fi
+else
+  if [ "$(cat /boot/cmdline.txt | grep unified_cgroup)" != "" ]
+  then
+    printf "Seems to be already fixed!"
+  else
+    sed -i "1 s|$| systemd.unified_cgroup_hierarchy=0|" /boot/cmdline.txt
+  fi
 fi
 
 #### INSTALL PIMOX7 AND REBOOT ###########################################################################################################
