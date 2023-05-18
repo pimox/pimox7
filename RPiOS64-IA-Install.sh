@@ -16,7 +16,7 @@ GREEN=$(tput setaf 2)
 YELLOW=$(tput setaf 3)
 GREY=$(tput setaf 8)
 
-#### SCRIPT IS MENT TO BE TO RUN AS ROOT! NOT AS PI WITH SUDO ###########################################################################
+#### SCRIPT IS MEANT TO BE TO RUN AS ROOT! NOT AS PI WITH SUDO ###########################################################################
 if [ $USER != root ]
  then
   printf "${RED}PLEASE RUN THIS SCRIPT AS ROOT! DONT USE SUDO! $NORMAL \n"
@@ -167,7 +167,7 @@ DEBIAN_FRONTEND=noninteractive apt install -y -o Dpkg::Options::="--force-confde
 #### RECONFIGURE NETWORK #### /etc/hosts REMOVE IPv6 #### /etc/network/interfaces.new CONFIGURE NETWORK TO CHANGE ON REBOOT ##############
 printf "
 =========================================================================================
-$GREEN ! FIXING NETWORK CONFIGURATION.... ERRORS ARE NOMALAY FINE AND RESOLVED AFTER REBOOT ! $NORMAL
+$GREEN ! FIXING NETWORK CONFIGURATION.... ERRORS ARE NORMALLY FINE AND RESOLVED AFTER REBOOT ! $NORMAL
 =========================================================================================
 \n"
 printf "127.0.0.1\tlocalhost
@@ -195,7 +195,7 @@ sed -i "s|$SEARCH.*|$REPLACE|" /usr/share/javascript/proxmox-widget-toolkit/prox
 ### FINAL MESSAGE ########################################################################################################################
 printf "
 =========================================================================================
-                   $GREEN     ! INSTALATION COMPLETED ! WAIT ! REBOOT ! $NORMAL
+                   $GREEN     ! INSTALLATION COMPLETED ! WAIT ! REBOOT ! $NORMAL
 =========================================================================================
 
     after reboot the PVE web interface will be reachable here :
