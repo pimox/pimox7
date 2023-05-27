@@ -139,9 +139,10 @@ printf "
 hostnamectl set-hostname $HOSTNAME
 
 #### ADD SOURCE PIMOX7 + KEY & UPDATE & INSTALL RPI-KERNEL-HEADERS #######################################################################
+mkdir -p /etc/apt/keyrings/
+wget -O- https://raw.githubusercontent.com/pimox/pimox7/master/KEY.gpg | gpg --dearmor | sudo tee /etc/apt/keyrings/pimox.gpg > /dev/null
 printf "# PiMox7 Development Repo
-deb https://raw.githubusercontent.com/pimox/pimox7/master/ dev/ \n" > /etc/apt/sources.list.d/pimox.list
-curl https://raw.githubusercontent.com/pimox/pimox7/master/KEY.gpg |  apt-key add -
+deb [signed-by=/etc/apt/keyrings/pimox.gpg] https://raw.githubusercontent.com/pimox/pimox7/master/ dev/ \n" | sudo tee /etc/apt/sources.list.d/pimox.list
 apt update && apt upgrade -y
 
 #### REMOVE DHCP, CLEAN UP ###############################################################################################################
