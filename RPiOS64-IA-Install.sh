@@ -167,7 +167,7 @@ DEBIAN_FRONTEND=noninteractive apt install -y -o Dpkg::Options::="--force-confde
 #### RECONFIGURE NETWORK #### /etc/hosts REMOVE IPv6 #### /etc/network/interfaces.new CONFIGURE NETWORK TO CHANGE ON REBOOT ##############
 printf "
 =========================================================================================
-$GREEN ! FIXING NETWORK CONFIGURATION.... ERRORS ARE NOMALAY FINE AND RESOLVED AFTER REBOOT ! $NORMAL
+$GREEN ! FIXING NETWORK CONFIGURATION.... ERRORS ARE NORMALLY FINE AND RESOLVED AFTER REBOOT ! $NORMAL
 =========================================================================================
 \n"
 printf "127.0.0.1\tlocalhost
